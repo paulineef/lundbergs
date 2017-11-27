@@ -1,5 +1,11 @@
+/*no css code in here*/
+
 /*
 Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
+
+h1 {
+	color: blue;
+}
