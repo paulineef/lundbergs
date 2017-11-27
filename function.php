@@ -1,5 +1,5 @@
 <?php  
-	include ('partials/reg_menu.php');
+	include("incl/reg_menu.php");
 
 ?>
 
