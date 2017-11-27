@@ -3,7 +3,7 @@
 function register_the_menus() {
 	register_nav_menus(
 	array(
-		'header-nav' => __('Page menu'),
+		'header-nav' => __('Page menu')
 		)
 	);
 } 
