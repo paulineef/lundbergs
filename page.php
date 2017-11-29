@@ -11,8 +11,7 @@
 		$produkt_query = new WP_Query($args); //create a custom query and put in the args array with produkter
 	?>
 		<div class="aboutCont">
-			<h1 class="titlePosts"> <?php// the_title();//the_ = echo out ?></h1>
-			<h1>Yohoo</h1>
+			<h1 class="titlePosts"> <?php the_title();//the_ = echo out ?></h1>
 		</div>
 		<div id="container">
 			<div id="textBox"><p>hejhejehjhejhejhe</p></div>
