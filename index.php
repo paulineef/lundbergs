@@ -1,4 +1,5 @@
 <?php get_header();  ?>
+
 <?php
 		$my_query = new WP_Query($args);
 		if ($my_query->have_posts()): 
