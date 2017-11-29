@@ -1,5 +1,5 @@
 <?php  
-	include("incl/reg_menu.php");
+	//include("incl/reg_menu.php");
 
 ?>
 
@@ -19,3 +19,34 @@
 // add_action( 'wp_enqueue_style', 'lundbergs_script_enqueue');
 
 ?> -->
+<?php 
+
+//title bar
+add_theme_support('title-tag');
+add_theme_support('post-thumbnails');
+add_theme_support('post-formats', array('gallery', 'image'));
+
+
+//include('includes/post_types.php');
+//include('includes/taxonomies.php');
+//include('includes/sidebar.php');
+
+
+//Media sizes
+add_image_size( 'grid_thumbnail', 300, 300, true );
+add_image_size( 'mobile_grid', 500, 500, true );
+add_image_size( 'single_large', 660, 400, false );
+
+
+//register menus
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+?>
