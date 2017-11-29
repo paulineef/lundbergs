@@ -3,7 +3,10 @@
 //  from lecture
 //------------------
 
-function project_post_type() {
+
+/* ------- PRODUKTER post type --------- */
+
+function produkter_post_type() {
 
     /* Set up the arguments for the post type. */
     $args = array(
@@ -58,7 +61,7 @@ function project_post_type() {
          * The css-string for the icon to use for the admin menu item.
          * https://developer.wordpress.org/resource/dashicons
          */
-        'menu_icon'           => 'dashicons-portfolio', // string (defaults to use the post icon)
+        'menu_icon'           => 'dashicons-screenoptions', // string (defaults to use the post icon)
 
         /**
          * Whether the posts of this post type can be exported via the WordPress import/export plugin
@@ -81,13 +84,13 @@ function project_post_type() {
          * posts. If set to TRUE, the post type name will be used for the archive slug.  You can also
          * set this to a string to control the exact name of the archive slug. (site.com/projects)
          */
-        'has_archive'         => 'projects', // bool|string (defaults to FALSE)
+        'has_archive'         => 'produkter', // bool|string (defaults to FALSE)
 
         /**
          * Sets the query_var key for this post type. If set to TRUE, the post type name will be used.
          * You can also set this to a custom string to control the exact key.
          */
-        'query_var'           => 'project', // bool|string (defaults to TRUE - post type name)
+        'query_var'           => 'produkt', // bool|string (defaults to TRUE - post type name)
 
         /**
          * A string used to build the edit, delete, and read capabilities for posts of this type. You
@@ -110,7 +113,7 @@ function project_post_type() {
          * rules from being created.
          */
         'rewrite' => array(
-      		'slug'                  => 'project',
+      		'slug'                  => 'produkter',
       		'with_front'            => false,
       		'pages'                 => true,
       		'feeds'                 => false,
@@ -165,31 +168,101 @@ function project_post_type() {
          * labels do not cover post updated, error, and related messages.  You'll need to filter the
          * 'post_updated_messages' hook to customize those.
          */
-        'taxonomies'            => array( 'project_type', 'project_skill' ),
+        'taxonomies'            => array( 'produkter_sort' /*, 'project_skill' */),
         'labels' => array(
-            'name'               => __( 'Projects',                   'project-textdomain' ),
-            'singular_name'      => __( 'Project',                    'project-textdomain' ),
-            'menu_name'          => __( 'Projects',                   'project-textdomain' ),
-            'name_admin_bar'     => __( 'Projects',                   'project-textdomain' ),
-            'add_new'            => __( 'Add New',                    'project-textdomain' ),
-            'add_new_item'       => __( 'Add New Project',            'project-textdomain' ),
-            'edit_item'          => __( 'Edit Project',               'project-textdomain' ),
-            'new_item'           => __( 'New Project',                'project-textdomain' ),
-            'view_item'          => __( 'View Project',               'project-textdomain' ),
-            'search_items'       => __( 'Search Projects',            'project-textdomain' ),
-            'not_found'          => __( 'No projects found',          'project-textdomain' ),
-            'not_found_in_trash' => __( 'No projects found in trash', 'project-textdomain' ),
-            'all_items'          => __( 'All Projects',               'project-textdomain' ),
+            'name'               => __( 'Produkter',                  'produkt-textdomain' ),
+            'singular_name'      => __( 'Produkt',                    'produkt-textdomain' ),
+            'menu_name'          => __( 'Produkter',                  'produkt-textdomain' ),
+            'name_admin_bar'     => __( 'Produkter',                  'produkt-textdomain' ),
+            'add_new'            => __( 'Lägg till ny korv',                'produkt-textdomain' ),
+            'add_new_item'       => __( 'Lägg till ny produkt',       'produkt-textdomain' ),
+            'edit_item'          => __( 'Redigera produkt',           'produkt-textdomain' ),
+            'new_item'           => __( 'Ny Produkt',                 'produkt-textdomain' ),
+            'view_item'          => __( 'See produkt',                'produkt-textdomain' ),
+            'search_items'       => __( 'Sök produkt',                'produkt-textdomain' ),
+            'not_found'          => __( 'Ingen produkt hittad',       'produkt-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen produkt hittat i papperskorgen','produkt-textdomain' ),
+            'all_items'          => __( 'Alla produkter',             'produkt-textdomain' ),
         )
     );
 
     /* Register the post type. */
     register_post_type(
-        'project', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'produkter', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }
 
 /* Register custom post types on the 'init' hook. Add an action to the init. */
-add_action( 'init', 'project_post_type' );
+add_action( 'init', 'produkter_post_type' );
+
+/* ------- PERSONAL post type --------- */
+
+function personal_post_type() {
+    $args = array(
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'show_in_nav_menus'   => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'menu_icon'           => 'dashicons-admin-users',
+        'can_export'          => true,
+        'delete_with_user'    => false,
+        'hierarchical'        => false,
+        'has_archive'         => 'personal',
+        'query_var'           => 'personal',
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+        'rewrite' => array(
+      		'slug'                  => 'personal',
+      		'with_front'            => false,
+      		'pages'                 => true,
+      		'feeds'                 => false,
+      	),
+
+        'supports' => array(
+
+            'title',
+            'editor',
+            'excerpt',
+            'author',
+            'thumbnail',
+            'comments',
+            'trackbacks',
+            'custom-fields',
+            'revisions',
+            'page-attributes',
+            'post-formats',
+        ),
+        'taxonomies'            => array( 'personal_sort' /*, 'project_skill' */),
+        'labels' => array(
+            'name'               => __( 'Personal',                    'personal-textdomain' ),
+            'singular_name'      => __( 'Personal',                    'personal-textdomain' ),
+            'menu_name'          => __( 'Personal',                    'personal-textdomain' ),
+            'name_admin_bar'     => __( 'Personal',                    'personal-textdomain' ),
+            'add_new'            => __( 'Lägg till ny',                'personal-textdomain' ),
+            'add_new_item'       => __( 'Lägg till ny personal',       'personal-textdomain' ),
+            'edit_item'          => __( 'Redigera personal',           'personal-textdomain' ),
+            'new_item'           => __( 'Ny personal',                 'personal-textdomain' ),
+            'view_item'          => __( 'See personal',                'personal-textdomain' ),
+            'search_items'       => __( 'Sök personal',                'personal-textdomain' ),
+            'not_found'          => __( 'Ingen personal hittad',       'personal-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen personal hittat i papperskorgen','personal-textdomain' ),
+            'all_items'          => __( 'All personal',                'personal-textdomain' ),
+        )
+    );
+
+    /* Register the post type. */
+    register_post_type(
+        'personal', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        $args      // Arguments for post type.
+    );
+}
+
+/* Register custom post types on the 'init' hook. Add an action to the init. */
+add_action( 'init', 'personal_post_type' );
+
  ?>
