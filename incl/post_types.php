@@ -3,8 +3,9 @@
 //  from lecture
 //------------------
 
-
-/* ------- PRODUKTER post type --------- */
+/* ---------------------------------
+------- PRODUKTER post type --------- 
+------------------------------------*/
 
 function produkter_post_type() {
 
@@ -196,7 +197,9 @@ function produkter_post_type() {
 /* Register custom post types on the 'init' hook. Add an action to the init. */
 add_action( 'init', 'produkter_post_type' );
 
-/* ------- PERSONAL post type --------- */
+/* -----------------------------------
+------- PERSONAL post type ---------- 
+--------------------------------------*/
 
 function personal_post_type() {
     $args = array(
