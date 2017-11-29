@@ -1,6 +1,7 @@
 <main>
 		
 	<?php 
+	get_header();
 	//the_post_thumbnail( 'desktop_grid' );
 		the_post();
 	?>
