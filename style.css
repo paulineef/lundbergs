@@ -14,23 +14,28 @@ body {
 	min-height: 240vh;
 	min-width: 320px;
 }
+
 h1 {
 	color: blue;
 }
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'montserrat';
 }
+
 #headerMenu ul {
 	text-decoration: none;
 	list-style-type: none;
 	position: absolute;
 	display: none;
 }
+
 #headerMenu ul li {
 	display: inline;
 	float: left;
 	padding: 0 20px;
 }
+
 #headerMenu {
 	width: 100%;
 	background: rgba(0,0,0,0.8);
@@ -39,31 +44,43 @@ h1,h2,h3,h4,h5,h6 {
 	top: 0;
 	left: 0;
 }
+
 #headerMenu a {
 	font-family: 'montserrat';
-	color: white;
+	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 }
+
 #headerMenu ul.open {
 	display: block;
 }
+
 #welcome {
 	width: 100%;
 	height: 100vh;
 	background: url(img/trees.jpg);
 	overflow: hidden;
 }
+
 #welcome img {
 	width: 100%;
 	height: 100%;
 }
-#menu {
-	font-size: 35px !important;
-	color: pink !important;
+
+.hamburger, .cross {
 	position: absolute;
+	background: transparent;
+	border: none; 
+	top: -5px;
 	right: 10px;
-	top: 7px;
+	color: #fff; 
+	font-size: 30pt; 
+	cursor: pointer;
+}
+
+.cross {
+	font-size: 80pt; 
 }
 
 footer {
