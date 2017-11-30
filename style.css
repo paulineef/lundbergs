@@ -38,13 +38,15 @@ h1,h2,h3,h4,h5,h6 {
 	position: fixed;
 	top: 0;
 	left: 0;
-	
 }
 #headerMenu a {
 	font-family: 'montserrat';
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+}
+#headerMenu ul.open {
+	display: block;
 }
 #welcome {
 	width: 100%;
@@ -57,24 +59,34 @@ h1,h2,h3,h4,h5,h6 {
 	height: 100%;
 }
 #menu {
-	font-size: 40px !important;
+	font-size: 35px !important;
 	color: pink !important;
 	position: absolute;
 	right: 10px;
 	top: 7px;
 }
+
+footer {
+	width: 100%; 
+	background: #f2f2f2; 
+	height: 200px; 
+}
+
 @media (min-width: 1024px){
 	#headerMenu ul {
 	text-decoration: none;
 	list-style-type: none;
 	position: absolute;
+		display: block;
 		
 }
+
 #headerMenu ul li {
 	display: inline;
 	float: left;
 	padding: 0 20px;
 }
+
 #headerMenu {
 	width: 100%;
 	background: rgba(0,0,0,0.8);
