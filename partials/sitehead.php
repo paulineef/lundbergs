@@ -8,5 +8,5 @@ $(document).ready(function() {					// makes sure code does not execute until ent
 			$("#burger").click(function(){
 			$("#headerMenu").toggleClass('open');
 			});
-}
+})
 </script>
