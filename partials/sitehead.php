@@ -5,7 +5,7 @@
 	</header>
 <script>
 $(document).ready(function() {					// makes sure code does not execute until entire DOM is loaded
-			$("#menu").click(function(){
+			$("#burger").click(function(){
 			$("#headerMenu").toggleClass('open');
 			});
 }
