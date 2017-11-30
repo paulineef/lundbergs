@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://use.fontawesome.com/1baea3ea6f.js"></script>
 	<html>
 		<head>
 			<meta charset="UTF-8">

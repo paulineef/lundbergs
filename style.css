@@ -5,10 +5,14 @@ Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
+html {
+	min-width: 320px;
+}
 body {
 	padding: 0;
 	margin: 0;
 	min-height: 240vh;
+	min-width: 320px;
 }
 h1 {
 	color: blue;
@@ -20,6 +24,51 @@ h1,h2,h3,h4,h5,h6 {
 	text-decoration: none;
 	list-style-type: none;
 	position: absolute;
+	display: none;
+}
+#headerMenu ul li {
+	display: inline;
+	float: left;
+	padding: 0 20px;
+}
+#headerMenu {
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+#headerMenu a {
+	font-family: 'montserrat';
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+#welcome {
+	width: 100%;
+	height: 100vh;
+	background: url(img/trees.jpg);
+	overflow: hidden;
+}
+#welcome img {
+	width: 100%;
+	height: 100%;
+}
+#menu {
+	font-size: 40px !important;
+	color: pink !important;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+@media (min-width: 1024px){
+	#headerMenu ul {
+	text-decoration: none;
+	list-style-type: none;
+	position: absolute;
+		
 }
 #headerMenu ul li {
 	display: inline;
@@ -40,13 +89,4 @@ h1,h2,h3,h4,h5,h6 {
 	text-decoration: none;
 	font-weight: bold;
 }
-#welcome {
-	width: 100%;
-	height: 100vh;
-	background: url(img/trees.jpg);
-	overflow: hidden;
-}
-#welcome img {
-	width: 100%;
-	height: 100%;
 }
