@@ -175,7 +175,7 @@ function produkter_post_type() {
             'singular_name'      => __( 'Produkt',                    'produkt-textdomain' ),
             'menu_name'          => __( 'Produkter',                  'produkt-textdomain' ),
             'name_admin_bar'     => __( 'Produkter',                  'produkt-textdomain' ),
-            'add_new'            => __( 'Lägg till ny korv',                'produkt-textdomain' ),
+            'add_new'            => __( 'Lägg till ny',                'produkt-textdomain' ),
             'add_new_item'       => __( 'Lägg till ny produkt',       'produkt-textdomain' ),
             'edit_item'          => __( 'Redigera produkt',           'produkt-textdomain' ),
             'new_item'           => __( 'Ny Produkt',                 'produkt-textdomain' ),
