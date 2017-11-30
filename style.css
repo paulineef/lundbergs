@@ -65,6 +65,13 @@ h1,h2,h3,h4,h5,h6 {
 	right: 10px;
 	top: 7px;
 }
+
+footer {
+	width: 100%; 
+	background: #f2f2f2; 
+	height: 200px; 
+}
+
 @media (min-width: 1024px){
 	#headerMenu ul {
 	text-decoration: none;
@@ -73,11 +80,13 @@ h1,h2,h3,h4,h5,h6 {
 		display: block;
 		
 }
+
 #headerMenu ul li {
 	display: inline;
 	float: left;
 	padding: 0 20px;
 }
+
 #headerMenu {
 	width: 100%;
 	background: rgba(0,0,0,0.8);
