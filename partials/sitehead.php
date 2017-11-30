@@ -5,10 +5,12 @@
 		<!-- Place logo here -->
 		<div class="hide">
 			<?php wp_nav_menu(); ?>
-		</div>	
+		</div>
+		
+		<div class="hamburger">&#9776;</div>
+ 		<div class="cross">&#735;</div>	
 	</div>
-	<div class="hamburger">&#9776;</div>
- 	<div class="cross">&#735;</div>
+	
 	<!-- <i class="hamburger" class="fa fa-bars" aria-hidden="true"></i>
 	<i class="cross" class="fa fa-times" aria-hidden="true"></i> -->
 	</header>
