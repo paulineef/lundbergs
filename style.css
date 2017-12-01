@@ -38,6 +38,7 @@ h2 {
 .hide {
 	position: relative;
 	top: 50px;
+	left: 0px;
 	z-index: 11;
 	display: none; 
 	width: 100%;
@@ -56,6 +57,10 @@ nav a {
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+nav li a:hover, .menu li a:hover {
+	color: #6fa67f;
 }
 
 #menu {
@@ -123,6 +128,7 @@ nav a {
 	height: 100%;
 }
 /*-------- FOOTER ---------*/
+
 footer {
 	width: 100%; 
 	background: #f2f2f2; 
@@ -138,6 +144,7 @@ footer {
 	height: 100%;
 	width: 100%;
 }
+
 @media (min-width: 768px){
 	
 	h2 {
@@ -153,6 +160,7 @@ footer {
 
 	.hide {
 		top: 5px;
+		left: 100px;
 		background: transparent;
 		display: block; 
 	}
