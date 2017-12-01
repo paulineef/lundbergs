@@ -63,7 +63,7 @@ nav li a:hover, .menu li a:hover {
 	color: #6fa67f;
 }
 
-#menu {
+#menu { 
 	width: 100%;
 	background: rgba(0,0,0,0.8);
 	height: 50px;
@@ -86,6 +86,21 @@ nav li a:hover, .menu li a:hover {
 
 .cross {
 	font-size: 80pt; 
+}
+
+.toplogomobile, .toplogo {
+	position: absolute;
+	top: -5px; 
+	right: 10px; 
+	height: 20px; 
+	background: url(img/logo.svg) no-repeat;
+}
+
+.toplogo {
+	display: none; 
+}
+
+.toplogomobile {
 }
 
 #welcome {
@@ -154,6 +169,7 @@ footer {
 }
 
 @media (min-width: 1024px){
+
 	.hamburger, .cross {
 		display: none; 
 	}
@@ -184,6 +200,19 @@ footer {
 
 	#menu a {
 		color: white;
+	}
+
+	#welcome img {
+	max-width: 100%;
+	max-height: 100%;
+	}
+
+	.toplogo {
+		display: block; 
+	}
+
+	.toplogomobile{
+		display: none; 
 	}
 }
 
