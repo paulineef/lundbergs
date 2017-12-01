@@ -2,10 +2,11 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
 <header>
 	<nav id="menu">
-		<!-- Place logo here -->
+		<div class="toplogomobile"></div>
 		<div class="hide">
 			<?php wp_nav_menu(); ?>
 		</div>
+		<div class="toplogo"></div>
 		
 		<div class="hamburger">&#9776;</div>
  		<div class="cross">&#735;</div>	
