@@ -111,6 +111,9 @@ nav li a:hover, .menu li a:hover {
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
 }
 
 #welcome img {
@@ -118,6 +121,16 @@ nav li a:hover, .menu li a:hover {
 	max-height: 100%;
 }
 /*----- FRONT-PAGE -----*/
+#content {
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+#history {
+	background: white;
+	min-height: 100vh;
+	width: 100%;
+}
 #arrow {
 	height: 64px;
 	margin: 0 auto;
