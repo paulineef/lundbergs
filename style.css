@@ -46,6 +46,12 @@ h2 {
 	text-align: center; 
 	background: #fff; 
 	padding: 10px 0px;
+	
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
 }
 
 nav ul li {
@@ -129,7 +135,7 @@ nav li a:hover, .menu li a:hover {
 }
 #history {
 	background: white;
-	min-height: 100vh;
+	min-height: 100%;
 	width: 100%;
 	position: relative;
 	margin-top: 100vh;
