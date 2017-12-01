@@ -44,11 +44,6 @@ h2 {
 	padding: 10px 0px;
 }
 
-.hide ul {
-	margin: 0;
-	padding: 0;
-}
-
 nav ul li {
 	list-style-type: none; 
 	padding: 10px 0px;
@@ -66,7 +61,7 @@ nav a {
 	background: rgba(0,0,0,0.8);
 	height: 50px;
 	position: fixed;
-	top: 0;
+	top: 30px;
 	left: 0;
 	z-index: 10; 
 }
@@ -118,9 +113,14 @@ footer {
 	}
 
 	.hide {
-		top: 0px;
+		top: 5px;
 		background: transparent;
 		display: block; 
+	}
+
+	.hide ul {
+		margin: 0;
+		padding: 0;
 	}
 
 	h2 {
