@@ -102,16 +102,26 @@ nav li a:hover, .menu li a:hover {
 }
 /*----- FRONT-PAGE -----*/
 #arrow {
-	width: 64px;
 	height: 64px;
 	margin: 0 auto;
 	position: absolute;
-	bottom: 10px;
+	bottom: 50px;
+	width: 100%;
+	
+	-webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s ;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    font-size: 20px !important;
+    -webkit-animation: bounce 2s infinite;
 }
 #arrowImg {
 	background-image: url(img/arrow.png);
 	width: 64px;
 	height: 64px;
+	margin: 0 auto;
 }
 #arrowImg img {
 	width: 100%;
@@ -175,4 +185,14 @@ footer {
 	#menu a {
 		color: white;
 	}
+}
+
+/*----- KEYFRAMES -----*/
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(60%);
+    }
 }
