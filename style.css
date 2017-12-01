@@ -128,6 +128,11 @@ nav li a:hover, .menu li a:hover {
 	width: 100%;
 	height: 100%;
 }
+#welcomeMobile {
+	background-image: url(img/alex-holt-305454.jpg);
+	height: 100vh;
+	width: 100%;
+}
 /*-------- FOOTER ---------*/
 
 footer {

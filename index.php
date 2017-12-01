@@ -18,4 +18,8 @@
 			<?php // the_excerpt();
 				the_post_thumbnail();//echo out the content from the wp developer ?>
 </ul>	
+<?php
+	endwhile;
+endif;
+?>
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 <div id="welcome">
+	<div id="welcomeMobile">
+	</div>
 	<h2>
 		Svensktillverkad </br> avfallshantering </br> sedan 1896
 	</h2>
