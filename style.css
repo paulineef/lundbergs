@@ -45,7 +45,8 @@ h2 {
 }
 
 .hide ul {
-	
+	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
