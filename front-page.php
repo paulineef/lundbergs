@@ -14,8 +14,10 @@
 	<div id="history">
 		<p>fweghgejk</p>
 	</div>
-</div>
 <?php get_footer(); ?>
+</div>
+
+
 <script>
 	$(document).ready(function() {
 
