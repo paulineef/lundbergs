@@ -180,19 +180,28 @@ nav li a:hover, .menu li a:hover {
 /*-------- FOOTER ---------*/
 
 footer {
+	overflow: hidden; 
 	display: flex;
 	align-items: center; 
+	justify-content: space-between;
 	width: 100%; 
 	background: #f2f2f2; 
-	height: 200px;
+	height: 150px;
 	position: relative;
 	bottom: 0;
+	padding: 0px 30px;
 }
 #footerLogo {
 	background: url(img/logo_since.svg) no-repeat center;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
+}
+
+#info {
+	width: 180px;
+	font-family: 'montserrat', sans-serif;
+	font-size: 8pt; 
 }
 
 @media (min-width: 767px){
