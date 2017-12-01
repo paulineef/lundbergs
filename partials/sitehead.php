@@ -11,34 +11,23 @@
 		<div class="hamburger">&#9776;</div>
  		<div class="cross">&#735;</div>	
 	</nav>
-	
-	<!-- <i class="hamburger" class="fa fa-bars" aria-hidden="true"></i>
-	<i class="cross" class="fa fa-times" aria-hidden="true"></i> -->
-	</header>
+</header>
 <script>
-// 	$(document).ready(function() {					// makes sure code does not execute until entire DOM is loaded
-// 		$("#burger").click(function(){
-// 		$("#headerMenu").toggleClass('open');
-// 	});
-// })
-
 $(document).ready(function() {
+	$( ".cross" ).hide();
 
-		$( ".cross" ).hide();
-
-		$( ".hamburger" ).click(function() {
-			$( ".hide" ).slideToggle( "normal", function() {
-				$( ".hamburger" ).hide();
-				$( ".cross" ).show();
-			});
+	$( ".hamburger" ).click(function() {
+		$( ".hide" ).slideToggle( "normal", function() {
+			$( ".hamburger" ).hide();
+			$( ".cross" ).show();
 		});
+	});
 
-		$( ".cross" ).click(function() {
-			$( ".hide" ).slideToggle( "normal", function() {
-				$( ".cross" ).hide();
-				$( ".hamburger" ).show();
-			});
+	$( ".cross" ).click(function() {
+		$( ".hide" ).slideToggle( "normal", function() {
+			$( ".cross" ).hide();
+			$( ".hamburger" ).show();
 		});
-
+	});
 });
 </script>
