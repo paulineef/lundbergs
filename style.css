@@ -33,20 +33,34 @@ h2 {
 	margin-left: 10%;
 }
 
-#headerMenu ul {
+.hide {
+	position: relative;
+	top: 50px;
+	z-index: 11;
+	display: none; 
+	width: 100%;
+	text-align: center; 
+	background: #fff; 
+	padding: 10px 0px;
+}
+
+.hide ul {
+	
+}
+
+nav ul li {
+	list-style-type: none; 
+	padding: 10px 0px;
+}
+
+nav a {
+	font-family: 'montserrat';
+	color: #000;
 	text-decoration: none;
-	list-style-type: none;
-	position: absolute;
-	display: none;
+	font-weight: bold;
 }
 
-#headerMenu ul li {
-	display: inline;
-	float: left;
-	padding: 0 20px;
-}
-
-#headerMenu {
+#menu {
 	width: 100%;
 	background: rgba(0,0,0,0.8);
 	height: 50px;
@@ -54,31 +68,6 @@ h2 {
 	top: 0;
 	left: 0;
 	z-index: 10; 
-}
-
-#headerMenu a {
-	font-family: 'montserrat';
-	color: #000;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-#headerMenu ul.open {
-	display: block;
-}
-
-#welcome {
-	width: 100%;
-	height: 100vh;
-	background-image: url(img/trees.jpg);
-	overflow: hidden;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-#welcome img {
-	max-width: 100%;
-	max-height: 100%;
 }
 
 .hamburger, .cross {
@@ -96,9 +85,17 @@ h2 {
 	font-size: 80pt; 
 }
 
-.hide {
-	color: #fff;
-	display: none; 
+#welcome {
+	width: 100%;
+	height: 100vh;
+	background: url(img/trees.jpg) no-repeat center top;
+	overflow: hidden;
+	background-size: 100%;
+}
+
+#welcome img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 footer {
@@ -120,6 +117,8 @@ footer {
 	}
 
 	.hide {
+		top: 0px;
+		background: transparent;
 		display: block; 
 	}
 
@@ -128,13 +127,14 @@ footer {
 		margin: 120px;
 		font-weight: 600;
 	}
-	#headerMenu ul li {
+
+	#menu ul li {
 		display: inline;
 		float: left;
-		padding: 0 20px;
+		padding: 0px 20px;
 	}
 
-	#headerMenu a {
+	#menu a {
 		color: white;
 	}
 }

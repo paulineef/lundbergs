@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
 <header>
-	<div id="headerMenu" class="menu">
+	<nav id="menu">
 		<!-- Place logo here -->
 		<div class="hide">
 			<?php wp_nav_menu(); ?>
@@ -9,7 +9,7 @@
 		
 		<div class="hamburger">&#9776;</div>
  		<div class="cross">&#735;</div>	
-	</div>
+	</nav>
 	
 	<!-- <i class="hamburger" class="fa fa-bars" aria-hidden="true"></i>
 	<i class="cross" class="fa fa-times" aria-hidden="true"></i> -->
