@@ -5,7 +5,9 @@ Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
-
+::-webkit-scrollbar { 
+    display: none; 
+}
 html {
 	min-width: 320px;
 }
@@ -98,12 +100,39 @@ nav a {
 	max-width: 100%;
 	max-height: 100%;
 }
-
+/*----- FRONT-PAGE -----*/
+#arrow {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+}
+#arrowImg {
+	background-image: url(img/arrow.png);
+	width: 64px;
+	height: 64px;
+}
+#arrowImg img {
+	width: 100%;
+	height: 100%;
+}
+/*-------- FOOTER ---------*/
 footer {
 	width: 100%; 
 	background: #f2f2f2; 
+	height: 200px;
 }
-
+#footerLogo {
+	background-image: url(img/logo.png);
+	overflow: hidden;
+	height: 100%;
+	background-repeat: no-repeat;
+	}
+#footerLogo img {
+	height: 100%;
+	width: 100%;
+}
 @media (min-width: 768px){
 	
 	h2 {
