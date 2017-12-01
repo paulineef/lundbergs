@@ -135,7 +135,7 @@ nav li a:hover, .menu li a:hover {
 }
 #history {
 	background: white;
-	min-height: 100%;
+	height: 100%;
 	width: 100%;
 	position: relative;
 	margin-top: 100vh;
