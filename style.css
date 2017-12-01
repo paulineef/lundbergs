@@ -139,6 +139,7 @@ nav li a:hover, .menu li a:hover {
 	width: 100%;
 	position: relative;
 	margin-top: 100vh;
+	padding-bottom: 200px;
 }
 #arrow {
 	height: 64px;

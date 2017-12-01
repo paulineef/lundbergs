@@ -14,17 +14,11 @@
 <div id="content">
 	<div id="history">
 		<p>fweghgejk</p>
-		<div id="theFixed" style="position:fixed;top:250px;background-color:red"><h1>hej</h1></div>
 	</div>
 </div>
 <?php get_footer(); ?>
 
 <script>
-	
-	$(window).scroll(function(){
-		$("#theFixed").css("top",Math.max(0,250-$(this).scrollTop()));
-	});
-	
 	$(document).ready(function() {
 
 		$( "#arrow" ).show();
