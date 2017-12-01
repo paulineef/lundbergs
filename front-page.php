@@ -19,18 +19,6 @@
 <?php get_footer(); ?>
 
 <script>
-	$(document).ready(function() {
-
-		$( "#arrow" ).show();
-
-		$( "#arrow" ).click(function() {
-			$( "#arrow" ).slideToggle( "normal", function() {
-				$( "#arrow" ).hide();
-			});
-		});
-
-
-});
 	$(document).ready(function(){
 	  // Add smooth scrolling to all links
 	  $("a").on('click', function(event) {
