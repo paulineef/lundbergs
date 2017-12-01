@@ -65,6 +65,9 @@ nav li a:hover, .menu li a:hover {
 }
 
 #menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	width: 100%;
 	background: rgba(0,0,0,0.8);
 	height: 50px;
@@ -87,6 +90,19 @@ nav li a:hover, .menu li a:hover {
 
 .cross {
 	font-size: 80pt; 
+}
+
+.toplogomobile, .toplogo {
+	position: relative;
+	right: 120px;
+	z-index: 100;
+	height: 20px;
+	width: 120px; 
+	background: url(img/logo.svg) no-repeat;
+}
+
+.toplogo {
+	display: none; 
 }
 
 #welcome {
@@ -181,7 +197,7 @@ footer {
 	}
 
 	.hide {
-		top: 5px;
+		top: 0px;
 		left: 100px;
 		background: transparent;
 		display: block; 
@@ -206,6 +222,14 @@ footer {
 
 	#menu a {
 		color: white;
+	}
+
+	.toplogo {
+		display: block; 
+	}
+
+	.toplogomobile{
+		display: none; 
 	}
 }
 
