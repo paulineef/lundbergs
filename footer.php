@@ -8,7 +8,10 @@
 			</div>
 			<div id="footerLogo">
 			</div>
-			<div id="info">
+			<div id="linkedin">
+				<a href="https://www.linkedin.com/company/lundbergsab" rel="external">
+					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				</a>
 			</div>
 		</footer>
 	<?php wp_footer(); ?>
