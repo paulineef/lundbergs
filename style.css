@@ -97,16 +97,17 @@ nav a {
 }
 /*----- FRONT-PAGE -----*/
 #arrow {
-	width: 64px;
 	height: 64px;
 	margin: 0 auto;
 	position: absolute;
-	bottom: 10px;
+	bottom: 50px;
+	width: 100%;
 }
 #arrowImg {
 	background-image: url(img/arrow.png);
 	width: 64px;
 	height: 64px;
+	margin: 0 auto;
 }
 #arrowImg img {
 	width: 100%;
