@@ -179,6 +179,7 @@ nav li a:hover, .menu li a:hover {
 /*-------- FOOTER ---------*/
 
 footer {
+	display: flex;
 	width: 100%; 
 	background: #f2f2f2; 
 	height: 200px;
@@ -186,18 +187,9 @@ footer {
 	bottom: 0;
 }
 #footerLogo {
-	background-image: url(img/logo.png);
+	background-image: url(img/logo.png) no-repeat center;
 	overflow: hidden;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 20px;
-	left: 30px;
-	}
-#footerLogo img {
-	height: 100%;
-	width: 100%;
+	width: 200px;
 }
 
 @media (min-width: 767px){
