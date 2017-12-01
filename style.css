@@ -6,6 +6,9 @@ Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 html {
 	min-width: 320px;
 }
@@ -80,7 +83,6 @@ h2 {
 	max-width: 100%;
 	max-height: 100%;
 }
-
 .hamburger, .cross {
 	position: absolute;
 	background: transparent;
@@ -91,7 +93,6 @@ h2 {
 	font-size: 30pt; 
 	cursor: pointer;
 }
-
 .cross {
 	font-size: 80pt; 
 }
@@ -100,12 +101,35 @@ h2 {
 	color: #fff;
 	display: none; 
 }
-
+/*----- FRONT-PAGE -----*/
+#arrow {
+	width: 64px;
+	height: 64px;
+	background-image: url(img/arrow.png);
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+}
+#arrow img {
+	width: 100%;
+	height: 100%;
+}
+/*-------- FOOTER ---------*/
 footer {
 	width: 100%; 
 	background: #f2f2f2; 
+	height: 200px;
 }
-
+#footerLogo {
+	background-image: url(img/logo.png);
+	overflow: hidden;
+	height: 100%;
+	background-repeat: no-repeat;
+	}
+#footerLogo img {
+	height: 100%;
+	width: 100%;
+}
 @media (min-width: 768px){
 	
 	h2 {
@@ -118,7 +142,6 @@ footer {
 	.hamburger, .cross {
 		display: none; 
 	}
-
 	.hide {
 		display: block; 
 	}
@@ -133,7 +156,6 @@ footer {
 		float: left;
 		padding: 0 20px;
 	}
-
 	#headerMenu a {
 		color: white;
 	}
