@@ -5,7 +5,7 @@
 			Svensktillverkad </br> avfallshantering </br> sedan 1896
 		</h2>
 		<div id="arrow">
-			<a href="#footerLogo">
+			<a href="#history">
 				<div id="arrowImg"></div>
 			</a>
 		</div>
