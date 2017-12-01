@@ -9,7 +9,7 @@
 			<div id="footerLogo">
 			</div>
 			<div id="linkedin">
-				<a href="https://www.linkedin.com/company/lundbergsab" rel="external">
+				<a href="https://www.linkedin.com/company/18000722/" rel="external" target="_blank">
 					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 				</a>
 			</div>
