@@ -14,21 +14,21 @@
 	</nav>
 </header>
 <script>
-$(document).ready(function() {
-	$( ".cross" ).hide();
+	$(document).ready(function() {
+		$( ".cross" ).hide();
 
-	$( ".hamburger" ).click(function() {
-		$( ".hide" ).slideToggle( "normal", function() {
-			$( ".hamburger" ).hide();
-			$( ".cross" ).show();
+		$( ".hamburger" ).click(function() {
+			$( ".hide" ).slideToggle( "normal", function() {
+				$( ".hamburger" ).hide();
+				$( ".cross" ).show();
+			});
+		});
+
+		$( ".cross" ).click(function() {
+			$( ".hide" ).slideToggle( "normal", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
 		});
 	});
-
-	$( ".cross" ).click(function() {
-		$( ".hide" ).slideToggle( "normal", function() {
-			$( ".cross" ).hide();
-			$( ".hamburger" ).show();
-		});
-	});
-});
 </script>

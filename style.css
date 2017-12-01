@@ -187,10 +187,10 @@ footer {
 	justify-content: space-between;
 	width: 100%; 
 	background: #f2f2f2; 
-	height: 150px;
+	height: 200px;
 	position: relative;
 	bottom: 0;
-	padding: 30px 120px;
+	padding: 60px 30px;
 }
 #footerLogo {
 	background: url(img/logo_since.svg) no-repeat center;
@@ -203,6 +203,11 @@ footer {
 	width: 180px;
 	font-family: 'montserrat', sans-serif;
 	font-size: 9pt; 
+}
+
+#linkedin {
+	width: 200px;
+	text-align: right;
 }
 
 #linkedin a {
@@ -273,6 +278,11 @@ footer {
 
 	.toplogomobile{
 		display: none; 
+	}
+
+	footer {
+		height: 150px;
+		padding: 30px 120px;
 	}
 }
 
