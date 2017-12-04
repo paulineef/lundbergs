@@ -1,17 +1,15 @@
-/*no css code in here*/
-
 /*
 Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
+
 ::-webkit-scrollbar { 
     display: none; 
 }
 
 * {
 	font-family: "montserrat", sans-serif;
-	font-size: 10pt;
 }
 
 html {
@@ -26,10 +24,6 @@ body {
 	min-width: 320px;
 }
 
-h1 {
-	color: blue;
-}
-
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'montserrat';
 }
@@ -40,6 +34,10 @@ h2 {
 	margin: 15%;
 	font-weight: 400;
 	margin-left: 10%;
+}
+
+p {
+	font-size: 10pt; 
 }
 
 a{
@@ -63,12 +61,13 @@ li {
 	box-sizing: border-box;
 	
 	
-	 -webkit-transition: all 0.5s; 
-  -moz-transition: all 0.5s; 
-  -ms-transition: all 0.5s; 
-  -o-transition: all 0.5s; 
-  transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	-moz-transition: all 0.5s; 
+	-ms-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+	transition: all 0.5s;
 }
+
 .hide.open {
 	display: block;
 	max-height: 500px;
@@ -78,28 +77,34 @@ li {
 	background: white;
 	box-sizing: border-box;
 	
-	 -webkit-transition: max-height 0.5s; 
-  -moz-transition: max-height 0.5s; 
-  -ms-transition: max-height 0.5s; 
-  -o-transition: max-height 0.5s; 
-  transition: max-height 0.5s;
+	-webkit-transition: max-height 0.5s; 
+	-moz-transition: max-height 0.5s; 
+	-ms-transition: max-height 0.5s; 
+	-o-transition: max-height 0.5s; 
+	transition: max-height 0.5s;
 }
+
 .hide.small {
 	top: 50px;
 }
+
 .hide a {
 	font-size: 25pt;
 	display: block;
 }
+
 .hide li:first-child {
 	padding-top: 60px;
 }
+
 .hide li:last-child {
 	padding-bottom: 80px;
 }
+
 #nav-icon3.open span{
-		display: block !important;
-	}
+	display: block !important;
+}
+
 nav ul li {
 	padding: 25px 0px;
 }
@@ -123,12 +128,14 @@ nav li a:hover, #menu a:hover{
 	left: 0;
 	z-index: 10; 
 }
+
 #menu.large {
 	min-height: 130px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
 }
+
 #menu.large .toplogomobile, #menu.large .toplogo {
 	position: relative;
 	z-index: 100;
@@ -139,8 +146,8 @@ nav li a:hover, #menu a:hover{
 	left: 25px;
 	
 	-webkit-transition: all 0.5s ease 0s;
-
 }
+
 #menu.large .hamburger {
 	font-size: 70px;
 	right: 25px;
@@ -148,6 +155,7 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small .hamburger {
 	font-size: 40pt;
 	right: 20px;
@@ -155,12 +163,14 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small {
 	min-height: 100px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
 }
+
 #menu.small .toplogomobile, #menu.small .toplogo {
 	position: relative;
 	z-index: 100;
@@ -171,6 +181,7 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small #nav-icon3 {
 	top: 25px;
 	width: 55px;
@@ -350,7 +361,7 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	background-position: center;
 }
-#welcomMobile img {
+#welcomeMobile img {
 	width: 100%;
 	height: 100%;
 }
