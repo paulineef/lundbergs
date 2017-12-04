@@ -252,7 +252,7 @@ nav li a:hover, #menu a:hover{
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
-	position: fixed;
+	/*position: fixed;*/
 	top: 0px;
 	left: 0px;
 }
@@ -263,11 +263,10 @@ nav li a:hover, #menu a:hover{
 }
 /*----- FRONT-PAGE -----*/
 #content {
-	min-height: 100vh;
+	min-height: 140vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin-top: 100vh;
 	background: #fff;
 }
 #nyhet {

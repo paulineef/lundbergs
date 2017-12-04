@@ -12,6 +12,8 @@
 </div>
 <div id="content">
     <?php require 'archive-nyheter.php';?>
+	<?php the_post();
+	the_content(); ?>
 </div>
 
 <?php get_footer(); ?>
