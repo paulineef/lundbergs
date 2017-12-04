@@ -68,6 +68,10 @@ h2 {
 }
 .hide.open a {
 	font-size: 20pt;
+	display: block;
+}
+.hide a {
+	display: none;
 }
 #nav-icon3.open span{
 		display: block !important;
@@ -353,6 +357,9 @@ footer {
 }
 
 @media (min-width: 1024px){
+	.hide a {
+		display: block;
+	}
 	#nav-icon3 {
 		display: none;
 	}
