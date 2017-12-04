@@ -61,6 +61,7 @@ h2 {
 }
 .hide.open {
 	display: block;
+	height: 500px;
 }
 #nav-icon3.open span{
 		display: block !important;
