@@ -142,6 +142,7 @@ nav li a:hover, #menu a:hover{
 	color: #fff; 
 	font-size: 30pt; 
 	cursor: pointer;
+	display: none;
 }
 
 .cross {
@@ -307,7 +308,7 @@ footer {
 		height: 30px;
 		width: 150px;
 		margin-right: 60px;
-		top: 3px;
+		top: 0px;
 
 		-webkit-transition: all 0.8s ease 0s;
 	}
