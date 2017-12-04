@@ -1,4 +1,4 @@
-<main>
+<!-- <main>
 	<?php 
 		get_header(); //get content from header.php
 		//the_post_thumbnail( 'desktop_grid' );
@@ -30,4 +30,4 @@
 			endwhile; 
 		endif;
 	?>
-</main>
+</main> -->
