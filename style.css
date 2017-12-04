@@ -42,6 +42,14 @@ h2 {
 	margin-left: 10%;
 }
 
+a{
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
 .hide {
 	position: relative;
 	top: 20px;
@@ -93,14 +101,12 @@ h2 {
 		display: block !important;
 	}
 nav ul li {
-	list-style-type: none; 
 	padding: 25px 0px;
 }
 
 nav a {
 	font-family: 'montserrat';
 	color: #000;
-	text-decoration: none;
 	font-weight: bold;
 }
 
@@ -269,20 +275,50 @@ nav li a:hover, #menu a:hover{
 	position: relative;
 	margin-top: 100vh;
 	background: #fff;
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 #nyhet {
-	overflow: hidden; 
+	overflow: hidden;
+	border-bottom: 10px solid #6fa67f; 
+	margin: 100px;
+	max-width: 100%;
+	padding-bottom: 30px;
+}
+
+#content ul {
+ 	padding: 0px;
+ 	margin: 0px;
 }
 
 #nyhet p {
-	text-align: justify;
-	margin: 0 auto;
-	padding-top: 150px;
-	padding-bottom: 30px;
-	max-width: 50%;
-	line-height: 16pt; 
-	border-bottom: 10px solid #6fa67f;
+	line-height: 20pt; 	
 }
+
+#nyhet a h1 {
+	color: #000;
+	font-size: 14pt; 
+	margin-bottom: 5px; 
+}
+
+#visa a {
+	margin: 0px 100px;
+	color: #6fa67f;
+}
+
+#visa a:hover {
+	color: #7a353a;
+}
+
+.ny {
+	margin-top: 150px; 
+}
+
+.entry-meta {
+	font-size: 8pt;
+	color: #ddd;
+}
+
 #arrow {
 	height: 64px;
 	margin: 0 auto;
@@ -458,6 +494,35 @@ footer {
 
 	.toplogomobile{
 		display: none; 
+	}
+
+	#content {
+		background: #fff;
+		padding-top: 150px;
+		padding-bottom: 30px;
+	}
+
+	#nyhet {
+		border-bottom: 10px solid #6fa67f; 
+		max-width: 50%;
+		margin: 0 auto;
+		margin-bottom: 30px; 
+	}
+
+	.nList ul {
+	 	padding: 0px;
+	}
+
+	#nyhet p {
+		text-align: justify;
+		line-height: 20pt; 	
+	}
+
+	#visa, #visa a {
+	margin: 0 auto;
+	text-align: left; 
+	width: 50%;
+	
 	}
 
 	footer {
