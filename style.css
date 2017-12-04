@@ -66,6 +66,7 @@ h2 {
 	height: 500px;
 	width: 100%;
 	right: 0px;
+	top: 30px;
 	
 	animation-name: slideOut;
     -webkit-animation-name: slideOut;
