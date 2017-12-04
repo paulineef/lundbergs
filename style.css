@@ -252,22 +252,21 @@ nav li a:hover, #menu a:hover{
 	min-height: 100vh;
 	width: 100%;
 	overflow: hidden;
-}
-#history {
-	background: white;
-	min-height: 140vh;
-	width: 100%;
 	position: relative;
 	margin-top: 100vh;
-	line-height: 16pt; 
+	background: #fff;
+}
+#nyhet {
+	overflow: hidden; 
 }
 
-#history p {
+#nyhet p {
 	text-align: justify;
 	margin: 0 auto;
 	padding-top: 150px;
 	padding-bottom: 30px;
 	max-width: 50%;
+	line-height: 16pt; 
 	border-bottom: 10px solid #6fa67f;
 }
 #arrow {
