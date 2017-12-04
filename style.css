@@ -297,6 +297,9 @@ footer {
 }
 
 @media (min-width: 1024px){
+	#nav-icon3 {
+		display: none;
+	}
 	#menu.large {
 		min-height: 100px;
 		-webkit-transition: min-height 0.5s;
@@ -335,6 +338,7 @@ footer {
 		left: 100px;
 		background: transparent;
 		display: block; 
+		width: 100%;
 	}
 	.hide ul {
 		margin: 0;
