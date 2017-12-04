@@ -8,6 +8,12 @@ Description: Svensktillverkad avfallshantering sedan 1896
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+* {
+	font-family: "montserrat", sans-serif;
+	font-size: 10pt;
+}
+
 html {
 	min-width: 320px;
 	width: 100%;
@@ -160,7 +166,16 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	position: relative;
 	margin-top: 100vh;
-	padding-bottom: 450px;
+	line-height: 16pt; 
+}
+
+#history p {
+	text-align: justify;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 30px;
+	max-width: 50%;
+	border-bottom: 10px solid #6fa67f;
 }
 #arrow {
 	height: 64px;
