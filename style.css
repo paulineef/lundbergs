@@ -67,8 +67,11 @@ h2 {
 	-webkit-transition: all 0.5s ease 0s;
 }
 .hide.open a {
-	font-size: 20pt;
+	font-size: 25pt;
 	display: block;
+}
+.hide.open li:first-child {
+	padding-top: 60px;
 }
 .hide a {
 	display: none;
@@ -78,7 +81,7 @@ h2 {
 	}
 nav ul li {
 	list-style-type: none; 
-	padding: 10px 0px;
+	padding: 25px 0px;
 }
 
 nav a {
