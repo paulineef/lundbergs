@@ -267,6 +267,8 @@ function personal_post_type() {
     );
 }
 
+add_action( 'init', 'personal_post_type' );
+
 function nyhet_post_type() {
     $args = array(
         'public'              => true,
