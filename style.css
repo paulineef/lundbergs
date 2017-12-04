@@ -348,8 +348,10 @@ footer {
 
 @media (min-width: 767px){
 	h2 {
-		font-size: 30pt;
-		margin: 120px;
+		font-size: 45pt;
+		font-weight: 600;
+		margin: 250px 120px;
+		line-height: 75px;
 	}
 	#welcome {
 		background-position: top;
