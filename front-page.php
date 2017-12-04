@@ -1,11 +1,4 @@
 <?php get_header(); 
-
-    $nyhet_query = new WP_Query(
-    	array(
-        'post_type' => 'nyhet',
-        'orderby' => 'title',
-        'order' => 'ASC',
-        'posts_per_page' => '3'));
 ?>
 
 <div id="welcome">
@@ -22,13 +15,6 @@
 <div id="content">
 	<div id="history">
 		<div>
-			<?php 
-			if ($nyhet_query->have_posts()) : while ($nyhet_query->have_posts() ) : the_post(); ?>
-                <h2><?php the_title();?></h2>
-                <p><?php the_content(); ?></p>
-           
-            <?php endwhile; endif; 
-        	?>
             
 		</div>
 	</div>
