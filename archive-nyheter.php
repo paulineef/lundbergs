@@ -7,7 +7,7 @@
 <ul>
 	<a href="<?php the_permalink();?>">
 		<li>
-			<div id="nyheter">
+			<div id="nyhet">
 				<h1><?php the_title();//the_ = echo out ?></h1>
 					<p><?php the_content();?></p>
 			</div>
