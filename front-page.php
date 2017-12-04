@@ -11,7 +11,7 @@
 	</div>
 </div>
 <div id="content">
-    <?php include 'archive-nyheter.php';?>
+    <?php require 'archive-nyheter.php';?>
 </div>
 
 <?php get_footer(); ?>
