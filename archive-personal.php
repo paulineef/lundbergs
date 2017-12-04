@@ -6,8 +6,14 @@
 			the_post(); 
 ?>
 
-<ul class="posts">
-	<a href='<?php the_permalink()?>'><li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></li></a>
+<ul class="staffGrid">
+	<li>
+		<a href='<?php the_permalink();?>'>
+		<img src="<?php the_post_thumbnail_url(); ?>"/>
+		</a>
+
+		<li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></a>
+	</li>
 
 <?php 
 	endwhile;
