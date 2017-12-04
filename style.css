@@ -428,7 +428,9 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
-
+	.hide.small {
+		top: 0px;
+	}
 	h2 {
 		font-size: 40pt;
 		margin: 180px 120px;
