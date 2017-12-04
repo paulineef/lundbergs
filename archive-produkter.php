@@ -15,7 +15,7 @@
 
 
 <ul class="staffGrid">
-	<a href='<?php the_permalink()?>'><li><h1 class="titlePosts">
+	<a href='<?php the_permalink();?>'><li><h1 class="titlePosts">
 
 	<?php the_title();//the_ = echo out ?></h1></li></a>
 
@@ -29,13 +29,3 @@
 ?>
 
 <?php get_footer(); ?>
-
-
-
-<?php 
-	get_header();
-	echo "Produkter";
-	if ( have_posts()):
-		while ( have_posts()): 
-			the_post(); 
-?>
