@@ -4,17 +4,13 @@
 	if ( have_posts()):
 		while ( have_posts()): 
 			the_post(); 
-
 ?>
-hhfnfmfjfgjffcgjftfj
-<ul class="posts">
 
-<a href='<?php the_permalink()?>'><li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></li></a>
+<ul class="posts">
+	<a href='<?php the_permalink()?>'><li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></li></a>
 
 <?php 
 	endwhile;
-	else: 
-		echo "string";
 	endif;
 ?>
 
