@@ -40,6 +40,7 @@
 	
 	$("#nav-icon3").click(function(){
 			$("#nav-icon3").toggleClass('open');
+			$(".hide").toggleClass('open');
 			});
 	
 	$(document).on("scroll", function() {

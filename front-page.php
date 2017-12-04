@@ -23,11 +23,11 @@
 	<div id="history">
 		<div>
 			<?php 
-			if ($nyhet_query->have_posts()) : while ($nyhet_query->have_posts() ) : the_post(); ?>
-                <h2><?php the_title();?></h2>
-                <p><?php the_content(); ?></p>
+		//	if ($nyhet_query->have_posts()) : while ($nyhet_query->have_posts() ) : the_post(); ?>
+                <h2><?php// the_title();?></h2>
+                <p><?php// the_content(); ?></p>
            
-            <?php endwhile; endif; 
+            <?php //endwhile; endif; 
         	?>
             
 		</div>
