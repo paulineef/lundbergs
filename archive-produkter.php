@@ -1,5 +1,6 @@
 <?php 
 	get_header();
+	echo "PRODUKTER";
 	if ( have_posts()):
 
 ?>
