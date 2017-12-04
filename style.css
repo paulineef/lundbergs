@@ -354,6 +354,19 @@ footer {
 	color: #57828C;
 }
 
+#StaffDiv {}
+
+#staffLi{
+/*	overflow: hidden;
+*/}
+
+.staffA{}
+
+.staffImg{
+/*	width: 100%;
+*/}
+
+.staffTitleh1{}
 
 @media (min-width: 767px){
 	h2 {
