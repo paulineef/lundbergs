@@ -47,11 +47,12 @@ h2 {
 	top: 30px;
 	left: 0px;
 	z-index: 11;
-	display: none;
-	width: 100%;
 	text-align: center; 
 	background: #fff; 
 	padding: 10px 0px;
+	width: 0%;
+	
+	-webkit-transition: all 0.5s ease 0s;
 	
 	-webkit-transition: opacity 3s ease-in-out;
     -moz-transition: opacity 3s ease-in-out;
@@ -62,6 +63,11 @@ h2 {
 .hide.open {
 	display: block;
 	height: 500px;
+	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
+}
+.hide.open a {
+	font-size: 20pt;
 }
 #nav-icon3.open span{
 		display: block !important;
