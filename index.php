@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<?php 
+	get_header();
+	the_title();
+	echo "INDEX";
+	get_footer(); 
+?>
+=======
 <?php get_header(); ?>
 
 <div id="content">
@@ -12,6 +20,7 @@
 </div>
 
 <?php get_footer(); ?>
+>>>>>>> 635ece36a0940791c1837f02bb3edfdd3477b6b4
 
 
 

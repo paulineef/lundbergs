@@ -47,7 +47,7 @@ h2 {
 	top: 30px;
 	left: 0px;
 	z-index: 11;
-	display: none; 
+	display: none;
 	width: 100%;
 	text-align: center; 
 	background: #fff; 
@@ -59,7 +59,12 @@ h2 {
     -o-transition: opacity 3s ease-in-out;
      opacity: 1;
 }
-
+.hide.open {
+	display: block;
+}
+#nav-icon3.open span{
+		display: block !important;
+	}
 nav ul li {
 	list-style-type: none; 
 	padding: 10px 0px;
@@ -273,6 +278,7 @@ footer {
 	color: #57828C;
 }
 
+
 @media (min-width: 767px){
 	h2 {
 		font-size: 30pt;
@@ -312,9 +318,7 @@ footer {
 
 		-webkit-transition: all 0.8s ease 0s;
 	}
-	#nav-icon3.open .hide{
-		display: block;
-	}
+	
 	.hamburger, .cross {
 		display: none; 
 	}
@@ -325,7 +329,6 @@ footer {
 		background: transparent;
 		display: block; 
 	}
-
 	.hide ul {
 		margin: 0;
 		padding: 0;

@@ -22,7 +22,7 @@ function produkter_post_type() {
         /**
          * Whether queries can be performed on the front end as part of parse_request().
          */
-        'publicly_queryable'  => true, // bool (defaults to 'public').
+        //'publicly_queryable'  => true, // bool (defaults to 'public').
 
         /**
          * Whether to exclude posts with this post type from front-end search results.
@@ -86,12 +86,14 @@ function produkter_post_type() {
          * set this to a string to control the exact name of the archive slug. (site.com/projects)
          */
         'has_archive'         => 'produkter', // bool|string (defaults to FALSE)
+        //'has_archive'         => true, // bool|string (defaults to FALSE)
 
         /**
          * Sets the query_var key for this post type. If set to TRUE, the post type name will be used.
          * You can also set this to a custom string to control the exact key.
          */
-        'query_var'           => 'produkt', // bool|string (defaults to TRUE - post type name)
+       // 'query_var'           => 'produkt', // bool|string (defaults to TRUE - post type name)
+        'query_var'           => true, // bool|string (defaults to TRUE - post type name)
 
         /**
          * A string used to build the edit, delete, and read capabilities for posts of this type. You
@@ -117,7 +119,7 @@ function produkter_post_type() {
       		'slug'                  => 'produkter',
       		'with_front'            => false,
       		'pages'                 => true,
-      		'feeds'                 => false,
+      		'feeds'                 => true,
       	),
 
         /**
