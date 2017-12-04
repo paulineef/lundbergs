@@ -44,37 +44,40 @@ h2 {
 
 .hide {
 	position: relative;
-	top: 30px;
-	right: -100%;
+	top: 20px;
 	z-index: 11;
 	text-align: center; 
-	background: #fff; 
-	padding: 10px 0px;
+	padding: 0;
 	width: 100%;
-	height: 500px;
+	max-height: 0px;
+	overflow: hidden;
+	background: black;
+	box-sizing: border-box;
 	
-	animation-name: slideOutMenu;
-    -webkit-animation-name: slideOutMenu;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-	visibility: visible !important;
+	
+	 -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -ms-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
 }
 .hide.open {
 	display: block;
-	height: 500px;
+	max-height: 500px;
 	width: 100%;
 	right: 0px;
 	top: 30px;
+	background: white;
+	box-sizing: border-box;
 	
-	animation-name: slideOut;
-    -webkit-animation-name: slideOut;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-	visibility: visible !important;
+	 -webkit-transition: max-height 0.5s; 
+  -moz-transition: max-height 0.5s; 
+  -ms-transition: max-height 0.5s; 
+  -o-transition: max-height 0.5s; 
+  transition: max-height 0.5s;
+}
+.hide.small {
+	top: 50px;
 }
 .hide a {
 	font-size: 25pt;
@@ -82,6 +85,9 @@ h2 {
 }
 .hide li:first-child {
 	padding-top: 60px;
+}
+.hide li:last-child {
+	padding-bottom: 80px;
 }
 #nav-icon3.open span{
 		display: block !important;
@@ -180,6 +186,7 @@ nav li a:hover, #menu a:hover{
 	  -o-transition: .5s ease-in-out;
 	  transition: .5s ease-in-out;
 	  cursor: pointer;
+		z-index: 99;
 	}
 	#nav-icon3 span{
 	  display: block;
@@ -414,7 +421,7 @@ footer {
 		background: transparent;
 		display: block; 
 		width: 100%;
-		height: 20px;
+		max-height: 20px;
 		animation: none;
 	}
 	.hide ul {
