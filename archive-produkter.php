@@ -1,35 +1,35 @@
-<?php 
-	get_header();
+<?php get_header(); ?>
+<ul class="staffGrid">
+<?php
 	echo "PRODUKTER";
 	if ( have_posts()):
 		while ( have_posts()): 
-			the_post(); 
 ?>
-
-<ul class="staffGrid">
 	<li class="product"><a href='<?php the_permalink();?>'><h1 class="titlePosts">
-
+		<?php the_post(); ?>
 		<h2><?php the_title();?></h2> <?php the_post_thumbnail(); ?></h1></a></li>
-</ul>
 
 <?php 
 	endwhile;
 	endif;
 ?>
-
+</ul>
 <?php get_footer(); ?>
 <style>
 	.staffGrid {
 		padding: 0;
 		margin: 0;
 		width: 100%;
+		padding: 44px 0;
+		min-height: 90vh;
 	}
 	.product {
-		max-width: 50%;
+		max-width: 100%;
 		box-sizing: border-box;
 		float: left;
 		overflow: hidden;
-		padding: 88px;
+		padding: 0px 88px;
+		
 		position: relative;
 
 	}
@@ -53,5 +53,11 @@
 	}
 	.product li {
 		list-style-type: none;
+	}
+	@media (min-width: 1024px){
+		.product {
+			max-width: 50%;
+			padding: 88px;	
+		}
 	}
 </style>
