@@ -19,6 +19,11 @@
 
 <?php get_footer(); ?>
 <style>
+	.staffGrid {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
 	.product {
 		max-width: 50%;
 		box-sizing: border-box;
@@ -38,7 +43,10 @@
 		text-align: center;
 		position: absolute;
 		margin: 0 auto;
-		top: 350px;
+		top: 330px;
+		width: 100%;
+		padding-right: 176px;
+		box-sizing: border-box;
 	}
 	.product a {
 		text-decoration: none;
