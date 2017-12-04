@@ -2,13 +2,8 @@
 	get_header();
 	echo "NYHETER";
 	if ( have_posts()):
-
-?>
-	<h2>Sample text</h2>
-
-<?php
-	while ( have_posts()): 
-		the_post(); 
+		while ( have_posts()): 
+			the_post(); 
 ?>
 hhfnfmfjfgjffcgjftfj
 <ul class="posts">

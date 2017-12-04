@@ -1,14 +1,10 @@
 <?php 
 	get_header();
-echo "PERSONAL";
+	echo "Produkter";
 	if ( have_posts()):
+		while ( have_posts()): 
+			the_post(); 
 
-?>
-	<h2>Sample text</h2>
-
-<?php
-	while ( have_posts()): 
-		the_post(); 
 ?>
 hhfnfmfjfgjffcgjftfj
 <ul class="posts">
