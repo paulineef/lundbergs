@@ -1,19 +1,18 @@
 <?php 
-	get_header();
 	echo "NYHETER";
-	if ( have_posts()):
-		while ( have_posts()): 
+	if (have_posts()):
+		while (have_posts()): 
 			the_post(); 
 ?>
 <ul>
-	<li>
-		<div id="nyheter">
-		<a href='<?php the_permalink()?>'>
-			<h1><?php the_title();//the_ = echo out ?></h1></a>
-				<p><?php the_content();?></p>
-
-		</div>
-	</li>
+	<a href="<?php the_permalink();?>">
+		<li>
+			<div id="nyheter">
+				<h1><?php the_title();//the_ = echo out ?></h1>
+					<p><?php the_content();?></p>
+			</div>
+		</li>
+	</a>
 </ul>
 
 <?php 
