@@ -307,7 +307,7 @@ function nyheter_post_type() {
             'page-attributes',
             'post-formats',
         ),
-        'taxonomies'            => array( 'personal_sort' /*, 'project_skill' */),
+        'taxonomies'            => array( 'nyheter_sort' /*, 'project_skill' */),
         'labels' => array(
             'name'               => __( 'Nyheter',                    'nyheter-textdomain' ),
             'singular_name'      => __( 'Nyhet',                    'nyheter-textdomain' ),
