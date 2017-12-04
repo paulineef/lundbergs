@@ -15,7 +15,7 @@
 <div id="content">
 	<div id="history">
 		<div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem iste quos excepturi delectus nulla, blanditiis vitae cumque est. Enim maxime dicta nam quas quae, earum possimus amet pariatur id voluptatum.</p> 
+           <?php include 'archive-nyheter.php';?>
 		</div>
 	</div>
 </div>

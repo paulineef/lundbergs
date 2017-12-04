@@ -5,15 +5,12 @@
 		while ( have_posts()): 
 			the_post(); 
 ?>
-hhfnfmfjfgjffcgjftfj
 <ul class="posts">
 
-<a href='<?php the_permalink()?>'><li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></li></a>
+	<a href='<?php the_permalink()?>'><li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></li></a>
 
 <?php 
 	endwhile;
-	else: 
-		echo "string";
 	endif;
 ?>
 
@@ -22,4 +19,3 @@ hhfnfmfjfgjffcgjftfj
 ?>
 
 <?php get_footer(); ?>
-
