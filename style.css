@@ -8,6 +8,12 @@ Description: Svensktillverkad avfallshantering sedan 1896
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+* {
+	font-family: "montserrat", sans-serif;
+	font-size: 10pt;
+}
+
 html {
 	min-width: 320px;
 	width: 100%;
@@ -66,7 +72,7 @@ nav a {
 	font-weight: bold;
 }
 
-nav li a:hover, .menu li a:hover {
+nav li a:hover, #menu a:hover{
 	color: #6fa67f;
 }
 
@@ -79,7 +85,32 @@ nav li a:hover, .menu li a:hover {
 	left: 0;
 	z-index: 10; 
 }
-
+#menu.large {
+	height: 150px;
+}
+#menu.large .toplogomobile, #menu.large .toplogo {
+	position: relative;
+	z-index: 100;
+	height: 80px;
+	width: 220px; 
+	background: url(img/logo.svg) no-repeat;
+	
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+#menu.small {
+	height: 100px;
+}
+#menu.small .toplogomobile, #menu.small .toplogo {
+	position: relative;
+	z-index: 100;
+	height: 30px;
+	width: 150px; 
+	background: url(img/logo.svg) no-repeat;
+	
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
 .hamburger, .cross {
 	position: absolute;
 	background: transparent;
@@ -96,11 +127,7 @@ nav li a:hover, .menu li a:hover {
 }
 
 .toplogomobile, .toplogo {
-	position: relative;
-	z-index: 100;
-	height: 20px;
-	width: 120px; 
-	background: url(img/logo.svg) no-repeat;
+	
 }
 
 .toplogomobile {
@@ -139,7 +166,16 @@ nav li a:hover, .menu li a:hover {
 	width: 100%;
 	position: relative;
 	margin-top: 100vh;
-	padding-bottom: 200px;
+	line-height: 16pt; 
+}
+
+#history p {
+	text-align: justify;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 30px;
+	max-width: 50%;
+	border-bottom: 10px solid #6fa67f;
 }
 #arrow {
 	height: 64px;
@@ -180,19 +216,43 @@ nav li a:hover, .menu li a:hover {
 /*-------- FOOTER ---------*/
 
 footer {
+	box-sizing: border-box;
+	overflow: hidden; 
 	display: flex;
-	align-items: center; 
+	align-items: flex-end; 
+	justify-content: space-between;
 	width: 100%; 
 	background: #f2f2f2; 
 	height: 200px;
 	position: relative;
 	bottom: 0;
+	padding: 60px 30px;
 }
 #footerLogo {
 	background: url(img/logo_since.svg) no-repeat center;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
+}
+
+#info {
+	width: 180px;
+	font-family: 'montserrat', sans-serif;
+	font-size: 9pt; 
+}
+
+#linkedin {
+	width: 200px;
+	text-align: right;
+}
+
+#linkedin a {
+	font-size: 20pt;
+	color: #000;
+}
+
+#linkedin a:hover {
+	color: #57828C;
 }
 
 @media (min-width: 767px){
@@ -206,8 +266,11 @@ footer {
 }
 
 @media (min-width: 1024px){
-	#welcome {
-		background-size: 100%;
+	#menu.large .toplogomobile, #menu.large .toplogo {
+		background: url(img/logo_since_white.svg) no-repeat;
+	}
+	#menu.small .toplogomobile, #menu.small .toplogo {
+		background: url(img/logo.svg) no-repeat;
 	}
 	.hamburger, .cross {
 		display: none; 
@@ -254,6 +317,16 @@ footer {
 
 	.toplogomobile{
 		display: none; 
+	}
+
+	footer {
+		height: 150px;
+		padding: 30px 120px;
+	}
+}
+@media (min-width: 1100px){
+	#welcome {
+		background-size: 100%;
 	}
 }
 
