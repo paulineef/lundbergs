@@ -312,7 +312,9 @@ footer {
 
 		-webkit-transition: all 0.8s ease 0s;
 	}
-	
+	#nav-icon3.open .hide{
+		display: block;
+	}
 	.hamburger, .cross {
 		display: none; 
 	}
