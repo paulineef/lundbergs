@@ -296,11 +296,10 @@ footer {
 	#menu.large .toplogomobile, #menu.large .toplogo {
 		height: 80px;
 		width: 220px; 
-		top: 20px;
+		top: 23px;
 		margin-right: 120px;
 
 		-webkit-transition: all 0.5s ease 0s;
-
 	}
 	#menu.small {
 		min-height: 70px;
@@ -312,7 +311,7 @@ footer {
 		height: 30px;
 		width: 150px;
 		margin-right: 60px;
-		top: 5px;
+		top: 3px;
 
 		-webkit-transition: all 0.8s ease 0s;
 	}
@@ -335,7 +334,7 @@ footer {
 
 	h2 {
 		font-size: 40pt;
-		margin: 120px;
+		margin: 180px 120px;
 		font-weight: 600;
 	}
 
