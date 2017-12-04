@@ -1,6 +1,5 @@
 <?php 
 	get_header();
-echo "ARCHIVE";
 	if ( have_posts()):
 
 ?>
