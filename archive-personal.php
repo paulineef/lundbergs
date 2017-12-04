@@ -6,13 +6,10 @@
 			the_post(); 
 ?>
 
-<ul class="staffGrid">
+<ul class="">
 	<li>
-		<a href='<?php the_permalink();?>'>
-		<img src="<?php the_post_thumbnail_url(); ?>"/>
-		</a>
-
-		<li><h1 class="titlePosts"><?php the_title();//the_ = echo out ?></h1></a>
+		<img src="<?php the_post_thumbnail_url();?>"/>
+		<h1 class=""> <?php the_title(); ?></h1>
 	</li>
 
 <?php 
