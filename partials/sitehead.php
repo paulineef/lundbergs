@@ -28,8 +28,10 @@
 
 	if($(document).scrollTop()>100) {
 		$("#menu").removeClass("large").addClass("small");
+		$(".hide").removeClass("large").addClass("small");
 	} else {
 		$("#menu").removeClass("small").addClass("large");
+		$(".hide").removeClass("small").addClass("large");
 	}
 	
 });

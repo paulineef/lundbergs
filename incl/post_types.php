@@ -259,7 +259,6 @@ function personal_post_type() {
             'all_items'          => __( 'All personal',                'personal-textdomain' ),
         )
     );
-
     /* Register the post type. */
     register_post_type(
         'personal', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
@@ -269,7 +268,7 @@ function personal_post_type() {
 
 add_action( 'init', 'personal_post_type' );
 
-function nyhet_post_type() {
+function nyheter_post_type() {
     $args = array(
         'public'              => true,
         'publicly_queryable'  => true,
@@ -308,32 +307,33 @@ function nyhet_post_type() {
             'page-attributes',
             'post-formats',
         ),
-        'taxonomies'            => array( 'nyhet_sort' /*, 'project_skill' */),
+        'taxonomies'            => array( 'personal_sort' /*, 'project_skill' */),
         'labels' => array(
-            'name'               => __( 'Nyheter',                    'nyhet-textdomain' ),
-            'singular_name'      => __( 'Nyhet',                    'nyhet-textdomain' ),
-            'menu_name'          => __( 'Nyheter',                    'nyhet-textdomain' ),
-            'name_admin_bar'     => __( 'Nyheter',                    'nyhet-textdomain' ),
-            'add_new'            => __( 'Lägg till ny',                'nyhet-textdomain' ),
-            'add_new_item'       => __( 'Lägg till nyhet',       'nyhet-textdomain' ),
-            'edit_item'          => __( 'Redigera nyhet',           'nyhet-textdomain' ),
-            'new_item'           => __( 'Ny nyhet',                 'nyhet-textdomain' ),
-            'view_item'          => __( 'Se nyhet',                'nyhet-textdomain' ),
-            'search_items'       => __( 'Sök nyhet',                'nyhet-textdomain' ),
-            'not_found'          => __( 'Ingen nyhet hittad',       'nyhet-textdomain' ),
-            'not_found_in_trash' => __( 'Ingen nyhet hittad i papperskorgen','nyhet-textdomain' ),
-            'all_items'          => __( 'Alla nyheter',                'nyhet-textdomain' ),
+            'name'               => __( 'Nyheter',                    'nyheter-textdomain' ),
+            'singular_name'      => __( 'Nyhet',                    'nyheter-textdomain' ),
+            'menu_name'          => __( 'Nyheter',                    'nyheter-textdomain' ),
+            'name_admin_bar'     => __( 'Nyheter',                    'nyheter-textdomain' ),
+            'add_new'            => __( 'Lägg till nyhet',                'nyheter-textdomain' ),
+            'add_new_item'       => __( 'Lägg till ny nyhet',       'nyheter-textdomain' ),
+            'edit_item'          => __( 'Redigera nyhet',           'nyheter-textdomain' ),
+            'new_item'           => __( 'Ny nyhet',                 'nyheter-textdomain' ),
+            'view_item'          => __( 'Se nyheten',                'nyheter-textdomain' ),
+            'search_items'       => __( 'Sök nyheter',                'nyheter-textdomain' ),
+            'not_found'          => __( 'Ingen nyhet hittad',       'nyheter-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen nyhet hittad i papperskorgen','nyheter-textdomain' ),
+            'all_items'          => __( 'Alla nyheter',                'nyheter-textdomain' ),
         )
     );
 
     /* Register the post type. */
     register_post_type(
-        'nyhet', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'nyheter', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }
 
-/* Register custom post types on the 'init' hook. Add an action to the init. */
-add_action( 'init', 'nyhet_post_type' );
+add_action( 'init', 'nyheter_post_type' );
+
+
 
  ?>
