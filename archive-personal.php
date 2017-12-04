@@ -1,6 +1,6 @@
 <?php 
 	get_header();
-	echo "Produkter";
+	echo "Om oss";
 	if ( have_posts()):
 		while ( have_posts()): 
 			the_post(); 
