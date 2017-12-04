@@ -22,7 +22,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	min-height: 240vh;
+	min-height: 120vh;
 	min-width: 320px;
 }
 
@@ -258,7 +258,7 @@ nav li a:hover, #menu a:hover{
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
-	position: fixed;
+	/*position: fixed;*/
 	top: 0px;
 	left: 0px;
 }
@@ -269,11 +269,10 @@ nav li a:hover, #menu a:hover{
 }
 /*----- FRONT-PAGE -----*/
 #content {
-	min-height: 100vh;
+	min-height: 140vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin-top: 100vh;
 	background: #fff;
 	padding-top: 100px;
 	padding-bottom: 30px;
@@ -397,6 +396,19 @@ footer {
 	color: #57828C;
 }
 
+#StaffDiv {}
+
+#staffLi{
+/*	overflow: hidden;
+*/}
+
+.staffA{}
+
+.staffImg{
+/*	width: 100%;
+*/}
+
+.staffTitleh1{}
 
 @media (min-width: 767px){
 	h2 {
