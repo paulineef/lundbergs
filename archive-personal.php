@@ -18,9 +18,5 @@
 	endif;
 ?>
 
-<?php // the_excerpt();
-	the_post_thumbnail();//echo out the content from the wp developer 
-?>
-
 <?php get_footer(); ?>
 
