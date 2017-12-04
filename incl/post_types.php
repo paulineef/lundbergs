@@ -181,10 +181,10 @@ function produkter_post_type() {
             'add_new_item'       => __( 'Lägg till ny produkt',       'produkt-textdomain' ),
             'edit_item'          => __( 'Redigera produkt',           'produkt-textdomain' ),
             'new_item'           => __( 'Ny Produkt',                 'produkt-textdomain' ),
-            'view_item'          => __( 'See produkt',                'produkt-textdomain' ),
+            'view_item'          => __( 'Se produkt',                'produkt-textdomain' ),
             'search_items'       => __( 'Sök produkt',                'produkt-textdomain' ),
             'not_found'          => __( 'Ingen produkt hittad',       'produkt-textdomain' ),
-            'not_found_in_trash' => __( 'Ingen produkt hittat i papperskorgen','produkt-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen produkt hittad i papperskorgen','produkt-textdomain' ),
             'all_items'          => __( 'Alla produkter',             'produkt-textdomain' ),
         )
     );
@@ -252,10 +252,10 @@ function personal_post_type() {
             'add_new_item'       => __( 'Lägg till ny personal',       'personal-textdomain' ),
             'edit_item'          => __( 'Redigera personal',           'personal-textdomain' ),
             'new_item'           => __( 'Ny personal',                 'personal-textdomain' ),
-            'view_item'          => __( 'See personal',                'personal-textdomain' ),
+            'view_item'          => __( 'Se personal',                'personal-textdomain' ),
             'search_items'       => __( 'Sök personal',                'personal-textdomain' ),
             'not_found'          => __( 'Ingen personal hittad',       'personal-textdomain' ),
-            'not_found_in_trash' => __( 'Ingen personal hittat i papperskorgen','personal-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen personal hittad i papperskorgen','personal-textdomain' ),
             'all_items'          => __( 'All personal',                'personal-textdomain' ),
         )
     );
@@ -267,7 +267,71 @@ function personal_post_type() {
     );
 }
 
+function nyhet_post_type() {
+    $args = array(
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'show_in_nav_menus'   => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'menu_icon'           => 'dashicons-format-aside',
+        'can_export'          => true,
+        'delete_with_user'    => false,
+        'hierarchical'        => false,
+        'has_archive'         => 'nyheter',
+        'query_var'           => 'nyheter',
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+        'rewrite' => array(
+            'slug'                  => 'nyheter',
+            'with_front'            => false,
+            'pages'                 => true,
+            'feeds'                 => false,
+        ),
+
+        'supports' => array(
+
+            'title',
+            'editor',
+            'excerpt',
+            'author',
+            'thumbnail',
+            'comments',
+            'trackbacks',
+            'custom-fields',
+            'revisions',
+            'page-attributes',
+            'post-formats',
+        ),
+        'taxonomies'            => array( 'nyhet_sort' /*, 'project_skill' */),
+        'labels' => array(
+            'name'               => __( 'Nyheter',                    'nyhet-textdomain' ),
+            'singular_name'      => __( 'Nyhet',                    'nyhet-textdomain' ),
+            'menu_name'          => __( 'Nyheter',                    'nyhet-textdomain' ),
+            'name_admin_bar'     => __( 'Nyheter',                    'nyhet-textdomain' ),
+            'add_new'            => __( 'Lägg till ny',                'nyhet-textdomain' ),
+            'add_new_item'       => __( 'Lägg till nyhet',       'nyhet-textdomain' ),
+            'edit_item'          => __( 'Redigera nyhet',           'nyhet-textdomain' ),
+            'new_item'           => __( 'Ny nyhet',                 'nyhet-textdomain' ),
+            'view_item'          => __( 'Se nyhet',                'nyhet-textdomain' ),
+            'search_items'       => __( 'Sök nyhet',                'nyhet-textdomain' ),
+            'not_found'          => __( 'Ingen nyhet hittad',       'nyhet-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen nyhet hittad i papperskorgen','nyhet-textdomain' ),
+            'all_items'          => __( 'Alla nyheter',                'nyhet-textdomain' ),
+        )
+    );
+
+    /* Register the post type. */
+    register_post_type(
+        'nyhet', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        $args      // Arguments for post type.
+    );
+}
+
 /* Register custom post types on the 'init' hook. Add an action to the init. */
-add_action( 'init', 'personal_post_type' );
+add_action( 'init', 'nyhet_post_type' );
 
  ?>

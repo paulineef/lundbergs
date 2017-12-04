@@ -47,7 +47,7 @@ h2 {
 	top: 30px;
 	left: 0px;
 	z-index: 11;
-	display: none; 
+	display: none;
 	width: 100%;
 	text-align: center; 
 	background: #fff; 
@@ -59,7 +59,12 @@ h2 {
     -o-transition: opacity 3s ease-in-out;
      opacity: 1;
 }
-
+.hide.open {
+	display: block;
+}
+#nav-icon3.open span{
+		display: block !important;
+	}
 nav ul li {
 	list-style-type: none; 
 	padding: 10px 0px;
@@ -86,30 +91,52 @@ nav li a:hover, #menu a:hover{
 	z-index: 10; 
 }
 #menu.large {
-	height: 150px;
+	min-height: 130px;
+	-webkit-transition: min-height 0.5s;
+	-moz-transition: min-height 0.5s;
+	transition: min-height 0.5s;
 }
 #menu.large .toplogomobile, #menu.large .toplogo {
 	position: relative;
 	z-index: 100;
-	height: 80px;
-	width: 220px; 
+	height: 100px;
+	width: 250px; 
 	background: url(img/logo.svg) no-repeat;
+	top: 40px;
+	left: 25px;
 	
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
+	-webkit-transition: all 0.5s ease 0s;
+
+}
+#menu.large .hamburger {
+	font-size: 70px;
+	right: 25px;
+	top: 10px;
+	
+	-webkit-transition: all 0.5s ease 0s;
+}
+#menu.small .hamburger {
+	font-size: 40pt;
+	right: 20px;
+	top: 10px;
+	
+	-webkit-transition: all 0.5s ease 0s;
 }
 #menu.small {
-	height: 100px;
+	min-height: 100px;
+	-webkit-transition: min-height 0.5s;
+	-moz-transition: min-height 0.5s;
+	transition: min-height 0.5s;
 }
 #menu.small .toplogomobile, #menu.small .toplogo {
 	position: relative;
 	z-index: 100;
-	height: 30px;
-	width: 150px; 
+	height: 50px;
+	width: 180px; 
+	top: 35px;
 	background: url(img/logo.svg) no-repeat;
 	
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
+	-webkit-transition: all 0.5s ease 0s;
 }
 .hamburger, .cross {
 	position: absolute;
@@ -120,16 +147,12 @@ nav li a:hover, #menu a:hover{
 	color: #fff; 
 	font-size: 30pt; 
 	cursor: pointer;
+	display: none;
 }
 
 .cross {
 	font-size: 80pt; 
 }
-
-.toplogomobile, .toplogo {
-	
-}
-
 .toplogomobile {
 	left: 20px;
 	top: 15px;
@@ -255,6 +278,7 @@ footer {
 	color: #57828C;
 }
 
+
 @media (min-width: 767px){
 	h2 {
 		font-size: 30pt;
@@ -266,12 +290,35 @@ footer {
 }
 
 @media (min-width: 1024px){
+	#menu.large {
+		min-height: 100px;
+		-webkit-transition: min-height 0.5s;
+		-moz-transition: min-height 0.5s;
+		transition: min-height 0.5s;
+	}
 	#menu.large .toplogomobile, #menu.large .toplogo {
-		background: url(img/logo_since_white.svg) no-repeat;
+		height: 80px;
+		width: 220px; 
+		top: 23px;
+		margin-right: 120px;
+
+		-webkit-transition: all 0.5s ease 0s;
+	}
+	#menu.small {
+		min-height: 70px;
+		-webkit-transition: min-height 0.5s;
+		-moz-transition: min-height 0.5s;
+		transition: min-height 0.5s;
 	}
 	#menu.small .toplogomobile, #menu.small .toplogo {
-		background: url(img/logo.svg) no-repeat;
+		height: 30px;
+		width: 150px;
+		margin-right: 60px;
+		top: 0px;
+
+		-webkit-transition: all 0.8s ease 0s;
 	}
+	
 	.hamburger, .cross {
 		display: none; 
 	}
@@ -282,7 +329,6 @@ footer {
 		background: transparent;
 		display: block; 
 	}
-
 	.hide ul {
 		margin: 0;
 		padding: 0;
@@ -290,7 +336,7 @@ footer {
 
 	h2 {
 		font-size: 40pt;
-		margin: 120px;
+		margin: 180px 120px;
 		font-weight: 600;
 	}
 
@@ -309,9 +355,7 @@ footer {
 	#menu a {
 		color: white;
 	}
-
 	.toplogo {
-		right: 120px;
 		display: block; 
 	}
 
@@ -338,4 +382,20 @@ footer {
     50%{
         transform: translateY(60%);
     }
+}
+@-webkit-keyframes opacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes opacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes opacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes opacity {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
