@@ -129,7 +129,7 @@ nav li a:hover, #menu a:hover{
 	height: 100px;
 	width: 250px; 
 	background: url(img/logo.svg) no-repeat;
-	top: 40px;
+	top: 42px;
 	left: 25px;
 	
 	-webkit-transition: all 0.5s ease 0s;
@@ -176,7 +176,7 @@ nav li a:hover, #menu a:hover{
 	  height: 50px;
 	  position: absolute;
 	  right: 32px;
-	  top: 35px;
+	  top: 42px;
 	  -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
 	  -o-transform: rotate(0deg);
