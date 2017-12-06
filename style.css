@@ -38,6 +38,7 @@ h2 {
 
 p {
 	font-size: 10pt; 
+	max-width: 600px;
 }
 
 a{

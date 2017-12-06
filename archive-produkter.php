@@ -1,6 +1,13 @@
 <?php get_header(); ?>
-<ul class="staffGrid">
-
+<div id="bigCont">
+	<div id="omOss">
+	<div id="omOssImg"></div> 
+	<div id="omOssContent"> 
+		<h1 class="bigHeading">Om oss</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mi eget blandit pellentesque, tortor risus molestie nibh, vitae aliquam dolor odio eu magna. Ut suscipit luctus sapien at lobortis. Morbi dignissim sem id commodo dapibus. Pellentesque ut mauris quis nisl sodales fringilla vel sit amet risus. Cras tristique sollicitudin sapien, at ullamcorper lectus aliquam non. In lacinia, neque at congue condimentum, ante diam fermentum quam, vitae iaculis sem ex et nulla.</p>
+	</div>
+	
+</div>
 	<?php 
 		$terms = get_terms(
 		array(
@@ -12,19 +19,34 @@
 		'post_type'     => 'produkt', 
 		'post_per_page' => -1, 
 		);
-	?>	
+	?>	<div id="catCon">
 	<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 			<div class="cont">
 				<span class="types">
-					<h2><a href="/kategori/<?php echo $value->slug ?>"><?php echo $value->name ?></a></h2>
+					<h3><a href="/kategori/<?php echo $value->slug ?>"><?php echo $value->name ?></a></h3>
 				</span>
 			</div>
 			<?php } ?>
-</ul>
+</ul></div>
+</div>
 <?php get_footer(); ?>
 <style>
+	#bigCont {
+		min-height: 90vh;
+		overflow: hidden;
+	}
+	#catCon {
+		overflow: hidden;
+		text-align: center;
+		width: 600px;
+		margin: 0 auto;
+		position: absolute;
+		top: 30vh;
+		left: 33%;
+	}
 	.cont {
-		width: 40%;
+		width: 250px;
+		height: 200px;
 		display: inline;
 		overflow: hidden;
 		float: left;
@@ -32,8 +54,11 @@
 		text-align: center;
 		background: #6FA67F;
 		color: white;
-		margin: 5%;
+		margin: 22px;
 		box-sizing: border-box;
+	}
+	.cont h3 {
+		margin: 70px 10px;
 	}
 	.cont a {
 		color: white;
