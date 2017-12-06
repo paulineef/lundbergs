@@ -1,25 +1,29 @@
-<?php 
-	echo "NYHETER";
-	if (have_posts()):
-		while (have_posts()): 
-			the_post(); 
-?>
-<ul>
-	<a href="<?php the_permalink();?>">
+<?php get_header();?>
+<div class="ny">
+	<ul class="nList">
+	<?php
+
+		if (have_posts()):
+			while (have_posts()): 
+				the_post(); 
+	?>
 		<li>
 			<div id="nyhet">
-				<h1><?php the_title();//the_ = echo out ?></h1>
-					<p><?php the_content();?></p>
+				<a href="<?php the_permalink();?>"><h1><?php the_title();//the_ = echo out ?></h1></a>
+				<div class="entry-meta">
+					<?php the_time("F d, Y"); ?>
+				</div>
+				<p><?php the_content();?></p>
 			</div>
+			
 		</li>
-	</a>
-</ul>
+	<?php 
+		endwhile;
+		endif;
+	?>
+	</ul>
+</div>
 
-<?php 
-	endwhile;
-	endif;
-?>
+<?php get_footer();?>
 
-<?php // the_excerpt();
-	the_post_thumbnail();//echo out the content from the wp developer 
-?>
+

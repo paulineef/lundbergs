@@ -1,17 +1,15 @@
-/*no css code in here*/
-
 /*
 Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
+
 ::-webkit-scrollbar { 
     display: none; 
 }
 
 * {
 	font-family: "montserrat", sans-serif;
-	font-size: 10pt;
 }
 
 html {
@@ -22,13 +20,16 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	min-height: 240vh;
+	min-height: 120vh;
 	min-width: 320px;
 }
 
+<<<<<<< HEAD
 h1 {
 }
 
+=======
+>>>>>>> 12cc2751695f9aea87500c8f76bfeb2cf263a6c4
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'montserrat';
 }
@@ -39,6 +40,18 @@ h2 {
 	margin: 15%;
 	font-weight: 400;
 	margin-left: 10%;
+}
+
+p {
+	font-size: 10pt; 
+}
+
+a{
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
 }
 
 .hide {
@@ -54,12 +67,13 @@ h2 {
 	box-sizing: border-box;
 	
 	
-	 -webkit-transition: all 0.5s; 
-  -moz-transition: all 0.5s; 
-  -ms-transition: all 0.5s; 
-  -o-transition: all 0.5s; 
-  transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	-moz-transition: all 0.5s; 
+	-ms-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+	transition: all 0.5s;
 }
+
 .hide.open {
 	display: block;
 	max-height: 500px;
@@ -69,37 +83,41 @@ h2 {
 	background: white;
 	box-sizing: border-box;
 	
-	 -webkit-transition: max-height 0.5s; 
-  -moz-transition: max-height 0.5s; 
-  -ms-transition: max-height 0.5s; 
-  -o-transition: max-height 0.5s; 
-  transition: max-height 0.5s;
+	-webkit-transition: max-height 0.5s; 
+	-moz-transition: max-height 0.5s; 
+	-ms-transition: max-height 0.5s; 
+	-o-transition: max-height 0.5s; 
+	transition: max-height 0.5s;
 }
+
 .hide.small {
 	top: 50px;
 }
+
 .hide a {
 	font-size: 25pt;
 	display: block;
 }
+
 .hide li:first-child {
 	padding-top: 60px;
 }
+
 .hide li:last-child {
 	padding-bottom: 80px;
 }
+
 #nav-icon3.open span{
-		display: block !important;
-	}
+	display: block !important;
+}
+
 nav ul li {
-	list-style-type: none; 
 	padding: 25px 0px;
 }
 
 nav a {
 	font-family: 'montserrat';
 	color: #000;
-	text-decoration: none;
 	font-weight: bold;
 }
 
@@ -116,12 +134,14 @@ nav li a:hover, #menu a:hover{
 	left: 0;
 	z-index: 10; 
 }
+
 #menu.large {
 	min-height: 130px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
 }
+
 #menu.large .toplogomobile, #menu.large .toplogo {
 	position: relative;
 	z-index: 100;
@@ -132,8 +152,8 @@ nav li a:hover, #menu a:hover{
 	left: 25px;
 	
 	-webkit-transition: all 0.5s ease 0s;
-
 }
+
 #menu.large .hamburger {
 	font-size: 70px;
 	right: 25px;
@@ -141,6 +161,7 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small .hamburger {
 	font-size: 40pt;
 	right: 20px;
@@ -148,12 +169,14 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small {
 	min-height: 100px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
 }
+
 #menu.small .toplogomobile, #menu.small .toplogo {
 	position: relative;
 	z-index: 100;
@@ -164,6 +187,7 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+
 #menu.small #nav-icon3 {
 	top: 25px;
 	width: 55px;
@@ -251,7 +275,7 @@ nav li a:hover, #menu a:hover{
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
-	position: fixed;
+	/*position: fixed;*/
 	top: 0px;
 	left: 0px;
 }
@@ -262,26 +286,55 @@ nav li a:hover, #menu a:hover{
 }
 /*----- FRONT-PAGE -----*/
 #content {
-	min-height: 100vh;
+	min-height: 140vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin-top: 100vh;
 	background: #fff;
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 #nyhet {
-	overflow: hidden; 
+	overflow: hidden;
+	border-bottom: 10px solid #6fa67f; 
+	margin: 100px;
+	max-width: 100%;
+	padding-bottom: 30px;
+}
+
+#content ul {
+ 	padding: 0px;
+ 	margin: 0px;
 }
 
 #nyhet p {
-	text-align: justify;
-	margin: 0 auto;
-	padding-top: 150px;
-	padding-bottom: 30px;
-	max-width: 50%;
-	line-height: 16pt; 
-	border-bottom: 10px solid #6fa67f;
+	line-height: 20pt; 	
 }
+
+#nyhet a h1 {
+	color: #000;
+	font-size: 14pt; 
+	margin-bottom: 5px; 
+}
+
+#visa a {
+	margin: 0px 100px;
+	color: #6fa67f;
+}
+
+#visa a:hover {
+	color: #7a353a;
+}
+
+.ny {
+	margin-top: 150px; 
+}
+
+.entry-meta {
+	font-size: 8pt;
+	color: #ddd;
+}
+
 #arrow {
 	height: 64px;
 	margin: 0 auto;
@@ -314,7 +367,7 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	background-position: center;
 }
-#welcomMobile img {
+#welcomeMobile img {
 	width: 100%;
 	height: 100%;
 }
@@ -478,6 +531,35 @@ footer {
 
 	.toplogomobile{
 		display: none; 
+	}
+
+	#content {
+		background: #fff;
+		padding-top: 150px;
+		padding-bottom: 30px;
+	}
+
+	#nyhet {
+		border-bottom: 10px solid #6fa67f; 
+		max-width: 50%;
+		margin: 0 auto;
+		margin-bottom: 30px; 
+	}
+
+	.nList ul {
+	 	padding: 0px;
+	}
+
+	#nyhet p {
+		text-align: justify;
+		line-height: 20pt; 	
+	}
+
+	#visa, #visa a {
+	margin: 0 auto;
+	text-align: left; 
+	width: 50%;
+	
 	}
 
 	footer {

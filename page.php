@@ -9,6 +9,7 @@
 		<h1 class="titlePosts"> <?php the_title();//the_ = echo out ?>
 		</div>
 		<div id="container">
+			<?php the_content();?>
 			<div id="textBox"><p>hejhejehjhejhejhe</p>
 			</div>
 		</div>

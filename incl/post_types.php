@@ -269,7 +269,7 @@ function personal_post_type() {
 add_action( 'init', 'personal_post_type' );
 
 function nyheter_post_type() {
-    $args = array(
+    $news = array(
         'public'              => true,
         'publicly_queryable'  => true,
         'exclude_from_search' => false,
@@ -328,7 +328,7 @@ function nyheter_post_type() {
     /* Register the post type. */
     register_post_type(
         'nyheter', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
-        $args      // Arguments for post type.
+        $news      // Arguments for post type.
     );
 }
 
