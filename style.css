@@ -413,8 +413,11 @@ footer {
 	color: #57828C;
 }
 
+/*-------- Staff and About us ---------*/
+
 #StaffUl {
 	margin: 0;
+	text-align: center;
 	padding: 0;
 }
 
@@ -428,7 +431,8 @@ footer {
 }
 
 .staffImg{
-	width: 100%;
+    border-radius: 100%;
+	width: 60%;
 }
 
 .staffTitleh1{
