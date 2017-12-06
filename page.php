@@ -1,18 +1,32 @@
 <main>
+	<?php get_header(); 
 
-	<?php 
-		get_header(); //get content from header.php
-		//the_post_thumbnail( 'desktop_grid' );	
+		$thumb_id = get_post_thumbnail_id();
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+		$thumb_url = $thumb_url_array[0];?>
 
-	?>
-		<div class="aboutCont">
-		<h1 class="titlePosts"> <?php the_title();//the_ = echo out ?>
+  		<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');">
+  		</div>
+
+		<div id="content">
+			<div class="page">
+				<h1><?php the_title(); ?></h1>
+				<?php the_content();?>
+			</div>			
 		</div>
-		<div id="container">
-			<?php the_content();?>
-			<div id="textBox"><p>hejhejehjhejhejhe</p>
-			</div>
-		</div>
-		<div id="cont"></div>
+
+
+	<?php get_footer(); ?>
 </main>
-</main>
+<style type="text/css">
+	#feature {
+		width: 100%;
+		height: 200px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.page {
+		margin: 0px 100px;
+	}
+</style>
