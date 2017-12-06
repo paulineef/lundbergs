@@ -8,12 +8,15 @@
   		<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');">
   		</div>
 
-		<div id="content">
-			<div class="page">
-				<h1><?php the_title(); ?></h1>
-				<?php the_content();?>
-			</div>			
-		</div>
+		<div class="page">
+			<?php 
+			the_title();
+			
+			the_post();
+			the_content(); 
+			?>
+
+		</div>	
 
 
 	<?php get_footer(); ?>
@@ -27,6 +30,6 @@
 	}
 
 	.page {
-		margin: 0px 100px;
+		margin: 60px 120px;
 	}
 </style>
