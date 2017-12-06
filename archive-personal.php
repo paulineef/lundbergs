@@ -1,3 +1,6 @@
+
+<h1 id="hej"><?php wp_title() ?></h1>
+
 <ul id="staffUl">
 
 <?php 
