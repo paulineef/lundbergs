@@ -24,6 +24,12 @@ body {
 	min-width: 320px;
 }
 
+<<<<<<< HEAD
+h1 {
+}
+
+=======
+>>>>>>> 12cc2751695f9aea87500c8f76bfeb2cf263a6c4
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'montserrat';
 }
@@ -407,19 +413,67 @@ footer {
 	color: #57828C;
 }
 
-#StaffDiv {}
+/*-------- Staff and About us ---------*/
+
+#omOss {
+	width: 100%;
+}
+
+#omOssContent{
+	margin: 0 auto;
+	width: 90%;
+}
+
+#omOssImg {
+	background: url(img/geran-de-klerk-216686.jpg) no-repeat center top;
+	background-size:cover;
+	overflow: hidden;
+	width: 100%;
+	height: 30%;
+	margin: 0 0 30px 0;
+}
+
+#StaffUl {
+	margin: 100px auto 0 auto;
+	text-align: center;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	width: 90%;
+}
 
 #staffLi{
-/*	overflow: hidden;
-*/}
+	display: inline-block;
+	margin: 0 20px 40px 20px;
+	padding: 0;
+	width: 40%;
+}
 
-.staffA{}
+.staffA{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+}
 
 .staffImg{
-/*	width: 100%;
-*/}
+	display: inline-block;
+    border-radius: 100%;
+	width: 100%;
+	float: left;
+}
 
-.staffTitleh1{}
+.staffTitleh1{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+.bigHeading{
+	font-size: 50px;
+	text-align: left;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
 
 @media (min-width: 767px){
 	h2 {
