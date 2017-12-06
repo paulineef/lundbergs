@@ -1,21 +1,43 @@
 <?php get_header(); ?>
 <ul class="staffGrid">
-<?php
-	echo "PRODUKTER";
-	if ( have_posts()):
-		while ( have_posts()): 
-?>
-	<li class="product"><a href='<?php the_permalink();?>'><h1 class="titlePosts">
-		<?php the_post(); ?>
-		<h2><?php the_title();?></h2> <?php the_post_thumbnail(); ?></h1></a></li>
 
-<?php 
-	endwhile;
-	endif;
-?>
+	<?php 
+		$terms = get_terms(
+		array(
+			'taxonomy' => 'kategori',
+			'hide_empty' => true 
+		)
+	);
+		$args = array(
+		'post_type'     => 'produkt', 
+		'post_per_page' => -1, 
+		);
+	?>	
+	<?php foreach ($terms as $value) { //loop through the taxonomy array?>
+			<div class="cont">
+				<span class="types">
+					<h2><a href="/kategori/<?php echo $value->slug ?>"><?php echo $value->name ?></a></h2>
+				</span>
+			</div>
+			<?php } ?>
 </ul>
 <?php get_footer(); ?>
 <style>
+	.cont {
+		width: 40%;
+		display: inline;
+		overflow: hidden;
+		float: left;
+		margin-top: 18vh;
+		text-align: center;
+		background: #6FA67F;
+		color: white;
+		margin: 5%;
+		box-sizing: border-box;
+	}
+	.cont a {
+		color: white;
+	}
 	.staffGrid {
 		padding: 0;
 		margin: 0;

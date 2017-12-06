@@ -20,7 +20,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	min-height: 120vh;
+	min-height: 90vh;
 	min-width: 320px;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -320,7 +320,10 @@ nav li a:hover, #menu a:hover{
 }
 
 .ny {
-	margin-top: 150px; 
+	padding-top: 150px; 
+	min-height: 90vh;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
 .entry-meta {

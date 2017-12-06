@@ -109,7 +109,7 @@ function produkter_post_type() {
          * 'map_meta_cap' hook.
          */
         'map_meta_cap'        => true, // bool (defaults to FALSE)
-
+		'taxonomies' => array('kategori'),
         /**
          * How the URL structure should be handled with this post type.  You can set this to an
          * array of specific arguments or true|false.  If set to FALSE, it will prevent rewrite
@@ -171,7 +171,7 @@ function produkter_post_type() {
          * labels do not cover post updated, error, and related messages.  You'll need to filter the
          * 'post_updated_messages' hook to customize those.
          */
-        'taxonomies'            => array( 'produkter_sort' /*, 'project_skill' */),
+        'taxonomies'            => array( 'produkter_sort', 'kategori'),
         'labels' => array(
             'name'               => __( 'Produkter',                  'produkt-textdomain' ),
             'singular_name'      => __( 'Produkt',                    'produkt-textdomain' ),
@@ -333,7 +333,5 @@ function nyheter_post_type() {
 }
 
 add_action( 'init', 'nyheter_post_type' );
-
-
 
  ?>
