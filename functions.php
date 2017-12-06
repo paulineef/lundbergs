@@ -21,6 +21,7 @@
 
 
 	include('incl/post_types.php');
+	include('incl/taxonomies.php');
 
 
 	//Media sizes
@@ -39,4 +40,10 @@
 	  );
 	}
 	add_action( 'init', 'register_my_menus' );
+
+
+add_action( 'init', 'sk_add_category_taxonomy_to_produkter' );
+function sk_add_category_taxonomy_to_produkter() {
+	register_taxonomy_for_object_type( 'kategori', 'e4gf_produkter' );
+}
 ?>
