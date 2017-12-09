@@ -143,7 +143,7 @@ nav li a:hover, #menu a:hover{
 	position: relative;
 	z-index: 100;
 	height: 100px;
-	width: 250px; 
+	width: 150px; 
 	background: url(img/logo.svg) no-repeat;
 	top: 42px;
 	left: 25px;
