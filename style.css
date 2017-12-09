@@ -494,6 +494,31 @@ footer {
 	margin: 0 0 20px 0;
 	padding: 0;
 }
+/*-------------PRODUKTER ---------------*/
+	.productImg {
+		background-color: #ff11ff;
+	}
+	.productImg img {
+		max-width: 50%;
+		height: 50%;
+	}
+	.productUl {
+		margin: 5%;
+   		padding: 0;
+	}
+	.productUl li {
+		width: 50%;
+	}
+	.productUl li a {
+		color: #6FA67F;
+		font-size: 18pt;
+		font-weight: 600;
+		margin-left: 10%;
+		font-family: 'montserrat';
+	}
+	#categoryId {
+		padding-top: 50px;	
+	}
 @media (min-width: 413px){
 	#footerLogo {
 		background: url(img/logo_since.svg) no-repeat center;
