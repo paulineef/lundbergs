@@ -20,7 +20,7 @@
 			<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 					<div class="cont">
 						<span class="types">
-							<a href="/kategori/<?php echo $value->slug ?>"><h3><?php echo $value->name ?></a>
+							<a href="/kategori/<?php echo $value->slug?>#categoriId"><h3><?php echo $value->name ?></a>
 						</span>
 					</div>
 			<?php } ?>
@@ -117,27 +117,6 @@
 	}
 	.product li {
 		list-style-type: none;
-	}
-	.productImg {
-		background-color: #ff11ff;
-	}
-	.productImg img {
-		max-width 50%;
-		height: 50%;
-	}
-	.productUl {
-		margin: 5%;
-   		padding: 0;
-	}
-	.productUl li {
-		width 50%;
-	}
-	.productUl li a {
-		color: #6FA67F;
-		font-size: 18pt;
-		font-weight: 600;
-		margin-left: 10%;
-		font-family: 'montserrat';
 	}
 @media (min-width: 1024px){
 	.product {
