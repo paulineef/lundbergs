@@ -70,7 +70,10 @@ li {
 	-o-transition: all 0.5s; 
 	transition: all 0.5s;
 }
-
+.hide ul {
+	padding: 0;
+	
+}
 .hide.open {
 	display: block;
 	max-height: 500px;
@@ -92,7 +95,7 @@ li {
 }
 
 .hide a {
-	font-size: 25pt;
+	font-size: 16px;
 	display: block;
 }
 
@@ -133,7 +136,7 @@ nav li a:hover, #menu a:hover{
 }
 
 #menu.large {
-	min-height: 130px;
+	min-height: 80px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
@@ -142,33 +145,17 @@ nav li a:hover, #menu a:hover{
 #menu.large .toplogomobile, #menu.large .toplogo {
 	position: relative;
 	z-index: 100;
-	height: 100px;
+	height: 50px;
 	width: 150px; 
 	background: url(img/logo.svg) no-repeat;
-	top: 42px;
+	top: 30px;
 	left: 25px;
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
 
-#menu.large .hamburger {
-	font-size: 70px;
-	right: 25px;
-	top: 10px;
-	
-	-webkit-transition: all 0.5s ease 0s;
-}
-
-#menu.small .hamburger {
-	font-size: 40pt;
-	right: 20px;
-	top: 10px;
-	
-	-webkit-transition: all 0.5s ease 0s;
-}
-
 #menu.small {
-	min-height: 100px;
+	min-height: 60px;
 	-webkit-transition: min-height 0.5s;
 	-moz-transition: min-height 0.5s;
 	transition: min-height 0.5s;
@@ -178,8 +165,8 @@ nav li a:hover, #menu a:hover{
 	position: relative;
 	z-index: 100;
 	height: 50px;
-	width: 180px; 
-	top: 35px;
+	width: 100px; 
+	top: 20px;
 	background: url(img/logo.svg) no-repeat;
 	
 	-webkit-transition: all 0.5s ease 0s;
@@ -190,17 +177,16 @@ nav li a:hover, #menu a:hover{
 	height: 350px;
 	}
 #menu.small #nav-icon3 {
-	top: 25px;
-	width: 55px;
-	height: 40px;
+	top: 15px;
+	right: 20px;
 	transition: 0.5s all ease 0s;
 	}
 	#nav-icon3{
-	  width: 65px;
-	  height: 50px;
+	  width: 35px;
+	  height: 25px;
 	  position: absolute;
-	  right: 32px;
-	  top: 42px;
+	  right: 30px;
+	  top: 30px;
 	  -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
 	  -o-transform: rotate(0deg);
@@ -215,7 +201,7 @@ nav li a:hover, #menu a:hover{
 	#nav-icon3 span{
 	  display: block;
 	  position: absolute;
-	  height: 6px;
+	  height: 3px;
 	  width: 100%;
 	  background: #ffffff;
 	  opacity: 1;
@@ -234,13 +220,13 @@ nav li a:hover, #menu a:hover{
 	  top: 0px;
 	}
 	#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-	  top: 20px;
+	  top: 11px;
 	}
 	#nav-icon3 span:nth-child(4) {
-	  top: 40px;
+	  top: 22px;
 	}
 	#nav-icon3.open span:nth-child(1) {
-	  top: 18px;
+	  top: 22px;
 	  width: 0%;
 	  left: 50%;
 	}
