@@ -149,7 +149,8 @@
 		height: 50%;
 	}
 	.productUl {
-		
+		margin: 5%;
+   		padding: 0;
 	}
 	.productUl li {
 		width 50%;
