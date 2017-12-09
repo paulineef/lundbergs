@@ -118,11 +118,11 @@
 		width: 100%;
 	}
 	.cont {
-		width: 50%;
+		width: 45%;
 		margin: 10px;
 	}
 	#catCon {
-		width: 600px;
+		width: 660px;
 	}
 }
 </style>
