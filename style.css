@@ -176,6 +176,11 @@ nav li a:hover, #menu a:hover{
 	
 	-webkit-transition: all 0.5s ease 0s;
 }
+#ProdukterImg {
+	background-image: url(img/geran-de-klerk-216686.jpg);
+	width: 100%;
+	height: 350px;
+	}
 #menu.small #nav-icon3 {
 	top: 17px;
 	right: 20px;
