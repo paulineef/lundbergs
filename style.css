@@ -358,6 +358,11 @@ nav li a:hover, #menu a:hover{
 }
 .page {
 	width: 100%;
+	margin: 0 !important;
+}
+#text {
+	text-align: left;
+	float: left;
 }
 #welcomeMobile {
 	background-image: url(img/trees.jpg);
