@@ -376,18 +376,18 @@ footer {
 	justify-content: space-between;
 	width: 100%; 
 	background: #f2f2f2; 
-	height: 220px;
+	height: 200px;
 	position: relative;
 	bottom: 0;
 	padding: 60px 30px;
 }
 #footerLogo {
-	background: url(img/logo_since.svg) no-repeat center;
+	background: url(img/logo_sinceSmall.svg) no-repeat center;
 	min-width: 50%;
 	min-height: 50%;
 	position: absolute;
 	top: 30px;
-	right: 0px;
+	right: 15px;
 }
 #info {
 	width: 180px;
@@ -400,6 +400,9 @@ footer {
 #linkedin {
 	width: 200px;
 	text-align: left;
+	bottom: 10px;
+	position: absolute;
+	left: 30px;
 }
 
 #linkedin a {
@@ -473,7 +476,12 @@ footer {
 	margin: 0 0 20px 0;
 	padding: 0;
 }
-
+@media (min-width: 413px){
+	#footerLogo {
+		background: url(img/logo_since.svg) no-repeat center;
+		right: 20px;
+	}
+}
 @media (min-width: 767px){
 	h2 {
 		font-size: 45pt;
@@ -484,9 +492,6 @@ footer {
 	#welcome {
 		background-position: top;
 	}
-	p {
-		font-size: 16pt;
-	}
 }
 
 
@@ -494,6 +499,18 @@ footer {
 @media (min-width: 1024px){
 
 	/*-------- Staff and About us ---------*/
+	#footerLogo {
+		background: url(img/logo_since.svg) no-repeat center;
+		height: 70%;
+		width: 100%;
+	}
+	footer {
+		height: 150px;
+	}
+	#linkedin {
+		width: 100%;
+		text-align: right;
+	}
 #omOss {
 	width: 100%;
 }
@@ -673,6 +690,12 @@ footer {
 	footer {
 		height: 150px;
 		padding: 30px 120px;
+	}
+	#linkedin {
+		position: relative;
+		right: 30px;
+		bottom: -10px;
+		padding-right: 60px;
 	}
 }
 @media (min-width: 1100px){
