@@ -782,12 +782,12 @@ div.wpcf7 p, div.wpcf7 h4{
 		width: 15%;
 	}
 	
-	#staffLi:nth-child(4n) {
+/*	#staffLi:nth-child(4n) {
 		background-color: red;
-/*		content: ' ';
+		content: ' ';
 		display: block;
-		margin: 10 auto 40 auto; */
-	} 
+		margin: 10 auto 40 auto; 
+	} */
 
 	.staffA{
 		text-decoration: none;
