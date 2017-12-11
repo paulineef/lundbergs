@@ -5,18 +5,16 @@
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 		$thumb_url = $thumb_url_array[0];?>
 
-  		<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');">
+  		<div id="feature" class="<?php the_title(); ?>" style="background-image: url('<?php echo $thumb_url; ?>');">
   		</div>
 
 		<div class="page">
 			<?php 
 			the_title();
-			
 			the_post();
 			the_content(); 
 			?>
 		</div>	
-
 
 	<?php get_footer(); ?>
 </main>
