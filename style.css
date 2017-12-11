@@ -336,7 +336,6 @@ nav li a:hover, #menu a:hover{
 	font-size: 8pt;
 	color: #ddd;
 }
-
 #arrow {
 	height: 64px;
 	margin: 0 auto;
@@ -363,39 +362,10 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	height: 100%;
 }
-.page {
-	width: 80%;
-	margin: 0 !important;
-}
-.page p {
-	text-align: left;
-}
 #text {
 	text-align: left;
 	float: left;
 	box-sizing: border-box;
-}
-#textarea span textarea{
-	width: 100%;
-	height: 300px;
-	overflow: hidden;
-	box-sizing: border-box;
-	border: 2px solid red;
-}
-#kontaktForm {
-		width: 100%;
-	}
-#area span{
-	border: 2px solid green !important;
-}
-#kontaktForm label span {
-	width: 100%;
-	border: 2px solid pink;
-	
-}
-#kontaktHeading {
-	color: black;
-	font-weight: 500;
 }
 #welcomeMobile {
 	background-image: url(img/trees.jpg);
@@ -518,6 +488,71 @@ footer {
 	margin: 5%;
 	padding: 0;
 }
+/*----------------------------------
+----------- CONTACT ---------------
+-----------------------------------*/
+#feature {
+		width: 100%;
+		height: 200px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+div.wpcf7 { 
+	border: 3px solid #7A353A;
+	padding: 20px !important;
+	margin: 0 auto !important;
+	max-width: 500px;
+	width: 80%;
+	
+}
+div.wpcf7 p, div.wpcf7 h4{
+	margin: 3px 0;
+	font-weight: 400;
+}
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+	background: #eeeeee;
+	color: black;   
+	width: 100%;
+	border: none;
+	padding: 6px;
+	font-size: 13px;
+}
+.wpcf7 input[type="textarea"]{
+	margin-bottom: 30px;
+}
+.wpcf7 input[type="submit"], .wpcf7 input[type="button"] { 
+	background-color: #7a353a;
+	color: white;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 6px 0;
+	border: 2px solid #7a353a;
+	font-weight: 600;
+	margin-top: 22px;
+	border-radius: 5px;
+	-webkit-transition: all 0.2s ease 0s;
+}
+.wpcf7 input[type="submit"]:hover, .wpcf7 input[type="button"]:hover { 
+	color: #7a353a;
+	background-color: white;
+	border: 2px solid #7a353a;
+	-webkit-transition: all 0.2s ease 0s;
+}
+#kontaktHeading {
+	color: black;
+	font-weight: 700;
+	margin: 44px 0;
+}
+.page {
+	width: 100%;
+	margin: 0 auto !important;
+	
+}
+.page p {
+	text-align: left;
+}
+
 /*----------------------------------
 ----------- PRODUCTS ---------------
 -----------------------------------*/
@@ -661,6 +696,13 @@ h5 {
 
 /*desktop version*/
 @media (min-width: 1024px){
+/*----------------------------------
+----------- CONTACT ---------------
+-----------------------------------*/
+	div.wpcf7 { 
+		box-sizing: border-box;
+	}
+	
 /*----------------------------------
 ----------- PRODUCTS ---------------
 -----------------------------------*/
@@ -952,6 +994,20 @@ h5 {
 	#welcome {
 		background-size: 100%;
 	}
+	/*----------------------------------
+	----------- CONTACT ---------------
+	-----------------------------------*/
+	div.wpcf7 {
+		max-width: 40%;
+		margin: 0 40px !important;
+	}
+	#feature {
+		max-width: 40%;
+		float: right;
+		height: 100vh;
+	}
+	
+
 }
 
 /*----- KEYFRAMES -----*/
