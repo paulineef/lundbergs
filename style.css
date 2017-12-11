@@ -4,6 +4,10 @@ Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
 */
 
+/*----------------------------------
+----------- FOR ALL PAGES ----------
+-----------------------------------*/
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -38,8 +42,7 @@ h2 {
 
 p {
 	font-size: 10pt; 
-	max-width: 600px;
-	line-height: 20pt;
+	line-height: 16pt;
 	text-align: center;
 }
 
@@ -50,7 +53,9 @@ a{
 li {
 	list-style-type: none;
 }
-
+/*----------------------------------
+----------- HEADER -----------------
+-----------------------------------*/
 .hide {
 	position: relative;
 	top: 20px;
@@ -180,7 +185,7 @@ nav li a:hover, #menu a:hover{
 	background-image: url(img/geran-de-klerk-216686.jpg);
 	width: 100%;
 	height: 350px;
-	}
+}
 #menu.small #nav-icon3 {
 	top: 17px;
 	right: 20px;
@@ -276,7 +281,9 @@ nav li a:hover, #menu a:hover{
 	max-width: 100%;
 	max-height: 100%;
 }
-/*----- FRONT-PAGE -----*/
+/*----------------------------------
+----------- FRONT-PAGE -------------
+-----------------------------------*/
 #content {
 	min-height: 140vh;
 	width: 100%;
@@ -400,8 +407,9 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	height: 100%;
 }
-/*-------- FOOTER ---------*/
-
+/*----------------------------------
+----------- FOOTER -----------------
+-----------------------------------*/
 footer {
 	box-sizing: border-box;
 	overflow: hidden; 
@@ -452,25 +460,21 @@ footer {
 	width: 100%;
 }
 
-/*-------- Staff and About us ---------*/
-
+/*----------------------------------
+----------- ABOUT US ---------------
+-----------------------------------*/
 #omOss {
 	width: 100%;
 }
 
 #omOssContent{
-	margin: 0 auto;
-	width: 90%;
 	overflow: hidden;
 }
 
 #omOssImg {
-	background: url(img/geran-de-klerk-216686.jpg) no-repeat center top;
-	background-size:cover;
-	overflow: hidden;
+	background-image: url(img/geran-de-klerk-216686.jpg);
 	width: 100%;
-	height: 30%;
-	margin: 0 0 30px 0;
+	height: 350px;
 }
 
 #StaffUl {
@@ -509,11 +513,127 @@ footer {
 }
 
 .bigHeading{
-	font-size: 50px;
+	font-size: 36pt;
 	text-align: left;
-	margin: 0 0 20px 0;
+	margin: 5%;
 	padding: 0;
 }
+/*----------------------------------
+----------- PRODUCTS ---------------
+-----------------------------------*/
+.productContainer {
+	overflow: hidden;
+}
+.productImg {
+  	margin: 0 auto;
+}
+.productImg img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 5%;
+}
+.productUl {
+	margin: 3%;
+   	padding: 0;
+}
+.productUl li {
+	text-align: center;
+	margin: 15%;
+}
+.productUl li a {
+	color: #6FA67F;
+	font-size: 26pt;
+	font-weight: 600;
+	font-family: 'montserrat';
+}
+#categoryId {
+	padding: 0;
+	padding-top: 50px;
+	font-size: 34pt;
+	text-align: left;	
+	margin: 5%;
+	margin-top: -50px;
+}
+.productUl li a:hover {
+	color: #3f634e;
+	-webkit-transition: all 0.5s; /*make the hover color fade in*/
+		-moz-transition: all 0.5s; 
+		-ms-transition: all 0.5s; 
+		-o-transition: all 0.5s; 
+		transition: all 0.5s;
+}
+/*----------------------------------
+----------- SINGLE -----------------
+-----------------------------------*/
+#singleHead {
+	margin: 10% 0 0 0;
+    text-align: center;
+}
+#singleContainer {
+	overflow: hidden;
+}
+#singleImg {
+    margin: 10% 15%;
+}
+#singleImg img {
+	width: 100%;
+	height: 100%;
+}
+.singleP {
+	margin: 0 15% 15% 15%;
+}
+.singleP p {
+	text-align: left;
+	font-size: 10pt;
+	line-height: 12pt;
+}
+/*----------------------------------
+----------- SERVICE -----------------
+-----------------------------------*/
+#serviceImg {
+	background: url(img/pexels-photo-192136.png) no-repeat center top;
+	background-size:cover;
+	overflow: hidden;
+	width: 100%;
+	height: 30%;
+	margin: 0 0 30px 0;
+}
+h5 {
+	color: #6FA67F;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 0;
+}
+#serviceHead {
+	margin: 15% 0 0 0;
+}
+#faqHead {
+	margin: 0;
+	margin-top: 10%;
+}
+#serviceContainer {
+	overflow: hidden;
+	padding: 8%;
+}
+#serviceContentContainer p:nth-child(2n+1) {
+	margin-top: 5%;
+}
+#serviceContentContainer p {
+	text-align: left;
+}
+.faqContainer {
+}
+.faqUl {
+	margin: 0;
+	padding: 0;
+}
+.faqUl li {
+	
+}
+.faqUl li p {
+	text-align: left;
+}
+
 @media (min-width: 413px){
 	#footerLogo {
 		background: url(img/logo_since.svg) no-repeat center;
@@ -530,13 +650,70 @@ footer {
 	#welcome {
 		background-position: top;
 	}
+	#serviceContentContainer p {
+		font-size: 12pt;
+	}
+	.faqUl li p {
+		font-size: 12pt;
+	}
 }
 
 
 /*desktop version*/
 @media (min-width: 1024px){
-
-	/*-------- Staff and About us ---------*/
+/*----------------------------------
+----------- PRODUCTS ---------------
+-----------------------------------*/
+	.productContainer {
+		margin: 5%;
+    	padding-bottom: 10%;
+	}
+	.productUl {
+		padding: 0;
+		float: left;
+	}
+	.productUl li {
+		width: 300px;
+    	height: 300px;
+	}
+	.productUl li a {
+		font-size: 18pt;
+	}
+/*----------------------------------
+----------- SINGLE -----------------
+-----------------------------------*/
+	#singleHead {
+		margin: 10% 0 0 10%;
+		text-align: left;
+		font-size: 32pt;
+	}
+	#singleContainer {
+		overflow: hidden;
+	}
+	#singleImg {
+		float: left;
+		width: 35%;
+		margin-top: 5%;
+	}
+	#singleImg img {
+		width: 100%;
+		height: 100%;
+	}
+	.singleP {
+		float: left;
+		margin: 0;
+		margin-top: 5%;
+		width: 40%;
+		margin-left: -5%;
+	}
+	#singleImg {
+		margin: 0 5% 5% 10%;
+		padding: 5%;
+		padding-left: 0;
+	}
+/*----------------------------------
+----------- FOOTER -----------------
+-----------------------------------*/
 	#footerLogo {
 		background: url(img/logo_since.svg) no-repeat center;
 		height: 70%;
@@ -550,68 +727,107 @@ footer {
 		width: 100%;
 		text-align: right;
 	}
-#omOss {
-	width: 100%;
-}
+/*----------------------------------
+----------- SERVICE -----------------
+-----------------------------------*/
+	h5 {
 
-#omOssContent{
-	margin: 0 auto;
-	width: 90%;
-	overflow: hidden;
-}
+	}
+	#serviceContainer {
+		overflow: hidden;
+		padding: 5%;
+	}
+	#serviceContentContainer {
+		float: left;
+		width: 50%;
+		margin: 0 8% 0 3% ;
+	}
+	.faqContainer {
+		float: left;
+		width: 30%;
+		border-left: 3px solid #6FA67F;
+		padding: 2%;
+		margin-top: 0;
+		padding-right: 0;
+	}
+	#serviceHead {
+		font-size: 30pt;
+		margin-left: 3%;
+	}
+/*----------------------------------
+----------- ABOUT US -----------------
+-----------------------------------*/
+	#omOss {
+		width: 100%;
+	}
 
-#omOssImg {
-	background: url(img/geran-de-klerk-216686.jpg) no-repeat center top;
-	background-size:cover;
-	overflow: hidden;
-	width: 100%;
-	height: 30%;
-	margin: 0 0 30px 0;
-}
-	
-#StaffUl {
-	margin: 100px auto 0 auto;
-	text-align: center;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-	width: 100%;
-}
+	#omOssContent{
+		margin: 0 auto;
+		width: 90%;
+		overflow: hidden;
+	}
 
-#staffLi{
-	display: inline-block;
-	margin: 0 10px 40px 10px;
-	padding: 0;
-	width: 15%;
-}
+	#omOssImg {
+		background: url(img/geran-de-klerk-216686.jpg) no-repeat center top;
+		background-size:cover;
+		overflow: hidden;
+		width: 100%;
+		height: 30%;
+		margin: 0 0 30px 0;
+	}
 
-.staffA{
-	text-decoration: none;
-	list-style: none;
-	display: inline-block;
-}
+	#StaffUl {
+		margin: 100px auto 0 auto;
+		text-align: center;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		width: 100%;
+	}
 
-.staffImg{
-	display: inline-block;
-    border-radius: 100%;
-	width: 100%;
-	float: left;
-}
+	#staffLi{
+		display: inline-block;
+		margin: 0 10px 40px 10px;
+		padding: 0;
+		width: 15%;
+	}
 
-.staffTitleh1{
-	margin: 0;
-	padding: 0;
-	font-weight: 300;
-	font-size: 20px;
-}
+	.staffA{
+		text-decoration: none;
+		list-style: none;
+		display: inline-block;
+	}
 
-.bigHeading{
-	font-size: 50px;
-	text-align: left;
-	margin: 0 0 20px 0;
-	padding: 0; 
-}
+	.staffImg{
+		display: inline-block;
+		border-radius: 100%;
+		width: 100%;
+		float: left;
+	}
 
+	.staffTitleh1{
+		margin: 0;
+		padding: 0;
+		font-weight: 300;
+		font-size: 20px;
+	}
+/*----------------------------------
+----------- ALL PAGES --------------
+-----------------------------------*/
+	.bigHeading{
+		font-size: 50px;
+		text-align: left;
+		margin: 0 0 20px 0;
+		padding: 0; 
+	}
+	h2 {
+		font-size: 40pt;
+		margin: 180px 120px;
+		font-weight: 600;
+	}
+/*----------------------------------
+----------- HEADER -----------------
+-----------------------------------*/
 	.hide a {
 		display: block;
 		font-size: 16px;
@@ -668,12 +884,6 @@ footer {
 	.hide.small {
 		top: 0px;
 	}
-	h2 {
-		font-size: 40pt;
-		margin: 180px 120px;
-		font-weight: 600;
-	}
-
 	#menu {
 		display: flex;
 		flex-direction: row;
@@ -701,6 +911,7 @@ footer {
 		background: #fff;
 		padding-top: 150px;
 		padding-bottom: 30px;
+		overflow: hidden;
 	}
 
 	#nyhet {

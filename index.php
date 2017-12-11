@@ -18,25 +18,20 @@
 		<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 				<div class="cont">
 					<span class="types">
-						<a href="/kategori/<?php echo $value->slug ?>"><h3><?php echo $value->name ?></a>
+						<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
 					</span>
 				</div>
 		<?php } ?>
-			<div id="omOssContent"> 
-				<p class=pProdukt>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mi eget blandit pellentesque, tortor risus molestie nibh, vitae aliquam dolor odio eu magna. Ut suscipit luctus sapien at lobortis. Morbi dignissim sem id commodo dapibus. Pellentesque ut mauris quis nisl sodales fringilla vel sit amet risus. Cras tristique sollicitudin sapien, at ullamcorper lectus aliquam non. In lacinia, neque at congue condimentum, ante diam fermentum quam, vitae iaculis sem ex et nulla.
-				</p>
-			</div>
 		</div>
 	</div>
-	<h1><?php echo $value->name ?></h1>
 	<?php 
 		$args = array(
 			'post_type'     => 'project', 
 			'post_per_page' => -1, 
 		); 
 	?>
-	<div class="content">
+	<h1 id="categoryId"> Vakumsystem och avfallskvarnar <br>ÄNDRAS! </h1>
+	<div class="productContainer">
 		<?php if(have_posts()):
 				while(have_posts()):
 					the_post();
@@ -45,13 +40,11 @@
 						<li>
 							<div class="productImg"><?php the_post_thumbnail(); //echo out image ?></div>
 							<a href='<?php the_permalink()//link to single page?>'> <?php the_title();//the_ = echo out ?></a>
-							<p class=pProdukt><?php the_content(); ?></p>
 						</li>
 					</ul>
 				<?php
 				endwhile; 
 			endif;
-		echo('index');
 		?>
 	</div>
 </main>
@@ -64,8 +57,8 @@
 		font-size: 12pt;
 	}
 	.bigCont {
-		min-height: 90vh;
 		overflow: hidden;
+		margin-bottom: 10%;
 	}
 	#catCon {
 		overflow: hidden;
@@ -90,7 +83,7 @@
 	}
 	.cont:hover {
 		background: #3f634e;
-		-webkit-transition: all 0.5s; 
+		-webkit-transition: all 0.5s; /*make the hover color fade in*/
 			-moz-transition: all 0.5s; 
 			-ms-transition: all 0.5s; 
 			-o-transition: all 0.5s; 
@@ -102,6 +95,7 @@
 	}
 	.cont a {
 		color: white;
+		font-size: 32pt;
 	}
 	.staffGrid {
 		padding: 0;
@@ -141,34 +135,10 @@
 	.product li {
 		list-style-type: none;
 	}
-	.productImg {
-		background-color: #ff11ff;
-	}
-	.productImg img {
-		max-width 50%;
-		height: 50%;
-	}
-	.productUl {
-		margin: 5%;
-   		padding: 0;
-	}
-	.productUl li {
-		width 50%;
-	}
-	.productUl li a {
-		color: #6FA67F;
-		font-size: 18pt;
-		font-weight: 600;
-		margin-left: 10%;
-		font-family: 'montserrat';
-	}
 @media (min-width: 1024px){
 	.product {
 		max-width: 50%;
 		padding: 88px;	
-	}
-	#pProdukt {
-		margin: 0 auto;
 	}
 	#omOssContent {
 		width: 100%;
@@ -176,6 +146,9 @@
 	.cont {
 		width: 45%;
 		margin: 10px;
+	}
+	.cont a {
+		font-size: 26pt;
 	}
 	#catCon {
 		width: 670px;

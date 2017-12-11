@@ -13,7 +13,7 @@
 	?>
 				<p><?php  the_content();?></p>
 				<h1 class="bigHeading">Personal</h1>
-				<?php get_template_part('partials/posttype_personal'); //get the content inside from postgrid?>
+				<?php get_template_part('partials/posttype_personal'); //get the content from the file personal?>
 	<?php 
 			endwhile;
 		endif;
