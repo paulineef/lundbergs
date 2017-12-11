@@ -13,7 +13,7 @@
 			the_post();
 			the_content(); 
 			?>
-		</div>	
+		</div>
 
 	<?php get_footer(); ?>
 </main>
