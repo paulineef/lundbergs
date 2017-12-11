@@ -41,9 +41,9 @@ h2 {
 }
 
 p {
-	font-size: 10pt; 
+	font-size: 10pt;
 	line-height: 16pt;
-	text-align: center;
+	text-align: left;
 }
 
 a{
@@ -281,6 +281,14 @@ nav li a:hover, #menu a:hover{
 	max-width: 100%;
 	max-height: 100%;
 }
+
+#feature {
+	width: 100%;
+	height: 200px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 /*----------------------------------
 ----------- FRONT-PAGE -------------
 -----------------------------------*/
@@ -625,49 +633,6 @@ div.wpcf7 p, div.wpcf7 h4{
 /*----------------------------------
 ----------- SERVICE -----------------
 -----------------------------------*/
-#serviceImg {
-	background: url(img/pexels-photo-192136.png) no-repeat center top;
-	background-size:cover;
-	overflow: hidden;
-	width: 100%;
-	height: 30%;
-	margin: 0 0 30px 0;
-}
-h5 {
-	color: #6FA67F;
-	font-weight: 400;
-	text-align: left;
-	margin-bottom: 0;
-}
-#serviceHead {
-	margin: 15% 0 0 0;
-}
-#faqHead {
-	margin: 0;
-	margin-top: 10%;
-}
-#serviceContainer {
-	overflow: hidden;
-	padding: 8%;
-}
-#serviceContentContainer p:nth-child(2n+1) {
-	margin-top: 5%;
-}
-#serviceContentContainer p {
-	text-align: left;
-}
-.faqContainer {
-}
-.faqUl {
-	margin: 0;
-	padding: 0;
-}
-.faqUl li {
-	
-}
-.faqUl li p {
-	text-align: left;
-}
 
 @media (min-width: 413px){
 	#footerLogo {
@@ -685,14 +650,8 @@ h5 {
 	#welcome {
 		background-position: top;
 	}
-	#serviceContentContainer p {
-		font-size: 12pt;
-	}
-	.faqUl li p {
-		font-size: 12pt;
-	}
-}
 
+}
 
 /*desktop version*/
 @media (min-width: 1024px){
@@ -772,30 +731,7 @@ h5 {
 /*----------------------------------
 ----------- SERVICE -----------------
 -----------------------------------*/
-	h5 {
 
-	}
-	#serviceContainer {
-		overflow: hidden;
-		padding: 5%;
-	}
-	#serviceContentContainer {
-		float: left;
-		width: 50%;
-		margin: 0 8% 0 3% ;
-	}
-	.faqContainer {
-		float: left;
-		width: 30%;
-		border-left: 3px solid #6FA67F;
-		padding: 2%;
-		margin-top: 0;
-		padding-right: 0;
-	}
-	#serviceHead {
-		font-size: 30pt;
-		margin-left: 3%;
-	}
 /*----------------------------------
 ----------- ABOUT US -----------------
 -----------------------------------*/
@@ -817,6 +753,18 @@ h5 {
 		height: 30%;
 		margin: 0 0 30px 0;
 	}
+
+
+#staffLi:nth-child(2) {
+    background-color: red;
+
+}
+
+.staffA{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+}
 
 	#StaffUl {
 		margin: 100px auto 0 auto;
