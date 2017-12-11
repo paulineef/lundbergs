@@ -20,12 +20,12 @@
 			<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 					<div class="cont">
 						<span class="types">
-							<a href="/kategori/<?php echo $value->slug ?>"><h3><?php echo $value->name ?></a>
+							<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
 						</span>
 					</div>
 			<?php } ?>
 			<div id="omOssContent"> 
-				<p id=pProdukt>
+				<p class=pProdukt>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mi eget blandit pellentesque, tortor risus molestie nibh, vitae aliquam dolor odio eu magna. Ut suscipit luctus sapien at lobortis. Morbi dignissim sem id commodo dapibus. Pellentesque ut mauris quis nisl sodales fringilla vel sit amet risus. Cras tristique sollicitudin sapien, at ullamcorper lectus aliquam non. In lacinia, neque at congue condimentum, ante diam fermentum quam, vitae iaculis sem ex et nulla.
 				</p>
 			</div>
@@ -123,8 +123,8 @@
 		max-width: 50%;
 		padding: 88px;	
 	}
-	#pProdukt {
-		margin: 0 auto;
+	.pProdukt {
+		margin: 5% auto;
 	}
 	#omOssContent {
 		width: 100%;

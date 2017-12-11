@@ -268,6 +268,10 @@ function personal_post_type() {
 
 add_action( 'init', 'personal_post_type' );
 
+/* -----------------------------------
+------- NYHETER post type ---------- 
+--------------------------------------*/
+
 function nyheter_post_type() {
     $news = array(
         'public'              => true,
@@ -334,4 +338,72 @@ function nyheter_post_type() {
 
 add_action( 'init', 'nyheter_post_type' );
 
+/* -----------------------------------
+------- FAQ post type ---------- 
+--------------------------------------*/
+
+function faq_post_type() {
+    $args = array(
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'show_in_nav_menus'   => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'menu_icon'           => 'dashicons-format-status',
+        'can_export'          => true,
+        'delete_with_user'    => false,
+        'hierarchical'        => false,
+        'has_archive'         => 'faq',
+        'query_var'           => 'faq',
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+        'rewrite' => array(
+      		'slug'                  => 'faq',
+      		'with_front'            => false,
+      		'pages'                 => true,
+      		'feeds'                 => false,
+      	),
+
+        'supports' => array(
+
+            'title',
+            'editor',
+            'excerpt',
+            'author',
+            'thumbnail',
+            'comments',
+            'trackbacks',
+            'custom-fields',
+            'revisions',
+            'page-attributes',
+            'post-formats',
+        ),
+        'taxonomies'            => array( 'faq_sort' /*, 'project_skill' */),
+        'labels' => array(
+            'name'               => __( 'FAQ',                    			'faq-textdomain' ),
+            'singular_name'      => __( 'FAQ',                  			'faq-textdomain' ),
+            'menu_name'          => __( 'FAQ',                    			'faq-textdomain' ),
+            'name_admin_bar'     => __( 'FAQ',                    			'faq-textdomain' ),
+            'add_new'            => __( 'Lägg till ny',               	    'faq-textdomain' ),
+            'add_new_item'       => __( 'Lägg till ny fråga/svar',    	    'faq-textdomain' ),
+            'edit_item'          => __( 'Redigera fråga/svar',        	    'faq-textdomain' ),
+            'new_item'           => __( 'Ny fråga/svar',             	    'faq-textdomain' ),
+            'view_item'          => __( 'Se FAQ',             			    'faq-textdomain' ),
+            'search_items'       => __( 'Sök FAQ',                			'faq-textdomain' ),
+            'not_found'          => __( 'Ingen FAQ hittad',      			'faq-textdomain' ),
+            'not_found_in_trash' => __( 'Ingen FAQ hittad i papperskorgen', 'faq-textdomain' ),
+            'all_items'          => __( 'Alla FAQ',                			'faq-textdomain' ),
+        )
+    );
+    /* Register the post type. */
+    register_post_type(
+        'faq', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        $args      // Arguments for post type.
+    );
+}
+
+add_action( 'init', 'faq_post_type' );
  ?>
