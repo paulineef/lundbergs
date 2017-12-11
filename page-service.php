@@ -90,6 +90,10 @@
 		font-weight: 600;
 	}
 
+	.faqul {
+		padding: 0;
+	}
+
 	@media (min-width: 1024px){
 
 		.page {
