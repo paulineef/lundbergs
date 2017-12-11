@@ -15,9 +15,10 @@
 		<div id="nyhet">
 			<a href="<?php the_permalink();?>"><h1><?php the_title();//the_ = echo out ?></h1></a>
 			<div class="entry-meta">
+				<?php the_author();?> |
 				<?php the_time("F d, Y"); ?>
 			</div>
-			<p><?php the_content();?></p>
+			<p><?php the_content();?></p>	
 		</div>
 		
 	</li>
