@@ -30,7 +30,8 @@
 			'post_per_page' => -1, 
 		); 
 	?>
-	<h1 id="categoryId"> Vakumsystem och avfallskvarnar <br>ÄNDRAS! </h1>
+			<h1 id="categoryId"> <?php the_title();// echo $value->name ?></h1>
+
 	<div class="productContainer">
 		<?php if(have_posts()):
 				while(have_posts()):
