@@ -505,7 +505,7 @@ footer {
 ----------- CONTACT ---------------
 -----------------------------------*/
 #contactBig {
-	padding: 0 40px;
+	padding: 0 40px 0 25px;
 	margin-top: 25px;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -537,7 +537,7 @@ footer {
 		background-repeat: no-repeat;
 	}
 div.wpcf7 { 
-	border: 4px solid #6fa67f;
+	border: 0px solid #7a353a;
 	padding: 20px !important;
 	margin: 0 auto !important;
 	max-width: 500px;
@@ -560,22 +560,22 @@ div.wpcf7 p, div.wpcf7 h4{
 	margin-bottom: 30px;
 }
 .wpcf7 input[type="submit"], .wpcf7 input[type="button"] { 
-	background-color: #6fa67f;
+	background-color: #7a353a;
 	color: white;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 6px 0;
-	border: 2px solid #6fa67f;
+	border: 2px solid #7a353a;
 	font-weight: 600;
 	margin-top: 22px;
 	border-radius: 5px;
 	-webkit-transition: all 0.2s ease 0s;
 }
 .wpcf7 input[type="submit"]:hover, .wpcf7 input[type="button"]:hover { 
-	color: #6fa67f;
-	background-color: white;
-	border: 2px solid #6fa67f;
+	color: #7a353a;
+	background-color: transparent;
+	border: 2px solid #7a353a;
 	-webkit-transition: all 0.2s ease 0s;
 }
 #kontaktHeading {
@@ -1011,8 +1011,8 @@ div.wpcf7 p, div.wpcf7 h4{
 	div.wpcf7 {
 		max-width: 500px;
 		margin: 0 40px !important;
-		background-color: rgba(192,192,192, 0.5);
-		padding: 0 40px 0px 70px !important;
+		background-color: rgba(210,210,210, 0.5);
+		padding: 0 40px 0px 40px !important;
 	}
 	.Kontakt {
 		float: right;
@@ -1033,8 +1033,7 @@ div.wpcf7 p, div.wpcf7 h4{
 		top: 80px;
 	}
 	#kontaktHeading {
-		color: white;
-		margin: 32px 0 12px 0;
+		margin: 56px 0 12px 0;
 	}
 }
 
