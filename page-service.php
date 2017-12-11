@@ -33,9 +33,11 @@
 
 <style type="text/css">
 	.page {
-	display: flex;
-	flex-direction: column; 
-	margin: 60px 120px;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-direction: column; 
+		padding: 60px 120px;
 	}
 
 	.page h1 {
@@ -55,6 +57,11 @@
 		width: 100%;
 	}
 
+	.column_2 {
+		display: flex; 
+		flex-direction: column; 
+	}
+
 	.box {
 		margin-bottom: 60px; 
 		background: #f2f2f2;
@@ -71,8 +78,19 @@
 		text-align: right; 
 	}
 
+	span {
+		font-size: 10pt; 
+		line-height: 16pt;
+	}
+
+	h5 {
+		font-weight: 600;
+	}
+
 	@media (min-width: 1024px){
+
 		.page {
+			display: flex; 
 			flex-direction: row;
 			justify-content: space-between;
 		}
@@ -88,9 +106,9 @@
 		}
 
 		.column_2 {
-		padding-left: 60px;
-		display: flex; 
-		flex-direction: column; 
+			padding-left: 60px;
+			display: flex; 
+			flex-direction: column; 
 		}
 	}
 </style>

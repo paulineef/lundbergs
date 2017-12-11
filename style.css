@@ -598,49 +598,6 @@ footer {
 /*----------------------------------
 ----------- SERVICE -----------------
 -----------------------------------*/
-#serviceImg {
-	background: url(img/pexels-photo-192136.png) no-repeat center top;
-	background-size:cover;
-	overflow: hidden;
-	width: 100%;
-	height: 30%;
-	margin: 0 0 30px 0;
-}
-h5 {
-	color: #6FA67F;
-	font-weight: 400;
-	text-align: left;
-	margin-bottom: 0;
-}
-#serviceHead {
-	margin: 15% 0 0 0;
-}
-#faqHead {
-	margin: 0;
-	margin-top: 10%;
-}
-#serviceContainer {
-	overflow: hidden;
-	padding: 8%;
-}
-#serviceContentContainer p:nth-child(2n+1) {
-	margin-top: 5%;
-}
-#serviceContentContainer p {
-	text-align: left;
-}
-.faqContainer {
-}
-.faqUl {
-	margin: 0;
-	padding: 0;
-}
-.faqUl li {
-	
-}
-.faqUl li p {
-	text-align: left;
-}
 
 @media (min-width: 413px){
 	#footerLogo {
@@ -658,14 +615,8 @@ h5 {
 	#welcome {
 		background-position: top;
 	}
-	#serviceContentContainer p {
-		font-size: 12pt;
-	}
-	.faqUl li p {
-		font-size: 12pt;
-	}
-}
 
+}
 
 /*desktop version*/
 @media (min-width: 1024px){
@@ -738,30 +689,7 @@ h5 {
 /*----------------------------------
 ----------- SERVICE -----------------
 -----------------------------------*/
-	h5 {
 
-	}
-	#serviceContainer {
-		overflow: hidden;
-		padding: 5%;
-	}
-	#serviceContentContainer {
-		float: left;
-		width: 50%;
-		margin: 0 8% 0 3% ;
-	}
-	.faqContainer {
-		float: left;
-		width: 30%;
-		border-left: 3px solid #6FA67F;
-		padding: 2%;
-		margin-top: 0;
-		padding-right: 0;
-	}
-	#serviceHead {
-		font-size: 30pt;
-		margin-left: 3%;
-	}
 /*----------------------------------
 ----------- ABOUT US -----------------
 -----------------------------------*/
@@ -784,7 +712,7 @@ h5 {
 		margin: 0 0 30px 0;
 	}
 
-<<<<<<< HEAD
+
 #staffLi:nth-child(2) {
     background-color: red;
 
@@ -795,7 +723,7 @@ h5 {
 	list-style: none;
 	display: inline-block;
 }
-=======
+
 	#StaffUl {
 		margin: 100px auto 0 auto;
 		text-align: center;
@@ -804,7 +732,6 @@ h5 {
 		overflow: hidden;
 		width: 100%;
 	}
->>>>>>> 9bc3e159ce31ee58a34cd169159d21a943f269c2
 
 	#staffLi{
 		display: inline-block;
