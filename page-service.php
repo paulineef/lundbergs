@@ -1,13 +1,16 @@
 <?php /* Template Name: Service */ ?>
 <main>
-	<?php get_header(); 
+	<?php get_header();
 
+	if(has_post_thumbnail()): 
 		$thumb_id = get_post_thumbnail_id();
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-		$thumb_url = $thumb_url_array[0];?>
-
-  		<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');">
-  		</div>
+		$thumb_url = $thumb_url_array[0]; 
+	?>
+	<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');"></div>
+	<?php
+		endif;
+	?>
 			<?php if(have_posts()):
 					while(have_posts()):
 						the_post();
@@ -85,6 +88,10 @@
 
 	h5 {
 		font-weight: 600;
+	}
+
+	.faqul {
+		padding: 0;
 	}
 
 	@media (min-width: 1024px){
