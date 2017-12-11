@@ -1,7 +1,7 @@
 <div id="omOss">
 	<div id="omOssImg"></div> 
 	<div id="omOssContent"> 
-		<h1 class="bigHeading"><?php the_title(); ?></h1>
+		<h6 id="headomoss"><?php the_title(); ?></h6>
 	</div>
 </div>
 <?php get_header();?>
