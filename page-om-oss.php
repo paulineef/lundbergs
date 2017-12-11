@@ -20,6 +20,5 @@
 	?>
 
 </ul>
-<?php echo"PAGE OM OSS"?>
 <?php get_footer(); ?>
 
