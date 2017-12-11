@@ -762,7 +762,7 @@ h5 {
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		width: 100%;
+		width: 80%;
 	}
 
 	#staffLi{
@@ -771,6 +771,13 @@ h5 {
 		padding: 0;
 		width: 15%;
 	}
+	
+	#staffLi:nth-child(4n) {
+		background-color: red;
+/*		content: ' ';
+		display: block;
+		margin: 10 auto 40 auto; */
+	} 
 
 	.staffA{
 		text-decoration: none;
@@ -784,6 +791,8 @@ h5 {
 		width: 100%;
 		float: left;
 	}
+	
+	
 
 	.staffTitleh1{
 		margin: 0;
