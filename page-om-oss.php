@@ -5,14 +5,16 @@
 	</div>
 </div>
 <?php get_header();?>
-<ul id="staffUl">
 	<?php 
 		if (have_posts()):
 			while (have_posts()): 
 				the_post(); 
 	?>
-				<p><?php  the_content();?></p>
+				<div id="contentfloat"><?php  the_content();?></div>
+				
+				<ul id="staffUl">
 				<h1 class="bigHeading">Personal</h1>
+
 				<?php get_template_part('partials/posttype_personal'); //get the content from the file personal?>
 	<?php 
 			endwhile;
