@@ -21,13 +21,6 @@
 	<?php get_footer(); ?>
 </main>
 <style type="text/css">
-	#feature {
-		width: 100%;
-		height: 200px;
-		background-size: 100%;
-		background-repeat: no-repeat;
-	}
-
 	.page {
 		margin: 60px 120px;
 	}
