@@ -232,10 +232,7 @@ function personal_post_type() {
 
             'title',
             'editor',
-            'author',
             'thumbnail',
-            'custom-fields',
-
 
         ),
         'taxonomies'            => array( 'personal_sort' /*, 'project_skill' */),

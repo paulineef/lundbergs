@@ -331,11 +331,6 @@ nav li a:hover, #menu a:hover{
 	margin-bottom: 5px; 
 }
 
-.nList li:first-child {
-	border-bottom: 12px solid grey; 
-	margin-bottom: 30px;
-}
-
 #visa a {
 	margin: 0px 100px;
 	color: #6fa67f;
@@ -1023,12 +1018,10 @@ div.wpcf7-response-output {
 	----------- CONTACT ---------------
 	-----------------------------------*/
 
-<<<<<<< HEAD
-=======
 	#kontaktHeading {
 		padding-top: 0;
 	}
->>>>>>> ddcc7fb1fe79ebfb30950e58866ab3036aca201f
+
 	div.wpcf7 {
 		max-width: 500px;
 		margin: 0 40px !important;
