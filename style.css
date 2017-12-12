@@ -305,6 +305,7 @@ nav li a:hover, #menu a:hover{
 	padding-top: 100px;
 	padding-bottom: 30px;
 }
+
 #nyhet {
 	overflow: hidden;
 	border-bottom: 10px solid #6fa67f; 
@@ -326,6 +327,11 @@ nav li a:hover, #menu a:hover{
 	color: #000;
 	font-size: 14pt; 
 	margin-bottom: 5px; 
+}
+
+.nList li:first-child {
+	border-bottom: 12px solid grey; 
+	margin-bottom: 30px;
 }
 
 #visa a {
@@ -389,6 +395,8 @@ nav li a:hover, #menu a:hover{
 	width: 100%;
 	height: 100%;
 }
+
+
 /*----------------------------------
 ----------- FOOTER -----------------
 -----------------------------------*/
@@ -1023,6 +1031,7 @@ div.wpcf7-response-output {
 	/*----------------------------------
 	----------- CONTACT ---------------
 	-----------------------------------*/
+
 
 	div.wpcf7 {
 		max-width: 500px;
