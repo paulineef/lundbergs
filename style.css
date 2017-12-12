@@ -276,6 +276,7 @@ nav li a:hover, #menu a:hover{
 	top: 0px;
 	left: 0px;
 	background-size: 300%;
+	margin-bottom: 100vh !important;
 }
 
 #welcome img {
@@ -305,7 +306,6 @@ nav li a:hover, #menu a:hover{
 	background: #fff;
 	padding-top: 100px;
 	padding-bottom: 30px;
-	margin-top: 100vh;
 }
 
 #nyhet {
@@ -335,7 +335,6 @@ nav li a:hover, #menu a:hover{
 	border-bottom: 12px solid grey; 
 	margin-bottom: 30px;
 }
-
 #visa a {
 	margin: 0px 100px;
 	color: #6fa67f;
