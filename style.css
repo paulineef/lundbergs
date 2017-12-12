@@ -272,9 +272,10 @@ nav li a:hover, #menu a:hover{
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
-	/*position: fixed;*/
+	position: fixed;
 	top: 0px;
 	left: 0px;
+	background-size: 300%;
 }
 
 #welcome img {
@@ -304,6 +305,7 @@ nav li a:hover, #menu a:hover{
 	background: #fff;
 	padding-top: 100px;
 	padding-bottom: 30px;
+	margin-top: 100vh;
 }
 
 #nyhet {
@@ -611,7 +613,7 @@ div.wpcf7-response-output {
 #kontaktHeading {
 	color: black;
 	font-weight: 700;
-	margin: 22px 12px;
+	margin: 44px 12px 6px 12px;
 }
 .page {
 	width: 100%;
@@ -716,6 +718,9 @@ div.wpcf7-response-output {
 
 /*desktop version*/
 @media (min-width: 1024px){
+	#welcome {
+		background-size: 100%;
+	}
 /*----------------------------------
 ----------- CONTACT ---------------
 -----------------------------------*/
@@ -735,6 +740,11 @@ div.wpcf7-response-output {
 		max-width: 800px;
 		margin: 0 auto;
 		padding-top: 66px;
+	}
+	#kontaktHeading {
+		max-width: 550px;
+		margin: 0 auto;
+		padding-top: 44px;
 	}
 /*----------------------------------
 ----------- PRODUCTS ---------------
@@ -1031,6 +1041,7 @@ div.wpcf7-response-output {
 	}
 }
 @media (min-width: 1100px){
+	
 	#welcome {
 		background-size: 100%;
 	}
@@ -1038,7 +1049,9 @@ div.wpcf7-response-output {
 	----------- CONTACT ---------------
 	-----------------------------------*/
 
-
+	#kontaktHeading {
+		padding-top: 0;
+	}
 	div.wpcf7 {
 		max-width: 500px;
 		margin: 0 40px !important;
