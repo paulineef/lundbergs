@@ -1,3 +1,4 @@
+<?php /* Template name: Om Oss */ ?>
 <main>
 	<?php get_header();?>
 
@@ -33,7 +34,10 @@
 			?>
 			<li>
 				<div class="anstalld" style="background-image: url('<?php the_post_thumbnail_url('mobil_thumbnail');?>');"></div>
-				<h4><?php the_title(); ?></h4>
+				<div class="meta">
+					<h4><?php the_title(); ?></h4>
+					<?php the_content(); ?>
+				</div>
 			</li>
 			<?php 
 				endwhile;
