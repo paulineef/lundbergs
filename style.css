@@ -521,6 +521,9 @@ span.wpcf7-not-valid-tip {
 	font-size: 10px;
 	color: #7A353A !important;
 }
+textarea {
+    resize: none;
+}
 #contactBig {
 	padding: 0 0px 80px 0px;
 	margin-top: 25px;
@@ -528,6 +531,9 @@ span.wpcf7-not-valid-tip {
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 auto;
+}
+#contactBig a {
+	color: black;
 }
 #contactBig p{
 	line-height: 14px;
