@@ -467,7 +467,7 @@ footer {
 }
 
 #omOss h1 {
-	font-size: 19pt;
+	font-size: 18pt;
 }
 
 #omOssContent{
@@ -499,6 +499,7 @@ footer {
 	flex-direction: column; 
 	justify-content: center; 
 	width: 100%;
+	margin-bottom: 80px;
 }
 
 #personal h1 {
@@ -509,6 +510,7 @@ footer {
 #personal ul {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -518,8 +520,10 @@ footer {
 }
 
 #personal li{
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
 	float: left;
-	text-align: center; 
 	margin-bottom: 30px;
 }
 
@@ -530,6 +534,31 @@ footer {
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
+}
+
+.meta {
+	text-align: center;
+	padding-left: 20px;
+}
+
+.meta p {
+	font-size: 9pt;
+}
+
+.meta a {
+	color: #70a580;
+}
+
+.meta a:hover {
+	color: #51795d;
+}
+
+.meta h4 {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 0px;
+
 }
 
 @media (min-width: 500px) {
