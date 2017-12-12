@@ -1,42 +1,33 @@
 <?php get_header(); ?>
-<div id="bigCont">
-	<div id="omOss">
-	<div id="ProdukterImg"></div> 
-	
-</div>
-	<?php 
-	$terms = get_terms(
-		array(
-			'taxonomy' => 'kategori',
-			'hide_empty' => true 
-		)
-	);
-		$args = array(
-		'post_type'     => 'produkt', 
-		'post_per_page' => -1, 
-		);
-	?>	<div id="catCon">
-	<?php foreach ($terms as $value) { //loop through the taxonomy array?>
-			<div class="cont">
-				<span class="types">
-					<h3><a href="/kategori/<?php echo $value->slug ?>"><?php echo $value->name ?></a></h3>
-				</span>
-				
-			</div>
-			<?php } ?>
-	<div id="omOssContent"> 
-		<p id=pProdukt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mi eget blandit pellentesque, tortor risus molestie nibh, vitae aliquam dolor odio eu magna. Ut suscipit luctus sapien at lobortis. Morbi dignissim sem id commodo dapibus. Pellentesque ut mauris quis nisl sodales fringilla vel sit amet risus. Cras tristique sollicitudin sapien, at ullamcorper lectus aliquam non. In lacinia, neque at congue condimentum, ante diam fermentum quam, vitae iaculis sem ex et nulla.</p>
+<main>
+	<div class="bigCont">
+		<div id="omOss">
+			<div id="ProdukterImg"></div> 
+		</div>
+		<?php get_template_part('partials/taxonomi_category'); //get the content from the file taxonomy_category?>
+		<div id="omOssContent"> 
+			<?php if(have_posts()):
+					while(have_posts()):
+						the_post();
+				?>
+						<div class=pProdukt> <?php the_content();?></div>
+				<?php
+					endwhile; 
+				endif;
+			?>
+		</div>
 	</div>
-	
-</ul></div>
-</div>
+</main>
 <?php get_footer(); ?>
 <style>
-	#pProdukt {
+	.pProdukt {
+		    margin-top: 20%;
+	}
+	.pProdukt p {
 		margin-top: 42px;
 		font-size: 12pt;
 	}
-	#bigCont {
+	.bigCont {
 		min-height: 90vh;
 		overflow: hidden;
 	}
@@ -47,6 +38,7 @@
 		margin: 0 auto;
 		margin-top: -150px;
 		left: 33%;
+		margin-bottom: -200px;
 	}
 	.cont {
 		width: 100%;
@@ -60,6 +52,14 @@
 		color: white;
 		margin: 22px 0;
 		box-sizing: border-box;
+	}
+	.cont:hover {
+		background: #3f634e;
+		-webkit-transition: all 0.5s; 
+			-moz-transition: all 0.5s; 
+			-ms-transition: all 0.5s; 
+			-o-transition: all 0.5s; 
+			transition: all 0.5s;
 	}
 	.cont h3 {
 		margin: 120px 0px;
@@ -111,8 +111,8 @@
 		max-width: 50%;
 		padding: 88px;	
 	}
-	#pProdukt {
-		margin: 0 auto;
+	.pProdukt {
+		margin: 5% auto;
 	}
 	#omOssContent {
 		width: 100%;
@@ -122,7 +122,7 @@
 		margin: 10px;
 	}
 	#catCon {
-		width: 660px;
+		width: 670px;
 	}
 }
 </style>
