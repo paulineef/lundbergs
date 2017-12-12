@@ -10,7 +10,6 @@
 <ul id="staffUl">
 	<h1 class="bigHeading">Personal</h1>
 
-
 	<?php 
 		get_header();
 

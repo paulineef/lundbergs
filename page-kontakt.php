@@ -15,6 +15,7 @@
 			?>
 		</div>
 
+	<iframe width="100%" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoZnrFvRoWkYRqeCiGwoQgL0&key=AIzaSyCNJhm6UWvGYSe8FJBBv4F7NW5sSgKbteY" allowfullscreen></iframe>
 	<?php get_footer(); ?>
 </main>
 <style type="text/css">
