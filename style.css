@@ -404,7 +404,7 @@ footer {
 	position: relative;
 	bottom: 0;
 	padding: 60px 30px;
-	margin-top: 80px;
+	margin-top: 0px;
 }
 #footerLogo {
 	background: url(img/logo_sinceSmall.svg) no-repeat center;
@@ -1027,8 +1027,11 @@ div.wpcf7-response-output {
 	div.wpcf7 {
 		max-width: 500px;
 		margin: 0 40px !important;
-		background-color: rgba(210,210,210, 0.5);
+		background-color: rgba(200,200,200, 0.3);
 		padding: 0 40px 0px 40px !important;
+	}
+	.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+		background: #FBFBFB;
 	}
 	.Kontakt {
 		float: right;
