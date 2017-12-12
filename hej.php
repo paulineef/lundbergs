@@ -26,11 +26,24 @@
 			<?php } ?>
 			<div id="omOssContent"> 
 				<p class=pProdukt>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mi eget blandit pellentesque, tortor risus molestie nibh, vitae aliquam dolor odio eu magna. Ut suscipit luctus sapien at lobortis. Morbi dignissim sem id commodo dapibus. Pellentesque ut mauris quis nisl sodales fringilla vel sit amet risus. Cras tristique sollicitudin sapien, at ullamcorper lectus aliquam non. In lacinia, neque at congue condimentum, ante diam fermentum quam, vitae iaculis sem ex et nulla.
+					<?php
+						get_option('the_content');
+						// This retrieves the content from the post or page where ID = $page_id.
+						// You can either set this above here, or call get_the_content(12). Your choice.
+						//$parent_page_content = get_the_content($page_id);
+
+						// Clean it up and make it a bit more legible:
+						//$parent_page_content = str_replace(']]>', ']]&gt;', $parent_page_content);
+						//$parent_page_content = apply_filters('the_content', $parent_page_content);
+
+						// Now echo out the content in place! <p> tags won't be necessary here, btw.
+						//echo $parent_page_content;
+					?>
 				</p>
 			</div>
 		</div>
 	</div>
+		hej archive-produkter
 </main>
 <?php get_footer(); ?>
 
@@ -51,6 +64,7 @@
 		margin: 0 auto;
 		margin-top: -150px;
 		left: 33%;
+		margin-bottom: -200px;
 	}
 	.cont {
 		width: 100%;

@@ -2,7 +2,7 @@
 <main class="indexMain">
 	<div class="bigCont">
 		<div id="ProdukterImg"></div> 
-		<?php 
+		<?php
 			$terms = get_terms(
 				array(
 					'taxonomy' => 'kategori',
@@ -23,33 +23,34 @@
 				</div>
 		<?php } ?>
 		</div>
-	</div>
-	<?php 
-		$args = array(
-			'post_type'     => 'project', 
-			'post_per_page' => -1, 
-		); 
-	?>
-			<h1 id="categoryId"> <?php the_title();// echo $value->name ?></h1>
-
-	<div class="productContainer">
-		<?php if(have_posts()):
-				while(have_posts()):
-					the_post();
+		<?php 
+			$args = array(
+				'post_type'     => 'project', 
+				'post_per_page' => -1, 
+			); 
 		?>
-					<ul class="productUl">	
-						<li>
-							<div class="productImg"><?php the_post_thumbnail(); //echo out image ?></div>
-							<a href='<?php the_permalink()//link to single page?>'> <?php the_title();//the_ = echo out ?></a>
-						</li>
-					</ul>
-				<?php
-				endwhile; 
-			endif;
-		?>
+		<h1 id="categoryId"><?php single_term_title(); ?></h1>
+		<div class="productContainer">
+			<?php if(have_posts()):
+					while(have_posts()):
+						the_post();
+			?>
+						<ul class="productUl">	
+							<li>
+								<a href='<?php the_permalink()//link to single page?>'>
+									<div class="productImg"><?php the_post_thumbnail(); //echo out image ?></div>
+									 <?php the_title();//the_ = echo out ?>
+								</a>
+							</li>
+						</ul>
+					<?php
+					endwhile; 
+				endif;
+			?>
+		</div>
 	</div>
 </main>
-<?php get_footer(); ?>
+<?php get_footer();?>
 
 
 <style>
@@ -68,6 +69,7 @@
 		margin: 0 auto;
 		margin-top: -150px;
 		left: 33%;
+		margin-bottom: -200px;
 	}
 	.cont {
 		width: 100%;
@@ -91,7 +93,7 @@
 			transition: all 0.5s;
 	}
 	.cont h3 {
-		margin: 120px 0px;
+		margin: 100px 0px;
 		font-size: 25pt;
 	}
 	.cont a {
