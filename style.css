@@ -504,6 +504,15 @@ footer {
 /*----------------------------------
 ----------- CONTACT ---------------
 -----------------------------------*/
+div.wpcf7-validation-errors {
+	border: none !important;
+	font-size: 10px;
+	font-weight: 500 !important;
+}
+span.wpcf7-not-valid-tip {
+	font-size: 10px;
+	color: #7A353A !important;
+}
 #contactBig {
 	padding: 0 40px 0 25px;
 	margin-top: 25px;
@@ -538,7 +547,7 @@ footer {
 	}
 div.wpcf7 { 
 	border: 0px solid #7a353a;
-	padding: 20px !important;
+	padding: 0 20px 20px 20px !important;
 	margin: 0 auto !important;
 	max-width: 500px;
 	width: 80%;
@@ -558,6 +567,11 @@ div.wpcf7 p, div.wpcf7 h4{
 }
 .wpcf7 input[type="textarea"]{
 	margin-bottom: 30px;
+	height: 100px !important;
+}
+div.wpcf7-response-output {
+	margin: 0 !important;
+	padding-bottom: 20px !important;
 }
 .wpcf7 input[type="submit"], .wpcf7 input[type="button"] { 
 	background-color: #7a353a;
