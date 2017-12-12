@@ -36,7 +36,7 @@
 				<div class="anstalld" style="background-image: url('<?php the_post_thumbnail_url('mobil_thumbnail');?>');"></div>
 				<div class="meta">
 					<h4><?php the_title(); ?></h4>
-					<?php the_content(); ?>
+					<span><?php the_content(); ?></span>
 				</div>
 			</li>
 			<?php 
