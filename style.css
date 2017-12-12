@@ -756,6 +756,19 @@ div.wpcf7-response-output {
 	font-size: 10pt;
 	line-height: 12pt;
 }
+#singleTop {
+	width: 0; 
+	height: 0; 
+	border-right: 900px solid transparent;
+	border-top: 100px solid #7a353a;
+	margin-top: 4.8%;
+}
+#singleBottom {
+	width: 0; 
+	height: 0; 
+	border-right: 900px solid transparent;
+	border-bottom: 100px solid #7a353a;
+}
 /*----------------------------------
 ----------- SERVICE -----------------
 -----------------------------------*/
@@ -775,6 +788,18 @@ div.wpcf7-response-output {
 	}
 	#welcome {
 		background-position: top;
+	}
+	#singleHead {
+		margin: 10% 0 0 0;
+		text-align: center;
+		font-size: 46pt;
+	}
+	.singleP {
+		font-size: 20pt;
+	}
+	.singleP p {
+		font-size: 14pt;
+		line-height: 16pt;
 	}
 
 }
@@ -826,38 +851,6 @@ div.wpcf7-response-output {
 	}
 	.productUl li a {
 		font-size: 18pt;
-	}
-/*----------------------------------
------------ SINGLE -----------------
------------------------------------*/
-	#singleHead {
-		margin: 10% 0 0 10%;
-		text-align: left;
-		font-size: 32pt;
-	}
-	#singleContainer {
-		overflow: hidden;
-	}
-	#singleImg {
-		float: left;
-		width: 35%;
-		margin-top: 5%;
-	}
-	#singleImg img {
-		width: 100%;
-		height: 100%;
-	}
-	.singleP {
-		float: left;
-		margin: 0;
-		margin-top: 5%;
-		width: 40%;
-		margin-left: -5%;
-	}
-	#singleImg {
-		margin: 0 5% 5% 10%;
-		padding: 5%;
-		padding-left: 0;
 	}
 /*----------------------------------
 ----------- FOOTER -----------------
@@ -1057,6 +1050,49 @@ div.wpcf7-response-output {
 	}
 	#kontaktHeading {
 		margin: 56px 0 12px 0;
+	}
+/*----------------------------------
+----------- SINGLE -----------------
+-----------------------------------*/
+	#singleHead {
+		margin: 10% 0 0 10%;
+		text-align: left;
+		font-size: 32pt;
+	}
+	#singleContainer {
+		overflow: hidden;
+	}
+	#singleImg {
+		float: left;
+		width: 35%;
+		margin-top: 5%;
+	}
+	#singleImg img {
+		width: 100%;
+		height: 100%;
+	}
+	.singleP {
+		float: left;
+		margin: 0;
+		margin-top: 5%;
+		width: 40%;
+		margin-left: -5%;
+	}
+	#singleImg {
+		margin: 0 5% 5% 10%;
+		padding: 5%;
+		padding-left: 0;
+	}
+	#singleBottom {
+		border-right: 1100px solid transparent;
+		border-bottom: 60px solid #7a353a;
+	}
+	#singleTop {
+		width: 0; 
+		height: 0; 
+		border-right: 1100px solid transparent;
+		border-top: 60px solid #7a353a;
+		margin-top: 5.2%;
 	}
 }
 

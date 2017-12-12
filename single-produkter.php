@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main>
+	<div id="singleTop"></div>
 	<h1 id="singleHead"><?php the_title();?></h1>
 	<div id="singleContainer">
 		<?php if(have_posts()):
@@ -13,5 +14,7 @@
 			endif;
 		?>
 	</div>
+	<div id="singleBottom"></div>
 </main>
 <?php get_footer(); ?>
+
