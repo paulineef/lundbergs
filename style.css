@@ -334,6 +334,10 @@ nav li a:hover, #menu a:hover{
 	border-bottom: 12px solid grey; 
 	margin-bottom: 30px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2427f75b04f8b21c3bb0f4f0ac73f46c7c9e9b12
 #visa a {
 	margin: 0px 100px;
 	color: #6fa67f;
@@ -456,7 +460,7 @@ footer {
 #omOss {
 	display: flex;
 	width: 100%;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 #omOss h1 {
@@ -480,7 +484,7 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
-	height: 100%;
+	height: 150px;
 	width: 100%;
 }
 
@@ -555,6 +559,10 @@ footer {
 }
 
 @media (min-width: 500px) {
+
+	#omOss {
+		flex-direction: row;
+	}
 
 	#omOss h1 {
 		font-weight: 25pt;
