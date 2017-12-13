@@ -1,4 +1,8 @@
+<!-- a fallback if there's a page without a customized file -->
+
 <main>
+
+	<!-- gets the header and include it by default -->
 	<?php get_header(); 
 
 		$thumb_id = get_post_thumbnail_id();
@@ -8,6 +12,7 @@
   		<div id="feature" class="<?php the_title(); ?>" style="background-image: url('<?php echo $thumb_url; ?>');">
   		</div>
 
+  		<!-- will display the post and content -->
 		<div class="page">
 			<?php 
 			the_post();
@@ -15,8 +20,10 @@
 			?>
 		</div>	
 
+	<!-- gets the footer and include it by default -->
 	<?php get_footer(); ?>
 </main>
+
 <style type="text/css">
 	.page {
 		width: 100%;
