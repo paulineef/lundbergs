@@ -20,17 +20,17 @@
 			//if the post contains any thumbnails (images), big on at the top 
 			if(has_post_thumbnail()): 
 				
-				//get the thumbnails for the current post and put it into a variable
+				//get the thumbnails for the current post and put it into a variable, all
 				$thumb_id = get_post_thumbnail_id(); 
 
-				//get all the source URL of each img from the the variable 'thumb_id' with the size defined inside 'thumbnail-size'
+				//get all the source URL of each img from the the variable 'thumb_id' with the size defined inside 'thumbnail-size', all
 				$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true); 
 
-				//put the first image in the array into a new variable
+				//put the first image in the array into a new variable, one
 				$thumb_url = $thumb_url_array[0]; 
 		?>
 
-			<div id="omOssImg" style="background-image: url('<?php echo $thumb_url; //echo out the first image from the array?>');"></div> 
+			<div id="omOssImg" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');"></div> 
 		<?php endif; ?>
 
 		<!--div around om oss text only, not the image-->	
