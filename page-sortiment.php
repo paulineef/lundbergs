@@ -8,12 +8,28 @@
 		<div class="bigCont" style="background-image: url('<?php echo $thumb_url; ?>');">
 		
 		<div class="categories">
-			<div id="sortCont">
+			<div class="sortCont">
 				<h1><?php the_title();?></h1> 
 				<?php the_post();?>
 				<p><?php the_content();?></p>
 			</div>
-			<?php get_template_part('partials/taxonomi_category'); //get the content from the file taxonomy_category?>
+			<?php 
+				$terms = get_terms(
+					array(
+						'taxonomy' => 'kategori',
+						'hide_empty' => true, 
+					)
+				);
+				?>	
+				<div id="catCon">
+					<?php foreach ($terms as $value) { //loop through the taxonomy array?>
+						<div class="cont">
+							<span class="types">
+								<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
+							</span>
+						</div>
+					<?php } ?>
+				</div>
 		</div>
 	</div>
 	<?php
@@ -45,11 +61,19 @@
 	.categories h1 {
 
 	}
+
+	.sortCont {
+		width: 80%;
+		margin: 100px auto 30px auto;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
 	#catCon {
 		overflow: hidden;
 		text-align: center;
 		width: 80%;
-		margin: 100px auto;
+		margin: 0px auto 100px auto;
 	}
 	.cont {
 		width: 100%;
@@ -65,7 +89,7 @@
 		box-sizing: border-box;
 	}
 	.cont:hover {
-		background: #3f634e;
+		background: #4b6e76;
 		-webkit-transition: all 0.5s; 
 			-moz-transition: all 0.5s; 
 			-ms-transition: all 0.5s; 
@@ -128,6 +152,11 @@
 	.cont {
 		width: 45%;
 		margin: 10px;
+	}
+
+	.sortCont {
+		margin-top: 150px;
+		width: 650px;
 	}
 	#catCon {
 		width: 670px;
