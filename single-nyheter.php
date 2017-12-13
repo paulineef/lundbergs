@@ -4,10 +4,16 @@
 	<!-- gets the header and include it by default -->
 	<?php get_header();
 
-	// if there's a thumbnail or feautred image
+	//if the post contains any thumbnails (images)
 	if(has_post_thumbnail()): 
+
+		//get the thumbnails for the current post and put it into a variable, all
 		$thumb_id = get_post_thumbnail_id();
+		
+		//get all the source URL of each img from the the variable 'thumb_id' with the size defined inside 'thumbnail-size', all
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+		
+		//put the first image in the array into a new variable, one
 		$thumb_url = $thumb_url_array[0]; 
 	?>
 	<div id="feature" style="background-image: url('<?php echo $thumb_url; ?>');"></div>
@@ -17,7 +23,7 @@
 	<?php the_post();?>
 	<div id="content">
 		<div id="nyhet">
-			<a href="<?php the_permalink();?>"><h1 style="font-size: 24pt;"><?php the_title();//the_ = echo out ?></h1></a>
+			<a href="<?php the_permalink();?>"><h1 style="font-size: 24pt;"><?php the_title();//display the first image from the array?></h1></a>
 			<div class="entry-meta">
 				
 				<!-- displays a small text of who the author of the news is and the date it was first published -->

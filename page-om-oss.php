@@ -71,8 +71,10 @@
 				<!-- a specification of the thumbnails size, determined in functions.php -->
 				<div class="anstalld" style="background-image: url('<?php the_post_thumbnail_url('mobil_thumbnail');?>');"></div>
 				<div class="meta">
+
 					<!-- display the title of the post -->
 					<h4><?php the_title(); ?></h4>
+					
 					<!-- display the content of the post -->
 					<span><?php the_content(); ?></span>
 				</div>
