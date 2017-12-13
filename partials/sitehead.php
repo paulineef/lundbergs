@@ -7,7 +7,7 @@
 		<div class="hide">
 			<?php wp_nav_menu(); ?>
 		</div>
-		<div class="toplogo"></div>
+		<a href="../"><div class="toplogo"></div></a>
 		<div id="nav-icon3">
   				<span></span>
  				<span></span>
