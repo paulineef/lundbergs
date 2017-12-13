@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <main class="indexMain">
-	<div class="bigCont">
-		<div id="ProdukterImg"></div> 
+	<div class="bigCont" style="background-image: url('http://lundbergs.local/wp-content/uploads/2017/12/pexels-photo-192136.jpeg');">
 		<?php
 			$terms = get_terms(
 				array(
@@ -14,33 +13,36 @@
 				'post_per_page' => -1, 
 			);
 		?>	
-		<div id="catCon">
-		<?php foreach ($terms as $value) { //loop through the taxonomy array?>
-				<div class="cont">
-					<span class="types">
-						<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
-					</span>
-				</div>
-		<?php } ?>
-		</div>
-		<h1 id="categoryId"><?php single_term_title(); ?></h1>
-		<div class="productContainer">
-			<?php if(have_posts()):
-					while(have_posts()):
-						the_post();
-			?>
-						<ul class="productUl">	
+		<div class="categories">
+			<!-- <div id="catCon">
+				<?php foreach ($terms as $value) { //loop through the taxonomy array?>
+						<div class="cont">
+							<span class="types">
+								<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
+							</span>
+						</div>
+				<?php } ?>
+			</div> -->
+			<div class="category">
+				<h1><?php single_term_title(); ?></h1>
+				<ul class="productUl">
+					<?php if(have_posts()):
+							while(have_posts()):
+								the_post();
+					?>		
 							<li>
 								<a href='<?php the_permalink()//link to single page?>'>
 									<div class="productImg"><?php the_post_thumbnail(); //echo out image ?></div>
 									 <?php the_title();//the_ = echo out ?>
 								</a>
 							</li>
-						</ul>
+							
 					<?php
-					endwhile; 
-				endif;
-			?>
+							endwhile; 
+						endif;
+					?>
+				</ul>
+			</div>
 		</div>
 	</div>
 </main>
@@ -49,21 +51,46 @@
 
 <style>
 	.pProdukt {
+		    margin-top: 20%;
+	}
+	.pProdukt p {
 		margin-top: 42px;
 		font-size: 12pt;
 	}
 	.bigCont {
+		background-repeat: no-repeat;
+		min-height: 90vh;
 		overflow: hidden;
-		margin-bottom: 10%;
 	}
+	.categories {
+		overflow: hidden;
+		box-sizing: border-box;
+		width: 80%;
+		margin: auto;
+		background: #fff;
+	}
+
+	.categories h1 {
+
+	}
+
+	.category {
+		padding: 100px;
+		margin: 0px auto 100px auto;
+	}
+
+	.sortCont {
+		width: 80%;
+		margin: 100px auto 30px auto;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
 	#catCon {
 		overflow: hidden;
 		text-align: center;
 		width: 80%;
-		margin: 0 auto;
-		margin-top: -150px;
-		left: 33%;
-		margin-bottom: -200px;
+		margin: 0px auto 100px auto;
 	}
 	.cont {
 		width: 100%;
@@ -73,26 +100,25 @@
 		float: left;
 		margin-top: 20vh;
 		text-align: center;
-		background: #6FA67F;
+		background: #57828C;
 		color: white;
 		margin: 22px 0;
 		box-sizing: border-box;
 	}
 	.cont:hover {
-		background: #3f634e;
-		-webkit-transition: all 0.5s; /*make the hover color fade in*/
+		background: #4b6e76;
+		-webkit-transition: all 0.5s; 
 			-moz-transition: all 0.5s; 
 			-ms-transition: all 0.5s; 
 			-o-transition: all 0.5s; 
 			transition: all 0.5s;
 	}
 	.cont h3 {
-		margin: 100px 0px;
+		margin: 120px 0px;
 		font-size: 25pt;
 	}
 	.cont a {
 		color: white;
-		font-size: 32pt;
 	}
 	.staffGrid {
 		padding: 0;
@@ -133,19 +159,24 @@
 		list-style-type: none;
 	}
 @media (min-width: 1024px){
+	.bigCont {
+		background-size: 200%;
+	}
 	.product {
 		max-width: 50%;
 		padding: 88px;	
 	}
-	#omOssContent {
-		width: 100%;
+	.pProdukt {
+		margin: 5% auto;
 	}
 	.cont {
 		width: 45%;
 		margin: 10px;
 	}
-	.cont a {
-		font-size: 26pt;
+
+	.sortCont {
+		margin-top: 150px;
+		width: 650px;
 	}
 	#catCon {
 		width: 670px;

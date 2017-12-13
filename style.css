@@ -803,14 +803,15 @@ div.wpcf7-response-output {
 	width: 0; 
 	height: 0; 
 	border-right: 900px solid transparent;
-	border-top: 100px solid #7a353a;
-	margin-top: 4.8%;
+	border-top: 150px solid #59828c;
+	margin-top: 0;
 }
 #singleBottom {
 	width: 0; 
 	height: 0; 
 	border-right: 900px solid transparent;
-	border-bottom: 100px solid #7a353a;
+	border-bottom: 150px solid #59828c;
+	margin-top: 0;
 }
 /*----------------------------------
 ----------- SERVICE -----------------
@@ -833,7 +834,7 @@ div.wpcf7-response-output {
 		background-position: top;
 	}
 	#singleHead {
-		margin: 10% 0 0 0;
+		margin: 10% 10% 0 10%;
 		text-align: center;
 		font-size: 46pt;
 	}
@@ -887,10 +888,13 @@ div.wpcf7-response-output {
 	.productUl {
 		padding: 0;
 		float: left;
+		margin-bottom: 50%;
 	}
 	.productUl li {
-		width: 300px;
-    	height: 300px;
+		width: 200px;
+    	height: 200px;
+    	float: left;
+    	margin: 7%;
 	}
 	.productUl li a {
 		font-size: 18pt;
@@ -1103,6 +1107,7 @@ div.wpcf7-response-output {
 		text-align: left;
 		font-size: 32pt;
 	}
+
 	#singleContainer {
 		display: flex;
 		flex-direction: row;
@@ -1121,18 +1126,16 @@ div.wpcf7-response-output {
 		float: left;
 	}
 	#singleImg {
-
+		float: left;
+	    width: 100%;
+	    height: 100%;
+	    margin: 8% 15% 0 0%;
 	}
 	#singleBottom {
-		border-right: 2700px solid transparent;
-		border-bottom: 100px solid #59828c;
+		border-right: 1000px solid transparent;
 	}
 	#singleTop {
-		width: 0; 
-		height: 0; 
-		border-right: 2700px solid transparent;
-		border-top: 150px solid #59828c;
-		margin-top: 0;
+		border-right: 1000px solid transparent;
 	}
 }
 

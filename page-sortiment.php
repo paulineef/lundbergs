@@ -20,7 +20,7 @@
 						'hide_empty' => true, 
 					)
 				);
-				?>	
+			?>	
 				<div id="catCon">
 					<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 						<div class="cont">
@@ -46,7 +46,7 @@
 		font-size: 12pt;
 	}
 	.bigCont {
-		background-size: 100%;
+		background-repeat: no-repeat;
 		min-height: 90vh;
 		overflow: hidden;
 	}
@@ -56,10 +56,6 @@
 		width: 80%;
 		margin: auto;
 		background: #fff;
-	}
-
-	.categories h1 {
-
 	}
 
 	.sortCont {
@@ -142,6 +138,9 @@
 		list-style-type: none;
 	}
 @media (min-width: 1024px){
+	.bigCont {
+		background-size: 200%;
+	}
 	.product {
 		max-width: 50%;
 		padding: 88px;	
