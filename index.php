@@ -1,4 +1,6 @@
+<!-- gets the header and include it by default -->
 <?php get_header(); ?>
+
 <main class="indexMain">
 	<div class="bigCont">
 		<div id="ProdukterImg"></div> 

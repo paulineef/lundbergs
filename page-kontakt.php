@@ -1,11 +1,24 @@
 <main>
+
+	<!-- gets the header and include it by default -->
 	<?php get_header(); 
 
-		$thumb_id = get_post_thumbnail_id();
-		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-		$thumb_url = $thumb_url_array[0];?>
+		//if the post contains any thumbnails (images), big on at the top 
+		if(has_post_thumbnail()): 
+				
+			//get the thumbnails for the current post and put it into a variable, all
+			$thumb_id = get_post_thumbnail_id(); 
 
-  		<div id="feature" class="<?php the_title(); ?>" style="background-image: url('<?php echo $thumb_url; ?>');">
+			//get all the source URL of each img from the the variable 'thumb_id' with the size defined inside 'thumbnail-size', all
+			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true); 
+
+			//put the first image in the array into a new variable, one
+			$thumb_url = $thumb_url_array[0]; 
+	?>
+
+		<div id="feature" class="<?php the_title(); ?>" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');">
+		<?php endif; ?>
+  		
   		</div>
 
 		<div class="page">
@@ -15,7 +28,10 @@
 			?>
 		</div>
 
+	<!-- api that let's us use google map-->
 	<iframe width="100%" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoZnrFvRoWkYRqeCiGwoQgL0&key=AIzaSyCNJhm6UWvGYSe8FJBBv4F7NW5sSgKbteY" allowfullscreen></iframe>
+
+	<!-- gets the footer and include it by default -->
 	<?php get_footer(); ?>
 </main>
 <style type="text/css">

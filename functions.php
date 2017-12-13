@@ -15,11 +15,12 @@
 ?>
 <?php 
 	//title bar
+	// All below registers theme support for different given features
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails'); //support photos
 	add_theme_support('post-formats', array('gallery', 'image'));
 
-
+	// includes the files below
 	include('incl/post_types.php');
 	include('incl/taxonomies.php');
 
@@ -30,12 +31,12 @@
 	add_image_size( 'single_large', 660, 400, false );
 
 
-	//register menus
+	//register menus through a function
 	function register_my_menus() {
 	  register_nav_menus(
 		array(
-		  'main-menu' => __( 'Main Menu' ), //the name in dashboard
-		  'extra-menu' => __( 'Extra Menu' )
+		  'main-menu' => __( 'Main Menu' ), //menu location and name of menu
+		  'extra-menu' => __( 'Extra Menu' ) //menu location and name of menu
 		)
 	  );
 	}

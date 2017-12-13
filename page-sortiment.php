@@ -26,6 +26,7 @@
 			</div>
 			
 			<?php 
+
 				$terms = get_terms(
 					array(
 						'taxonomy' => 'kategori',
@@ -34,6 +35,8 @@
 				);
 				?>	
 				<div id="catCon">
+
+					
 					<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 						<div class="cont">
 							<span class="types">

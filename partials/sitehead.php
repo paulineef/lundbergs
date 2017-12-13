@@ -5,7 +5,9 @@
 	<nav id="menu" class="large">
 		<div class="toplogomobile"></div>
 		<div class="hide">
-			<?php wp_nav_menu(); ?>
+
+		<!-- displays the menu that is register in functions.php -->
+		<?php wp_nav_menu(); ?>
 		</div>
 		<a href="../"><div class="toplogo"></div></a>
 		<div id="nav-icon3">

@@ -3,8 +3,13 @@
 	<ul class="nList">
 	<?php
 
+		// if there is  any posts
 		if (have_posts()):
-			while (have_posts()): 
+			
+			// and while there's posts
+			while (have_posts()):
+
+				// display posts 
 				the_post(); 
 	?>
 		<li>

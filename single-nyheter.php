@@ -23,7 +23,7 @@
 	<?php the_post();?>
 	<div id="content">
 		<div id="nyhet">
-			<a href="<?php the_permalink();?>"><h1 style="font-size: 24pt;"><?php the_title();//display the first image from the array?></h1></a>
+			<a href="<?php the_permalink();?>"><h1 style="font-size: 24pt;"><?php the_title();//display the title of the post type?></h1></a>
 			<div class="entry-meta">
 				
 				<!-- displays a small text of who the author of the news is and the date it was first published -->

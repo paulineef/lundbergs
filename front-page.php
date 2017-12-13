@@ -1,21 +1,30 @@
+<!-- gets the header and include it by default -->
 <?php get_header(); ?>
 
 <div id="welcome">
 	<h2>
 		Svensktillverkad </br> avfallshantering </br> sedan 1869
 	</h2>
+
+	<!-- arrow with bouncing effect in css -->
 	<div class="arrow">
 		<a href="#content">
 			<div class="arrowImg"></div>
 		</a>
 	</div>
+
 </div>
 <div id="content">
+
+	<!-- Another way that you can include a script,
+	but will throw a PHP fatal error if the file isn’t found. 	 -->
 	<?php require 'nyheter.php' ?>
 </div>
 
+<!-- gets the footer and include it by default -->
 <?php get_footer(); ?>
 
+<!-- javascript -->
 <script>
 	$(document).ready(function(){
 	  // Add smooth scrolling to all links
