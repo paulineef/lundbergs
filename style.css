@@ -334,6 +334,10 @@ nav li a:hover, #menu a:hover{
 	border-bottom: 12px solid grey; 
 	margin-bottom: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b1fdda0010d720f7b7671389ca338fa1064cc37
 #visa a {
 	margin: 0px 100px;
 	color: #6fa67f;
@@ -1021,6 +1025,7 @@ div.wpcf7-response-output {
 		height: 150px;
 		padding: 30px 120px;
 	}
+	
 	#linkedin {
 		position: relative;
 		right: 30px;

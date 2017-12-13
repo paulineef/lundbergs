@@ -1,5 +1,5 @@
 <ul class="nList">
-	<li><h1>Nyheter</h1></li>
+	<h1 style="margin: auto;">Nyheter</h1>
 	<?php
 		$nyhet = new WP_Query(array(
 	                    'post_type' => 'nyheter',

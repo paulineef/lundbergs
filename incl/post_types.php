@@ -297,6 +297,7 @@ function nyheter_post_type() {
             'author',
             'thumbnail',
             'revisions',
+            'excerpt',
         ),
         'taxonomies'            => array( 'nyheter_sort' /*, 'project_skill' */),
         'labels' => array(
