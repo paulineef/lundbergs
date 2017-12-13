@@ -19,6 +19,8 @@
  		<div class="cross">&#735;</div>	
 	</nav>
 </header>
+
+
 <script>
 	$(document).ready(function() {	
 		$("#nav-icon3").click(function(){

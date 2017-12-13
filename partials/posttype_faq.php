@@ -3,10 +3,18 @@
 		'post_type'     => 'faq', 
 		'post_per_page' => -1, 
 	);
+	
+	// create a new query with an array to specified the custom post type
 	$query_personal = new WP_Query($args);
-	if ($query_personal->have_posts()): 
+
+	// if the specific custom post type, personal, have any posts 
+	if ($query_personal->have_posts()):
+
+		//and while the custom post type have posts 
 		while ($query_personal->have_posts()): 
-			$query_personal->the_post(); //adds stuff to $post	
+
+			//display the posts
+			$query_personal->the_post();
 ?>
 			<ul class="faqUl">	
 				<li>
