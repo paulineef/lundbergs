@@ -8,7 +8,7 @@
 		<div class="bigCont" style="background-image: url('<?php echo $thumb_url; ?>');">
 		
 		<div class="categories">
-			<div id="omOssContent">
+			<div id="sortCont">
 				<h1><?php the_title();?></h1> 
 				<?php the_post();?>
 				<p><?php the_content();?></p>
@@ -124,9 +124,6 @@
 	}
 	.pProdukt {
 		margin: 5% auto;
-	}
-	#omOssContent {
-		width: 100%;
 	}
 	.cont {
 		width: 45%;
