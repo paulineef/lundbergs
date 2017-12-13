@@ -7,8 +7,8 @@
 				while(have_posts()):
 					the_post();
 		?>
-					<div id="singleImg"><?php the_post_thumbnail(); //echo out image ?></div>
 					<div class="singleP"> <?php the_content();?></div>
+					<div id="singleImg"><?php the_post_thumbnail(); //echo out image ?></div>
 				<?php
 				endwhile; 
 			endif;
