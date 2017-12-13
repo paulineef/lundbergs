@@ -1,5 +1,10 @@
 <?php /* Template name: Om Oss */ ?>
 <main>
+<div class="arrow">
+		<a href="#content">
+			<div id="arrowomoss"></div>
+		</a>
+	</div>
 	<?php get_header();?>
 
 	<div id="omOss">
