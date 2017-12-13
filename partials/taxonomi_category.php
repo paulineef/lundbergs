@@ -2,7 +2,7 @@
 	$terms = get_terms(
 		array(
 			'taxonomy' => 'kategori',
-			'hide_empty' => true 
+			'hide_empty' => true, 
 		)
 	);
 ?>	
