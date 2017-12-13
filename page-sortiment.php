@@ -1,18 +1,30 @@
+<!-- gets the header and include it by default -->
 <?php get_header(); ?>
 <main>
-		<?php if(has_post_thumbnail()): 
+		<?php
+		//if the post contains any thumbnails (images) 
+		 if(has_post_thumbnail()): 
+
+		 	//get the thumbnails for the current post and put it into a variable, all
 			$thumb_id = get_post_thumbnail_id();
+			
+			//get all the source URL of each img from the the variable 'thumb_id' with the size defined inside 'thumbnail-size', all
 			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+			
+			//put the first image in the array into a new variable, one
 			$thumb_url = $thumb_url_array[0]; 
 		?>
-		<div class="bigCont" style="background-image: url('<?php echo $thumb_url; ?>');">
+		<div class="bigCont" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');">
 		
 		<div class="categories">
 			<div class="sortCont">
+
+				<!-- display the title of the post and the content by the_post() -->
 				<h1><?php the_title();?></h1> 
 				<?php the_post();?>
 				<p><?php the_content();?></p>
 			</div>
+			
 			<?php 
 				$terms = get_terms(
 					array(
