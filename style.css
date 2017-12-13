@@ -398,6 +398,11 @@ nav li a:hover, #menu a:hover{
 	height: 100%;
 }
 
+#titleDiv {
+	width: 50%;
+	margin: 0 auto;
+}
+
 
 /*----------------------------------
 ----------- FOOTER -----------------
