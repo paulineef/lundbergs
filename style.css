@@ -356,7 +356,7 @@ nav li a:hover, #menu a:hover{
 	font-size: 8pt;
 	color: #ddd;
 }
-#arrow {
+.arrow {
 	height: 64px;
 	margin: 0 auto;
 	position: absolute;
@@ -372,7 +372,15 @@ nav li a:hover, #menu a:hover{
     font-size: 20px !important;
     -webkit-animation: bounce 2s infinite;
 }
-#arrowImg {
+
+#arrowomoss{
+	background-image: url(img/arrow.png);
+	width: 45px;
+	height: 45px;
+	margin: 0 20%;
+}
+
+.arrowImg {
 	background-image: url(img/arrow.png);
 	width: 45px;
 	height: 45px;
