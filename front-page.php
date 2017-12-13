@@ -4,9 +4,9 @@
 	<h2>
 		Svensktillverkad </br> avfallshantering </br> sedan 1869
 	</h2>
-	<div id="arrow">
+	<div class="arrow">
 		<a href="#content">
-			<div id="arrowImg"></div>
+			<div class="arrowImg"></div>
 		</a>
 	</div>
 </div>
