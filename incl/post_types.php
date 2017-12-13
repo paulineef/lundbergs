@@ -139,31 +139,31 @@ function produkter_post_type() {
             'editor',
 
             /* Post excerpt ($post->post_excerpt). */
-            'excerpt',
+            
 
             /* Post author ($post->post_author). */
-            'author',
+            
 
             /* Featured images (the user's theme must support 'post-thumbnails'). */
             'thumbnail',
 
             /* Displays comments meta box.  If set, comments (any type) are allowed for the post. */
-            'comments',
+            
 
             /* Displays meta box to send trackbacks from the edit post screen. */
-            'trackbacks',
+            
 
             /* Displays the Custom Fields meta box. Post meta is supported regardless. */
-            'custom-fields',
+            
 
             /* Displays the Revisions meta box. If set, stores post revisions in the database. */
-            'revisions',
+            
 
             /* Displays the Attributes meta box with a parent selector and menu_order input box. */
-            'page-attributes',
+            
 
             /* Displays the Format meta box and allows post formats to be used with the posts. */
-            'post-formats',
+            
         ),
 
         /**
