@@ -272,11 +272,10 @@ nav li a:hover, #menu a:hover{
 	background: url(img/trees.jpg) no-repeat center top;
 	overflow: hidden;
 	background-position-y: center; 
-	position: fixed;
+	/*position: fixed;*/
 	top: 0px;
 	left: 0px;
 	background-size: 300%;
-	margin-bottom: 100vh !important;
 }
 
 #welcome img {
@@ -304,14 +303,14 @@ nav li a:hover, #menu a:hover{
 	overflow: hidden;
 	position: relative;
 	background: #fff;
-	padding-top: 100px;
-	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 #nyhet {
 	overflow: hidden;
 	border-bottom: 10px solid #6fa67f; 
-	margin: 100px;
+	margin: 0px 40px;
 	max-width: 100%;
 	padding-bottom: 30px;
 }
@@ -322,7 +321,7 @@ nav li a:hover, #menu a:hover{
 }
 
 #nyhet p {
-	line-height: 20pt; 	
+	line-height: 16pt; 	
 }
 
 #nyhet a h1 {
@@ -331,22 +330,17 @@ nav li a:hover, #menu a:hover{
 	margin-bottom: 5px; 
 }
 
-<<<<<<< HEAD
 .nList li:first-child {
 	border-bottom: 12px solid grey; 
 	margin-bottom: 30px;
 }
-=======
->>>>>>> 42296dd93dd00e5844d800f63e221525d9c7006a
 #visa a {
 	margin: 0px 100px;
 	color: #6fa67f;
 }
-
 #visa a:hover {
 	color: #7a353a;
 }
-
 .ny {
 	padding-top: 150px; 
 	min-height: 90vh;
@@ -462,7 +456,6 @@ footer {
 #omOss {
 	display: flex;
 	width: 100%;
-	height: 110vh;
 	flex-direction: row;
 }
 
@@ -475,7 +468,7 @@ footer {
 }
 
 .history {
-	margin-top: 60px; 
+	margin-top: 50px; 
 }
 
 .history, .history p {
@@ -568,11 +561,11 @@ footer {
 	}
 
 	#omOssContent{
-		padding: 100px 60px;
+		padding: 80px 60px;
 	}
 
 	#omOssImg {
-		height: 100%;
+		height: 100vh;
 		width: 60%;
 	}
 
@@ -996,7 +989,7 @@ div.wpcf7-response-output {
 
 	#content {
 		background: #fff;
-		padding-top: 150px;
+		padding-top: 100px;
 		padding-bottom: 30px;
 		overflow: hidden;
 	}
@@ -1013,8 +1006,8 @@ div.wpcf7-response-output {
 	}
 
 	#nyhet p {
-		text-align: justify;
-		line-height: 20pt; 	
+		line-height: 18pt;
+		font-weight: 300;
 	}
 
 	#visa, #visa a {

@@ -13,7 +13,7 @@
 				<div class="entry-meta">
 					<?php the_time("F d, Y"); ?>
 				</div>
-				<p><?php the_content();?></p>
+				<p><?php the_excerpt();?></p>
 			</div>
 			
 		</li>

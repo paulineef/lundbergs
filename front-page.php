@@ -2,7 +2,7 @@
 
 <div id="welcome">
 	<h2>
-		Svensktillverkad </br> avfallshantering </br> sedan 1896
+		Svensktillverkad </br> avfallshantering </br> sedan 1869
 	</h2>
 	<div id="arrow">
 		<a href="#content">
