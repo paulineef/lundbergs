@@ -23,12 +23,6 @@
 				</div>
 		<?php } ?>
 		</div>
-		<?php 
-			$args = array(
-				'post_type'     => 'project', 
-				'post_per_page' => -1, 
-			); 
-		?>
 		<h1 id="categoryId"><?php single_term_title(); ?></h1>
 		<div class="productContainer">
 			<?php if(have_posts()):

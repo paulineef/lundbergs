@@ -1,22 +1,24 @@
 <?php get_header(); ?>
 <main>
-	<div class="bigCont">
-		<div id="omOss">
-			<div id="ProdukterImg"></div> 
-		</div>
-		<?php get_template_part('partials/taxonomi_category'); //get the content from the file taxonomy_category?>
-		<div id="omOssContent"> 
-			<?php if(have_posts()):
-					while(have_posts()):
-						the_post();
-				?>
-						<div class=pProdukt> <?php the_content();?></div>
-				<?php
-					endwhile; 
-				endif;
-			?>
+		<?php if(has_post_thumbnail()): 
+			$thumb_id = get_post_thumbnail_id();
+			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+			$thumb_url = $thumb_url_array[0]; 
+		?>
+		<div class="bigCont" style="background-image: url('<?php echo $thumb_url; ?>');">
+		
+		<div class="categories">
+			<div id="omOssContent">
+				<h1><?php the_title();?></h1> 
+				<?php the_post();?>
+				<p><?php the_content();?></p>
+			</div>
+			<?php get_template_part('partials/taxonomi_category'); //get the content from the file taxonomy_category?>
 		</div>
 	</div>
+	<?php
+		endif;
+	?>
 </main>
 <?php get_footer(); ?>
 <style>
@@ -28,17 +30,26 @@
 		font-size: 12pt;
 	}
 	.bigCont {
+		background-size: 100%;
 		min-height: 90vh;
 		overflow: hidden;
+	}
+	.categories {
+		overflow: hidden;
+		box-sizing: border-box;
+		width: 80%;
+		margin: auto;
+		background: #fff;
+	}
+
+	.categories h1 {
+
 	}
 	#catCon {
 		overflow: hidden;
 		text-align: center;
 		width: 80%;
-		margin: 0 auto;
-		margin-top: -150px;
-		left: 33%;
-		margin-bottom: -200px;
+		margin: 100px auto;
 	}
 	.cont {
 		width: 100%;
@@ -48,7 +59,7 @@
 		float: left;
 		margin-top: 20vh;
 		text-align: center;
-		background: #6FA67F;
+		background: #57828C;
 		color: white;
 		margin: 22px 0;
 		box-sizing: border-box;
