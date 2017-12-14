@@ -608,6 +608,8 @@ footer {
 		margin-bottom: 60px;
 		margin-right: 60px;
 	}
+
+	
 }
 /*----------------------------------
 ----------- CONTACT ---------------
@@ -774,37 +776,52 @@ div.wpcf7-response-output {
 	margin: 10% 0 0 0;
     text-align: center;
 }
+
 #singleContainer {
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
 	overflow: hidden;
 }
-#singleImg {
-    margin: 10% 15%;
-}
+
 #singleImg img {
 	width: 100%;
 	height: 100%;
 }
-.singleP {
-	margin: 0 15% 15% 15%;
+
+#singleImg {
+	width: 100%;
 }
+
 .singleP p {
 	text-align: left;
 	font-size: 10pt;
 	line-height: 12pt;
 }
-#singleTop {
-	width: 0; 
-	height: 0; 
-	border-right: 900px solid transparent;
-	border-top: 150px solid #59828c;
-	margin-top: 0;
+
+.infoCont {
+	padding: 0px 30px;
+	display: flex;
+	flex-direction: column;
 }
-#singleBottom {
-	width: 0; 
-	height: 0; 
-	border-right: 900px solid transparent;
-	border-bottom: 150px solid #59828c;
-	margin-top: 0;
+
+.singleP ul {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+.singleP li {
+	font-size: 10pt;
+	list-style-type: square;
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+.border {
+	width: 100%;
+	height: 20px;
+	background: #57828C;
+	margin: 20px 0px;
 }
 /*----------------------------------
 ----------- SERVICE -----------------
@@ -827,7 +844,6 @@ div.wpcf7-response-output {
 		background-position: top;
 	}
 	#singleHead {
-		margin: 10% 10% 0 10%;
 		text-align: center;
 		font-size: 46pt;
 	}
@@ -837,8 +853,18 @@ div.wpcf7-response-output {
 	.singleP p {
 		font-size: 14pt;
 		line-height: 16pt;
+		margin-right: 30px;
 	}
 
+	#singleContainer {
+		margin: 100px auto;
+	}
+
+	.infoCont {
+		margin: auto 60px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 /*desktop version*/
@@ -1088,34 +1114,27 @@ div.wpcf7-response-output {
 	}
 
 	#singleContainer {
-		display: flex;
-		flex-direction: row;
 		width: 100%;
 		box-sizing: border-box;
 		overflow: hidden;
 	}
+
 	#singleImg {
-		float: left;
+		width: 50%;
 	}
-	#singleImg img {
-		width: 100%;
-		height: 100%;
-	}
+
+
 	.singleP {
-		float: left;
+		width: 600px;
 	}
-	#singleImg {
-		float: left;
-	    width: 100%;
-	    height: 100%;
-	    margin: 8% 15% 0 0%;
+
+	.infoCont{
+		margin: auto 120px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
-	#singleBottom {
-		border-right: 1000px solid transparent;
-	}
-	#singleTop {
-		border-right: 1000px solid transparent;
-	}
+
 }
 
 /*----- KEYFRAMES -----*/

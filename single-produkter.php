@@ -4,9 +4,11 @@
 <?php get_header(); ?>
 
 <main>
-	<div id="singleTop"></div>
-	<h1 id="singleHead"><?php the_title();?></h1>
 	<div id="singleContainer">
+		<h1 id="singleHead"><?php the_title();?></h1>
+		<div class="border"></div>
+
+		<div class="infoCont">
 
 		<!-- if there is  any posts  -->
 		<?php if(have_posts()):
@@ -26,15 +28,11 @@
 				endwhile; 
 			endif;
 		?>
-		
+		</div>	
 	</div>
-	<div id="singleBottom"></div>
 </main>
 
 <!-- gets the footer and include it by default -->
 <?php get_footer(); ?>
 
-<style type="text/css">
-
-</style>
 
