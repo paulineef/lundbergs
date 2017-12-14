@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
