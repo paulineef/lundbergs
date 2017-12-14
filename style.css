@@ -302,7 +302,7 @@ div.wpcf7-response-output {
 ----------- FRONT-PAGE -------------
 -----------------------------------*/
 #content {
-	min-height: 140vh;
+	min-height: 120vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -338,11 +338,14 @@ div.wpcf7-response-output {
 	margin-bottom: 30px;
 }
 #visa a {
-	margin: 0px 100px;
+	margin: 0px 30px;
 	color: #6fa67f;
 }
 #visa a:hover {
 	color: #7a353a;
+}
+#visa {
+	padding-top: 15px;
 }
 .ny {
 	padding-top: 150px; 
@@ -843,7 +846,9 @@ div.wpcf7-response-output {
 
 /*desktop version*/
 @media (min-width: 1024px){
-	
+	#visa {
+	padding-top: 0px;
+}
 	#welcome {
 		background-size: 100%;
 	}
