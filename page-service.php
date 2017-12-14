@@ -85,9 +85,7 @@
 
 	.column_2 {
 		display: flex; 
-		flex-direction: column; 
 	}
-
 	.box {
 		margin-bottom: 60px; 
 		background: #f2f2f2;
