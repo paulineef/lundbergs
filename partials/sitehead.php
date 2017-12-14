@@ -20,12 +20,15 @@
 </header>
 
 <script>
+	//click function on hamburger-menu changes classes to new values 
+	//to make it dissparead and not dissapear 
 	$(document).ready(function() {	
 		$("#nav-icon3").click(function(){
-			$("#nav-icon3").toggleClass('open');
-			$(".hide").toggleClass('open');
+			$("#nav-icon3").toggleClass('open'); //X
+			$(".hide").toggleClass('open'); //display
 			});
 	
+	//makes the logo big or small, if you scroll by more than 100px
 	$(document).on("scroll", function() {
 
 	if($(document).scrollTop()>100) {
