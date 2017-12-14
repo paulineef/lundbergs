@@ -1,4 +1,4 @@
-/*
+f/*
 Theme Name: Lundbergs
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
 Description: Svensktillverkad avfallshantering sedan 1896
@@ -1039,14 +1039,12 @@ div.wpcf7-response-output {
 	}
 
 	#visa, #visa a {
-	margin: 0 auto;
-	text-align: left; 
-	width: 50%;
+		margin: 0 auto;
+		text-align: left; 
+		width: 50%;
 	
 	}
-
 	footer {
-		height: 150px;
 		padding: 30px 120px;
 	}
 	
