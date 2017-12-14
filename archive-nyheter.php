@@ -14,11 +14,11 @@
 	?>
 		<li>
 			<div id="nyhet">
-				<a href="<?php the_permalink();?>"><h1><?php the_title();//the_ = echo out ?></h1></a>
+				<a href="<?php the_permalink();//the link to the root of the post?>"><h1><?php the_title();//the_ = echo out ?></h1></a>
 				<div class="entry-meta">
-					<?php the_time("F d, Y"); ?>
+					<?php the_time("F d, Y");//echo out the time from when the post was published ?>
 				</div>
-				<p><?php the_excerpt();?></p>
+				<p><?php the_excerpt();//echo out the excerpt field from dashboard?></p>
 			</div>
 			
 		</li>
