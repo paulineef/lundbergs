@@ -27,6 +27,7 @@
 			
 			<?php 
 
+				//get all the terms inside of the taxonomy Kategori
 				$terms = get_terms(
 					array(
 						'taxonomy' => 'kategori',
@@ -35,9 +36,13 @@
 				);
 			?>	
 				<div id="catCon">
-					<?php foreach ($terms as $value) { //loop through the taxonomy array?>
+
+					<!-- Lopp through the array $terms one by one (value) -->
+					<?php foreach ($terms as $value) { ?>
 						<div class="cont">
 							<span class="types">
+
+								<!-- echo out a link with the value of the term at the end of the url to get to the specific produkt -->
 								<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name?></h3></a>
 							</span>
 						</div>

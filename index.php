@@ -1,9 +1,13 @@
+<!-- the page after picked what category in Sortiment -->
 <!-- gets the header and include it by default -->
 <?php get_header(); ?>
 
 <main class="indexMain">
 	<div class="bigCont" style="background-image: url('img/gran.png');">
+		
 		<?php
+
+			//get all the terms inside of the taxonomy Kategori
 			$terms = get_terms(
 				array(
 					'taxonomy' => 'kategori',
@@ -13,16 +17,24 @@
 		?>	
 		<div class="categories">
 			<div class="category">
+
+				<!-- Displays or returns the term title for the current page.  -->
 				<h1><?php single_term_title(); ?></h1>
 				<ul class="productUl">
+					
+					<!-- if there is  any posts  -->
 					<?php if(have_posts()):
+
+							// and while there's posts
 							while(have_posts()):
+
+								// display posts
 								the_post();
 					?>		
 							<li>
 								<a href='<?php the_permalink()//link to single page?>'>
-									<div class="productImg"><?php the_post_thumbnail(); //echo out image ?></div>
-									 <?php the_title();//the_ = echo out ?>
+									<div class="productImg"><?php the_post_thumbnail(); //dispaly image ?></div>
+									 <?php the_title();//displays the title ?>
 								</a>
 							</li>
 							
@@ -80,6 +92,8 @@
 
 	.category li {
 		margin: 0px;
+		
+		-webkit-transition: all 0.2s ease 0s;
 	}
 
 	.category li a {
@@ -108,7 +122,6 @@
 	}
 
 	.category li {
-		height: 250px;
 		margin-bottom: 30px; 
 		margin-right: 30px;
 	}
