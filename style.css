@@ -875,6 +875,7 @@ div.wpcf7-response-output {
 }
 .cont h3 {
 	font-size: 20pt;
+	line-height: 32px;
 }
 .cont a {
 	color: white;
@@ -1166,12 +1167,12 @@ h5 {
 	.page {
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 60px 120px;
+		padding: 60px 30px;
 		width: 100%;
 	}
 	.column_1 {
 		border-right: 1px solid #ddd;
-		padding-right: 60px;
+		padding-right: 120px;
 	}
 	.column_1 img {
 		margin: 30px 0px;	
@@ -1180,6 +1181,7 @@ h5 {
 	.column_2 {
 		padding-left: 60px;
 		display: flex; 
+		width: 600px;
 		flex-direction: column; 
 	}
 /*----------------------------------
@@ -1328,6 +1330,11 @@ h5 {
 		padding-right: 60px;
 	}
 
+}
+@media (min-width: 700px){
+	.page {
+		padding: 60px 60px;
+	}
 }
 @media (min-width: 1100px){
 	/*----------------------------------
