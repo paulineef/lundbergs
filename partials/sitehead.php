@@ -28,6 +28,7 @@
 			$(".hide").toggleClass('open'); //display
 			});
 	
+	//makes the logo big or small, if you scroll by more than 100px
 	$(document).on("scroll", function() {
 
 	if($(document).scrollTop()>100) {
