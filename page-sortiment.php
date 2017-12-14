@@ -177,7 +177,8 @@
 	}
 
 	.cont h3 {
-		font-size: 25pt; 
+		font-size: 22pt; 
+		padding: 5px;
 	}
 }
 </style>
