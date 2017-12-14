@@ -92,6 +92,8 @@
 
 	.category li {
 		margin: 0px;
+		
+		-webkit-transition: all 0.2s ease 0s;
 	}
 
 	.category li a {
