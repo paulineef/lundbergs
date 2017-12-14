@@ -34,7 +34,7 @@
 							<li>
 								<a href='<?php the_permalink()//link to single page?>'>
 									<div class="productImg"><?php the_post_thumbnail(); //dispaly image ?></div>
-									 <?php the_title();//displays the title ?>
+									 <h3><?php the_title();//displays the title ?></h3>
 								</a>
 							</li>
 							
