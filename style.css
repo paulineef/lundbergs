@@ -840,6 +840,7 @@ div.wpcf7-response-output {
 
 /*desktop version*/
 @media (min-width: 1024px){
+	
 	#welcome {
 		background-size: 100%;
 	}
