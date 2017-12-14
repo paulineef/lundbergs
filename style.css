@@ -340,6 +340,9 @@ main {
 .nList li:first-child {
 	margin-bottom: 30px;
 }
+.nList {
+	padding-left: 0;
+}
 #visa a {
 	margin: 0px 30px;
 	color: #6fa67f;
@@ -1387,6 +1390,7 @@ h5 {
 
 	.singleP {
 		width: 600px;
+		padding-right: 32px;
 	}
 
 	.infoCont{
@@ -1394,6 +1398,7 @@ h5 {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		padding-bottom: 88px;
 	}
 
 }
