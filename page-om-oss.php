@@ -3,13 +3,6 @@
 
 <main>
 
-<!-- arrow with bouncing effect in css -->
-	<div class="arrow">
-		<a href="#personal">
-			<div id="arrowomoss"></div>
-		</a>
-	</div>
-
 	<!-- gets the header and include it by default -->
 	<?php get_header();?>
 
