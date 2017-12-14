@@ -55,6 +55,8 @@
 		background-repeat: no-repeat;
 		min-height: 90vh;
 		overflow: hidden;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 	.categories {
 		overflow: hidden;
