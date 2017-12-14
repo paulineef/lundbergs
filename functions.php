@@ -40,6 +40,7 @@
 		)
 	  );
 	}
+	//Hooks a function on a specific action
 	add_action( 'init', 'register_my_menus' );
 
 
