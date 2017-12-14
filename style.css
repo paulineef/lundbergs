@@ -297,12 +297,15 @@ div.wpcf7-response-output {
 	width: 100%;
 	height: 100%;
 }
+main {
+	min-height: 90vh;
+}
 
 /*----------------------------------
 ----------- FRONT-PAGE -------------
 -----------------------------------*/
 #content {
-	min-height: 120vh;
+	min-height: 80vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -582,12 +585,15 @@ footer {
 	}
 
 	#omOssContent{
-		padding: 80px 60px;
+		padding: 15vh 60px;
+		max-width: 600px;
+		margin: 0 auto;
 	}
 
 	#omOssImg {
 		height: 100vh;
 		width: 60%;
+		max-height: 900px;
 	}
 
 	#personal h1 {
@@ -854,7 +860,6 @@ div.wpcf7-response-output {
 		font-size: 20pt;
 	}
 	.singleP p {
-		font-size: 14pt;
 		line-height: 16pt;
 		margin-right: 30px;
 	}
@@ -1104,7 +1109,7 @@ div.wpcf7-response-output {
 	#formCont {
 		width: 100%;
 		position: absolute;
-		top: 80px;
+		top: 15vh;
 	}
 	#kontaktHeading {
 		margin: 56px 0 12px 0;
@@ -1113,7 +1118,7 @@ div.wpcf7-response-output {
 ----------- SINGLE -----------------
 -----------------------------------*/
 	#singleHead {
-		margin: 10% 0 0 10%;
+		margin: 10% 0 0 9%;
 		text-align: left;
 		font-size: 32pt;
 	}
@@ -1122,10 +1127,15 @@ div.wpcf7-response-output {
 		width: 100%;
 		box-sizing: border-box;
 		overflow: hidden;
+		min-height: 70vh;
+		max-width: 1600px;
+		margin: 0 auto;
+		padding-top: 15vh;
 	}
 
 	#singleImg {
 		width: 50%;
+		max-width: 500px;
 	}
 
 

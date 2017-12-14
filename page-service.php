@@ -64,6 +64,9 @@
 		display: flex;
 		flex-direction: column; 
 		padding: 60px 35px;
+		min-height: 80vh;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 
 	.page h1 {
