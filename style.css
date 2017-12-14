@@ -12,10 +12,13 @@ Description: Svensktillverkad avfallshantering sedan 1896
     display: none; 
 }
 
-* {
-	font-family: "montserrat", sans-serif;
+@font-face {
+	font-family: 'montserrat'; 
+	src: local('Montserrat/Montserrat-Regular.ttf'); 
 }
-
+* {
+	font-family: 'montserrat', 'sans serif';
+}
 html {
 	min-width: 320px;
 	width: 100%;
