@@ -1,4 +1,3 @@
-
 <?php 
 	//title bar
 	// All below registers theme support for different given features
