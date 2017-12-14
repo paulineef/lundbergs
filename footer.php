@@ -14,5 +14,7 @@
 				</a>
 			</div>
 		</footer>
+
+	<!-- to definde this is footer -->
 	<?php wp_footer(); ?>
 </html>

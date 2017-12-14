@@ -63,7 +63,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column; 
-		padding: 60px 120px;
+		padding: 60px 35px;
 	}
 
 	.page h1 {
@@ -85,9 +85,7 @@
 
 	.column_2 {
 		display: flex; 
-		flex-direction: column; 
 	}
-
 	.box {
 		margin-bottom: 60px; 
 		background: #f2f2f2;
@@ -123,6 +121,7 @@
 			display: flex; 
 			flex-direction: row;
 			justify-content: space-between;
+			padding: 60px 120px;
 		}
 
 		.column_1 {

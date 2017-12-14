@@ -24,7 +24,7 @@
 <!-- gets the footer and include it by default -->
 <?php get_footer(); ?>
 
-<!-- javascript -->
+<!-- javascript smooth scroll when clicking arrow -->
 <script>
 	$(document).ready(function(){
 	  // Add smooth scrolling to all links
