@@ -1374,7 +1374,8 @@ h5 {
 	#formCont {
 		width: 550px;
 		position: absolute;
-		top: 15vh;
+		top: 8vh;
+		margin-left: 88px;
 	}
 	#kontaktHeading {
 		margin: 56px 0 12px 0;
