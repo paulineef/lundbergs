@@ -1116,6 +1116,7 @@ div.wpcf7-response-output {
 }
 
 /*----- KEYFRAMES -----*/
+
 /* for the bouncing arrow */
 @keyframes bounce {
     0% {
@@ -1125,7 +1126,7 @@ div.wpcf7-response-output {
         transform: translateY(60%);
     }
 }
-
+/* Making content fade in */
 @-webkit-keyframes opacity {
   0%   { opacity: 0; }
   100% { opacity: 1; }
