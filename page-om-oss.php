@@ -15,7 +15,6 @@
 
 	<!-- div around the whole page -->
 	<div id="omOss">
-		
 		<?php
 			//if the post contains any thumbnails (images), big on at the top 
 			if(has_post_thumbnail()): 
@@ -29,13 +28,11 @@
 				//put the first image in the array into a new variable, one
 				$thumb_url = $thumb_url_array[0]; 
 		?>
-
 			<div id="omOssImg" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');"></div> 
 		<?php endif; ?>
 
 		<!--div around om oss text only, not the image-->	
  		<div id="omOssContent">
-			
 			<?php 
 				//gets the post
 				the_post();?>
@@ -44,7 +41,6 @@
 				<p><?php the_content(); ?></p>
 		</div>
 	</div>
-
 
 	<!-- div around the personal part -->
 	<div id="personal">
