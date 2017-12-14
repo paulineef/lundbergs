@@ -1052,7 +1052,6 @@ h5 {
 
 	.infoCont {
 		margin: auto 60px;
-		flex-direction: row;
 		justify-content: space-between;
 	}
 
