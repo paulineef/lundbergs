@@ -7,6 +7,7 @@
 			<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>"/>
 			<title><?php //bloginfo('name')?></title>
 
+			<!-- to definde this is header -->
 			<?php wp_head(); ?>
 		</head>
 		<body>
