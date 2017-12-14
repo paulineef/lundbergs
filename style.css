@@ -332,7 +332,6 @@ div.wpcf7-response-output {
 }
 
 .nList li:first-child {
-	border-bottom: 12px solid grey; 
 	margin-bottom: 30px;
 }
 #visa a {
@@ -841,6 +840,7 @@ div.wpcf7-response-output {
 
 /*desktop version*/
 @media (min-width: 1024px){
+	
 	#welcome {
 		background-size: 100%;
 	}

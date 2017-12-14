@@ -5,7 +5,6 @@
 
 <main>
 	<div id="singleTop"></div>
-	<a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
 	<h1 id="singleHead"><?php the_title();?></h1>
 	<div id="singleContainer">
 
@@ -34,4 +33,9 @@
 
 <!-- gets the footer and include it by default -->
 <?php get_footer(); ?>
+
+
+<style type="text/css">
+
+</style>
 
