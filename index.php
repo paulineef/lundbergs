@@ -10,10 +10,6 @@
 					'hide_empty' => true 
 				)
 			);
-			// $args = array(
-			// 	'post_type'     => 'produkt', 
-			// 	'post_per_page' => -1, 
-			// );
 		?>	
 		<div class="categories">
 			<div class="category">
@@ -114,6 +110,7 @@
 	.category li {
 		height: 250px;
 		margin-bottom: 30px; 
+		margin-right: 30px;
 	}
 	
 }
