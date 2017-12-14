@@ -979,7 +979,6 @@ div.wpcf7-response-output {
 	display: flex;
 	flex-direction: column; 
 	padding: 60px 35px;
-	min-height: 80vh;
 	max-width: 1600px;		
 	margin: 0 auto;
 }
@@ -1338,6 +1337,12 @@ h5 {
 	}
 }
 @media (min-width: 1100px){
+	#linkedin {
+		position: inherit;
+	}
+	#info {
+		padding-left: 60px;
+	}
 	/*----------------------------------
 	----------- CONTACT ---------------
 	-----------------------------------*/
@@ -1379,7 +1384,7 @@ h5 {
 ----------- SINGLE -----------------
 -----------------------------------*/
 	#singleHead {
-		margin: 10% 0 0 9%;
+		margin: 10% 0 0 60px;
 		text-align: left;
 		font-size: 32pt;
 	}
@@ -1406,7 +1411,7 @@ h5 {
 	}
 
 	.infoCont{
-		margin: auto 120px;
+		margin: 30px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
