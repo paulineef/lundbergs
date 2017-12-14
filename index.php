@@ -1,8 +1,10 @@
+<!-- the page after picked what category in Sortiment -->
 <!-- gets the header and include it by default -->
 <?php get_header(); ?>
 
 <main class="indexMain">
 	<div class="bigCont" style="background-image: url('img/gran.png');">
+		
 		<?php
 			$terms = get_terms(
 				array(
@@ -108,7 +110,6 @@
 	}
 
 	.category li {
-		height: 250px;
 		margin-bottom: 30px; 
 		margin-right: 30px;
 	}
