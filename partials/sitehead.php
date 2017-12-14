@@ -11,15 +11,13 @@
 		</div>
 		<a href="../"><div class="toplogo"></div></a>
 		<div id="nav-icon3">
-  				<span></span>
- 				<span></span>
-  				<span></span>
-  				<span></span>
-			</div>
- 		<div class="cross">&#735;</div>	
+  			<span></span>
+ 			<span></span>
+  			<span></span>
+  			<span></span>
+		</div>
 	</nav>
 </header>
-
 
 <script>
 	$(document).ready(function() {	
@@ -38,8 +36,7 @@
 		$(".hide").removeClass("small").addClass("large");
 	}
 	
+	});
 });
-		});
-	
-	
+		
 </script>

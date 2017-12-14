@@ -14,8 +14,7 @@ Description: Svensktillverkad avfallshantering sedan 1896
 
 * {
 	font-family: "montserrat", sans-serif;
-/*	border: 2px solid red;
-*/}
+}
 
 html {
 	min-width: 320px;
@@ -46,7 +45,7 @@ p {
 	text-align: left;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -355,8 +354,6 @@ div.wpcf7-response-output {
 	color: #ddd;
 }
 .arrow {
-	height: 64px;
-	margin: 0 auto;
 	position: absolute;
 	bottom: 50px;
 	width: 100%;
@@ -926,7 +923,6 @@ div.wpcf7-response-output {
 	h2 {
 		font-size: 40pt;
 		margin: 180px 120px;
-		font-weight: 600;
 	}
 /*----------------------------------
 ----------- HEADER -----------------
@@ -966,11 +962,6 @@ div.wpcf7-response-output {
 
 		-webkit-transition: all 0.8s ease 0s;
 	}
-	
-	.hamburger, .cross {
-		display: none; 
-	}
-
 	.hide {
 		top: 0px;
 		left: 100px;
@@ -1023,16 +1014,15 @@ div.wpcf7-response-output {
 		margin: 0 auto;
 		margin-bottom: 30px; 
 	}
+	#nyhet p {
+			font-weight: 300;
+		}
 
 	.nList ul {
 	 	padding: 0px;
 	}
 
-	#nyhet p {
-		line-height: 18pt;
-		font-weight: 300;
-	}
-
+	
 	#visa, #visa a {
 		margin: 0 auto;
 		text-align: left; 
@@ -1053,11 +1043,6 @@ div.wpcf7-response-output {
 }
 
 @media (min-width: 1100px){
-	
-	#welcome {
-		background-size: 100%;
-	}
-
 	/*----------------------------------
 	----------- CONTACT ---------------
 	-----------------------------------*/
