@@ -1165,8 +1165,7 @@ h5 {
 ----------- SERVICE ---------------
 -----------------------------------*/
 	.page {
-		flex-direction: row;
-		justify-content: space-between;
+
 		padding: 60px 30px;
 		width: 100%;
 	}
@@ -1373,7 +1372,7 @@ h5 {
 		margin: 0 auto;
 	}
 	#formCont {
-		width: 100%;
+		width: 550px;
 		position: absolute;
 		top: 15vh;
 	}
