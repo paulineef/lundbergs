@@ -1371,17 +1371,17 @@ h5 {
 		width: 100%;
 	}
 	#formDiv {
-		width: 550px;
+		width: 500px;
 		margin: 0 auto;
 	}
 	#formCont {
-		width: 550px;
+		width: 100%;
 		position: absolute;
 		top: 8vh;
-		margin-left: 88px;
 	}
 	#kontaktHeading {
 		margin: 56px 0 12px 0;
+		padding: 0 35px;
 	}
 /*----------------------------------
 ----------- SINGLE -----------------
