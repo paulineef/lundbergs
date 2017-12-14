@@ -105,7 +105,7 @@ li {
 }
 
 .hide a {
-	font-size: 16px;
+	font-size: 18px;
 	display: block;
 }
 
@@ -408,8 +408,9 @@ main {
 }
 
 #titleDiv {
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
+	padding-left: 30px;
 }
 
 
@@ -799,7 +800,8 @@ div.wpcf7-response-output {
 }
 .category {
 	margin: 100px auto;
-	padding: 0px 50px;
+	padding: 0px 0px;
+	
 }
 .category h1 {
 	margin-bottom: 30px;
@@ -822,10 +824,11 @@ div.wpcf7-response-output {
 .category li {
 	margin: 0px;	
 	-webkit-transition: all 0.2s ease 0s;
+	margin-bottom: 80px;
 }
 .category li a {
 	color: #57828C;
-	font-size: 14pt;
+	font-size: 18pt;
 }
 .sortCont {
 	width: 80%;
