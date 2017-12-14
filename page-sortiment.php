@@ -35,12 +35,10 @@
 				);
 			?>	
 				<div id="catCon">
-
-					
 					<?php foreach ($terms as $value) { //loop through the taxonomy array?>
 						<div class="cont">
 							<span class="types">
-								<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name ?></a>
+								<a href="/kategori/<?php echo $value->slug?>#categoryId"><h3><?php echo $value->name?></h3></a>
 							</span>
 						</div>
 					<?php } ?>
@@ -87,17 +85,20 @@
 		margin: 0px auto 100px auto;
 	}
 	.cont {
-		width: 100%;
-		height: 300px;
-		display: inline;
+		box-sizing: border-box;
 		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+		width: 100%;
+		height: 200px;
 		float: left;
 		margin-top: 20vh;
 		text-align: center;
 		background: #57828C;
 		color: white;
 		margin: 22px 0;
-		box-sizing: border-box;
+		
 	}
 	.cont:hover {
 		background: #4b6e76;
@@ -108,8 +109,7 @@
 			transition: all 0.5s;
 	}
 	.cont h3 {
-		margin: 120px 0px;
-		font-size: 25pt;
+		font-size: 20pt;
 	}
 	.cont a {
 		color: white;
@@ -174,6 +174,10 @@
 	}
 	#catCon {
 		width: 670px;
+	}
+
+	.cont h3 {
+		font-size: 25pt; 
 	}
 }
 </style>
