@@ -1,6 +1,6 @@
 <?php
 function kategori() {
-
+	//define which labels to use and what to call them
 	$labels = array(
 		'name'                       => _x( 'Kategorier', 'Taxonomy General Name', 'text_domain' ),
 		'singular_name'              => _x( 'kategori', 'Taxonomy Singular Name', 'text_domain' ),
@@ -23,6 +23,7 @@ function kategori() {
 		'items_list'                 => __( 'Items list', 'text_domain' ),
 		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
 	);
+	//an array of arguments, look for details at comments at post_types.php
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -32,9 +33,11 @@ function kategori() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
+	//register the taxonomy called 'kategori' connected to the post type 'produkt' with the arguments 'args'
 	register_taxonomy( 'kategori', array( 'produkt' ), $args );
 
 }
-add_action( 'init', 'kategori', 0 );
+//Hooks a function on to a specific action.
+add_action( 'init'/*name of action*/, 'kategori'/*which function to add*/, 0 /*early in the prioritazion list*/);
 
 ?>
