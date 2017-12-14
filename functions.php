@@ -13,6 +13,7 @@
 // add_action( 'wp_enqueue_style', 'lundbergs_script_enqueue');
 
 ?>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <?php 
 	//title bar
 	// All below registers theme support for different given features
