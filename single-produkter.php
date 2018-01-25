@@ -34,5 +34,3 @@
 
 <!-- gets the footer and include it by default -->
 <?php get_footer(); ?>
-
-

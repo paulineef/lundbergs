@@ -34,10 +34,3 @@
 	<!-- gets the footer and include it by default -->
 	<?php get_footer(); ?>
 </main>
-
-<style type="text/css">
-	.page {
-		width: 100%;
-		margin: 60px 120px;
-	}
-</style>

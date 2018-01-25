@@ -56,64 +56,7 @@
 	<!-- gets the footer and include it by default -->
 	<?php get_footer(); ?>
 </main>
-
 <style type="text/css">
-	.page {
-		box-sizing: border-box;
-		width: 100%;
-		display: flex;
-		flex-direction: column; 
-		padding: 60px 35px;
-	}
-
-	.page h1 {
-		font-weight: 300;
-	}
-
-	.page b {
-		font-weight: 600;
-	}
-
-	.column_1 {
-		padding-bottom: 60px;
-	}
-
-	.column_1 img {
-		margin: 60px 0px;
-		width: 100%;
-	}
-
-	.column_2 {
-		display: flex; 
-	}
-	.box {
-		margin-bottom: 60px; 
-		background: #f2f2f2;
-		padding: 30px;
-		text-align: right; 
-		float: left; 
-	}
-
-	.box b {
-		margin-bottom: 10px; 
-	}
-
-	.box p {
-		text-align: right; 
-	}
-
-	span {
-		font-size: 10pt; 
-		line-height: 16pt;
-	}
-
-	h5 {
-		font-weight: 600;
-	}
-
-	.faqul {
-		padding: 0;
-	}
 
 	@media (min-width: 1024px){
 
