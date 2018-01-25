@@ -1387,9 +1387,12 @@ h5 {
 ----------- SINGLE -----------------
 -----------------------------------*/
 	#singleHead {
-		margin: 10% 0 0 60px;
+		margin: 10% 0 0 180px;
 		text-align: left;
 		font-size: 32pt;
+	}
+	.singleP p {
+		padding: 0 0 0 120px;
 	}
 
 	#singleContainer {
