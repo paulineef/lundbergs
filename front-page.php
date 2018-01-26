@@ -3,7 +3,7 @@
 
 <div id="welcome">
 	<h2>
-		Svensktillverkad </br> avfallshantering </br> sedan 1869
+		Svensktillverkad </br> avfallshantering </br> i generationer
 	</h2>
 
 	<!-- arrow with bouncing effect in css -->
