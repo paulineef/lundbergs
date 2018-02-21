@@ -37,7 +37,7 @@
 
 	<!-- div around the personal part -->
 	<div id="personal">
-		<h1>Våra ansällda</h1>
+		<h1>Våra anställda</h1>
 		<ul>
 			
 			<?php 

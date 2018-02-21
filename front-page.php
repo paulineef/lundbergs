@@ -3,7 +3,7 @@
 
 <div id="welcome">
 	<h2>
-		Svensktillverkad </br> avfallshantering </br> i generationer
+		Din kompletta leverantör när det gäller avfallsutrustning.
 	</h2>
 
 	<!-- arrow with bouncing effect in css -->

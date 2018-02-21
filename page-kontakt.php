@@ -16,7 +16,7 @@
 			$thumb_url = $thumb_url_array[0]; 
 	?>
 
-		<div id="feature" class="<?php the_title(); ?>" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');">
+		<div id="feature" class="<?php the_title(); ?> kontaktFeature" style="background-image: url('<?php echo $thumb_url; //display the first image from the array?>');">
 		<?php endif; ?>
   		
   		</div>
@@ -27,9 +27,6 @@
 			the_content(); 
 			?>
 		</div>
-
-	<!-- api that let's us use google map-->
-	<iframe width="100%" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoZnrFvRoWkYRqeCiGwoQgL0&key=AIzaSyCNJhm6UWvGYSe8FJBBv4F7NW5sSgKbteY" allowfullscreen></iframe>
 
 	<!-- gets the footer and include it by default -->
 	<?php get_footer(); ?>

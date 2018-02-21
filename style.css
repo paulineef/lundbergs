@@ -1,7 +1,7 @@
 /*
-Theme Name: Lundbergs
+Theme Name: Lundbergs AB
 Author: Pauline Fagerberg, Frida Jönsson, Klara Norman, Lisa Årman
-Description: Svensktillverkad avfallshantering sedan 1896
+Description: Din kompletta leverantör när det gäller avfallsutrustning.
 */
 
 /*----------------------------------
@@ -49,6 +49,15 @@ p {
 
 a {
 	text-decoration: none;
+	color: #57828C;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #6fa67f;
 }
 
 li {
@@ -143,6 +152,10 @@ nav li a:hover, #menu a:hover{
 	top: 0px;
 	left: 0;
 	z-index: 10; 
+}
+
+#menu a:hover {
+	text-decoration: none; 
 }
 
 #menu.large {
@@ -281,7 +294,10 @@ div.wpcf7-response-output {
 	background-size: 300%;
 }
 #welcome h2 {
+	font-size: 24pt;
 	font-weight: 600;
+	line-height: 140%;
+	box-sizing: border-box;
 }
 #welcome img {
 	max-width: 100%;
@@ -694,7 +710,7 @@ div.wpcf7 p, div.wpcf7 h4{
 	margin: 3px 0;
 	font-weight: 400;
 }
-.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 input[type="tel"] {
 	background: #eeeeee;
 	color: black;   
 	width: 100%;
@@ -1036,7 +1052,8 @@ h5 {
 		line-height: 75px;
 	}
 	#welcome {
-		background-position: top;
+		/*background-position: top;*/
+		background-size: 150%;
 	}
 	#singleHead {
 		text-align: center;
@@ -1059,6 +1076,12 @@ h5 {
 		justify-content: space-between;
 	}
 
+	#welcome h2 {
+		margin-top: 20%;
+		font-size: 30pt;
+		width: 50%;
+	}
+
 }
 
 /*desktop version*/
@@ -1069,6 +1092,19 @@ h5 {
 	#welcome {
 		background-size: 100%;
 	}
+
+	#welcome h2 {
+		font-size: 33pt;
+		width: 60%;
+	}
+
+@media (min-width: 1300px) {
+	#welcome h2 {
+		margin-top: 15%;
+		font-size: 33pt;
+		width: 40%;
+	}
+}
 /*----------------------------------
 ----------- CONTACT ---------------
 -----------------------------------*/
@@ -1361,17 +1397,22 @@ h5 {
 		background-color: rgba(200,200,200, 0.3);
 		padding: 0 40px 0px 40px !important;
 	}
-	.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+	.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 input[type="tel"] {
 		background: #FBFBFB;
 	}
 	.Kontakt {
 		float: right;
-		height: 100vh !important;
+		height: 120vh !important;
 	}
 	.Kontakt img {
 		height: 100%;
 		width: 100%;
 	}
+
+	.kontaktFeature {
+		background-size: 120% !important;
+	}
+
 	#formDiv {
 		width: 500px;
 		margin: 0 auto;

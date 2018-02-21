@@ -2,7 +2,7 @@
 		<footer>
 			<div id="footerCont">
 				<div id="info">
-					Tel 010-102 25 50<br/><br/>  
+					Tel 010 10 22 590<br/><br/>  
 					Klingekärrsgatan 10<br/> 
 					566 31 Habo<br/> 
 					Sverige
